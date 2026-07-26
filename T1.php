@@ -30,7 +30,7 @@ $page = isset($data[$id]) ? $data[$id] : null;
 
 if (!$page) {
     http_response_code(404);
-    exit('<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><title>404</title></head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');
+    exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><title>404</title></head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');
 }
 
 function h($str) { return htmlspecialchars($str ?? '', ENT_QUOTES, 'UTF-8'); }

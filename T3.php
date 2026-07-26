@@ -13,7 +13,7 @@ $page = isset($data[$id]) ? $data[$id] : null;
 
 if (!$page) {
 http_response_code(404);
-exit('<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><title>404</title></head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');
+exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><title>404</title></head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');
 }
 
 function e($str) { return htmlspecialchars($str ?? '', ENT_QUOTES, 'UTF-8'); }
@@ -93,7 +93,7 @@ $ulasan = [
 <!DOCTYPE html>
 <html lang="<?= e($lang) ?>">
 <head>
-
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="<?= e($faviconSrc) ?>">
 <title><?= e($page['title']) ?></title>
