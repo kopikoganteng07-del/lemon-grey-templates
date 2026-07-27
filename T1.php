@@ -55,6 +55,50 @@ $allPosts = array_filter($data, function ($item) {
     return isset($item['category']) && $item['category'] === 'post';
 });
 
+$origin = 'https://' . $domainName;
+
+// og:image dan schema WAJIB URL mutlak. Jalur relatif membuat pratinjau bagikan
+// di WhatsApp dan Facebook gagal memuat gambar.
+$ogRel = $page['image_src'] ?? $bannerSrc ?? '';
+$ogAbs = $ogRel ? ((strpos($ogRel, 'http') === 0) ? $ogRel : $origin . $ogRel) : '';
+
+// Menu halaman informasi. Dicocokkan dengan AKHIRAN slug, bukan slug persis,
+// karena staf memakai pola berawalan nama domain (mis. domain-link-alternatif).
+// Pola yang lebih panjang didahulukan supaya 'cara-daftar' tidak tertelan 'daftar'.
+// Satu label hanya dipakai sekali, sehingga menu tidak pernah punya dua tautan sama.
+// Halaman yang belum ada otomatis tidak ditampilkan, jadi tidak pernah ada tautan mati.
+$polaMenu = [
+    'about-us'        => 'Tentang Kami',
+    'tentang-kami'    => 'Tentang Kami',
+    'contact-us'      => 'Kontak',
+    'kontak'          => 'Kontak',
+    'link-alternatif' => 'Link Alternatif',
+    'cara-daftar'     => 'Cara Daftar',
+    'daftar'          => 'Cara Daftar',
+    'cara-masuk-akun' => 'Cara Masuk',
+    'cara-masuk'      => 'Cara Masuk',
+    'login'           => 'Cara Masuk',
+    'disclaimer'      => 'Disclaimer',
+];
+
+$menuHalaman = [];
+$labelDipakai = [];
+foreach ($polaMenu as $pola => $label) {
+    if (isset($labelDipakai[$label])) { continue; }
+    foreach ($allPosts as $slug => $item) {
+        if (isset($menuHalaman[$slug])) { continue; }
+        $s = strtolower(trim($slug));
+        if ($s === $pola || substr($s, -(strlen($pola) + 1)) === '-' . $pola) {
+            $menuHalaman[$slug] = $label;
+            $labelDipakai[$label] = true;
+            break;
+        }
+    }
+}
+// Artikel biasa dipisah dari menu supaya Disclaimer tidak nongol di grid
+// "Artikel Terbaru" lengkap dengan thumbnail.
+$bacaanLain = array_diff_key($allPosts, $menuHalaman);
+
 // Data generik hardcode (sama di semua domain T1 - dikonfirmasi user)
 $genericGames = ['Naga Emas Beruntung','Harta Karun Kerajaan','Roda Fortuna Ajaib','Kembang Api Kemenangan','Singa Perkasa Jaya'];
 $genericProviders = ['Pragmatic Play','PG Soft','Habanero','Microgaming','Playtech','Evolution','JILI','CQ9'];
@@ -75,14 +119,14 @@ $genericProviders = ['Pragmatic Play','PG Soft','Habanero','Microgaming','Playte
 <meta property="og:url" content="<?= h($page['canonical_url']) ?>">
 <meta property="og:title" content="<?= h($page['title']) ?>">
 <meta property="og:description" content="<?= h($page['meta_description']) ?>">
-<meta property="og:image" content="<?= h($page['image_src'] ?? $bannerSrc ?? '') ?>">
+<meta property="og:image" content="<?= h($ogAbs) ?>">
 <meta property="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
 <?php if ($isHomepage): ?>
 {"@context":"https://schema.org","@type":"WebSite","name":<?= json_encode($page['title'], JSON_UNESCAPED_UNICODE) ?>,"url":<?= json_encode($page['canonical_url'], JSON_UNESCAPED_UNICODE) ?>}
 <?php else: ?>
-{"@context":"https://schema.org","@type":"Article","headline":<?= json_encode($page['h1'], JSON_UNESCAPED_UNICODE) ?>,"image":<?= json_encode($page['image_src'] ?? '', JSON_UNESCAPED_UNICODE) ?>,"dateModified":<?= json_encode($page['lastmod'] ?? '', JSON_UNESCAPED_UNICODE) ?>}
+{"@context":"https://schema.org","@type":"Article","headline":<?= json_encode($page['h1'], JSON_UNESCAPED_UNICODE) ?>,"image":<?= json_encode($ogAbs, JSON_UNESCAPED_UNICODE) ?>,"dateModified":<?= json_encode($page['lastmod'] ?? '', JSON_UNESCAPED_UNICODE) ?>}
 <?php endif; ?>
 </script>
 
@@ -184,6 +228,17 @@ tailwind.config = {
     </div>
   </div>
 </header>
+
+<?php if (count($menuHalaman) > 0): ?>
+<nav class="bg-bg-surface/60 border-b border-border" aria-label="Halaman informasi">
+  <div class="max-w-[1200px] mx-auto px-4 flex items-center gap-1 overflow-x-auto scrollbar-hide">
+    <a href="/" class="min-h-[44px] flex items-center px-3 text-[12px] md:text-sm font-semibold whitespace-nowrap rounded-md text-text-onDark/70 hover:text-brand-accent hover:bg-white/5 transition-all">Beranda</a>
+    <?php foreach ($menuHalaman as $slug => $label): ?>
+    <a href="/<?= h($slug) ?>" class="min-h-[44px] flex items-center px-3 text-[12px] md:text-sm font-semibold whitespace-nowrap rounded-md text-text-onDark/70 hover:text-brand-accent hover:bg-white/5 transition-all"><?= h($label) ?></a>
+    <?php endforeach; ?>
+  </div>
+</nav>
+<?php endif; ?>
 
 <main class="max-w-[1200px] mx-auto px-4 py-8">
 
@@ -335,11 +390,11 @@ tailwind.config = {
         </div>
       </div>
 
-      <?php if (count($allPosts) > 0): ?>
+      <?php if (count($bacaanLain) > 0): ?>
       <div class="mt-8 space-y-4">
         <h2 class="text-sm font-bold uppercase tracking-widest text-brand-accent">Artikel Terbaru</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-          <?php foreach ($allPosts as $slug => $item): ?>
+          <?php foreach ($bacaanLain as $slug => $item): ?>
           <a href="/<?= h($slug) ?>" class="bg-bg-card border border-border rounded-lg overflow-hidden hover:border-brand-primary/40 transition-all">
             <img src="<?= h($item['image_src'] ?? '') ?>" alt="<?= h($item['title']) ?>" loading="lazy" class="aspect-[4/3] object-cover w-full">
             <span class="block p-3 text-xs font-semibold text-text-onDark"><?= h($item['title']) ?></span>
@@ -375,6 +430,13 @@ tailwind.config = {
         </div>
       </div>
     </div>
+    <?php if (count($menuHalaman) > 0): ?>
+    <nav class="border-t border-white/5 mt-8 pt-6 flex flex-wrap justify-center gap-2" aria-label="Halaman informasi">
+      <?php foreach ($menuHalaman as $slug => $label): ?>
+      <a href="/<?= h($slug) ?>" class="inline-flex items-center min-h-[44px] px-4 text-xs font-semibold text-text-onDark/70 hover:text-brand-accent border border-border rounded-lg bg-bg-card transition-all"><?= h($label) ?></a>
+      <?php endforeach; ?>
+    </nav>
+    <?php endif; ?>
     <div class="border-t border-white/5 mt-8 pt-6 text-center">
       <p class="text-xs text-text-onDark/40">&copy; <?= date('Y') ?> <span class="text-brand-accent font-bold"><?= h($domainName) ?></span>. Hak Cipta Dilindungi</p>
     </div>
