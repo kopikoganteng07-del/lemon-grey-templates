@@ -87,6 +87,30 @@ break;
 // daftar bacaan lain.
 $bacaanLain = array_diff_key($semuaPost, $menuHalaman);
 
+// Tautan internal di awal artikel: kemunculan PERTAMA nama situs di dalam
+// content_html ditautkan ke beranda. Dikerjakan saat render, jadi artikel lama
+// pun ikut mendapat tautan tanpa perlu regenerate.
+// Penggantian HANYA pada teks di luar tag, supaya nama situs yang kebetulan
+// berada di dalam atribut tidak ikut dirusak. Hanya satu kali per halaman.
+// Variabel sengaja bernama $namaTaut, bukan $namaSitus, karena $namaSitus
+// sudah dipakai untuk keperluan lain di template ini.
+$isiArtikel = $page['content_html'];
+$namaTaut   = explode('.', $host)[0];
+if ($namaTaut !== '' && $isiArtikel !== '') {
+    $bagian = preg_split('/(<[^>]*>)/', $isiArtikel, -1, PREG_SPLIT_DELIM_CAPTURE);
+    $sudah = false;
+    foreach ($bagian as $i => $b) {
+        if ($sudah || $b === '' || $b[0] === '<') { continue; }
+        $pos = stripos($b, $namaTaut);
+        if ($pos !== false) {
+            $asli = substr($b, $pos, strlen($namaTaut));
+            $bagian[$i] = substr($b, 0, $pos) . '<a href="/">' . $asli . '</a>' . substr($b, $pos + strlen($namaTaut));
+            $sudah = true;
+        }
+    }
+    if ($sudah) { $isiArtikel = implode('', $bagian); }
+}
+
 $namaSitus = explode('.', $host)[0];
 
 $svg = [
@@ -389,7 +413,7 @@ a:focus-visible{outline:3px solid var(--k-emas);outline-offset:2px}
 <article class="k-artikel">
 <h1><?= e($page['h1']) ?></h1>
 <p class="k-cap">Diperbarui <time datetime="<?= e($lastmod) ?>"><?= e($tglTampil) ?></time></p>
-<?= $page['content_html'] ?>
+<?= $isiArtikel ?>
 </article>
 
 <?php if ($isHome): ?>
@@ -437,6 +461,7 @@ a:focus-visible{outline:3px solid var(--k-emas);outline-offset:2px}
 <img src="<?= e($logoSrc) ?>" width="180" height="40" alt="<?= e($host) ?>" loading="lazy" decoding="async">
 <?php if (count($menuHalaman) > 0): ?>
 <div class="k-tautan" style="margin-bottom:16px">
+<a href="/">Beranda</a>
 <?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
 </div>
 <?php endif; ?>
