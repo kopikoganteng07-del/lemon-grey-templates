@@ -430,13 +430,12 @@ tailwind.config = {
         </div>
       </div>
     </div>
-    <?php if (count($menuHalaman) > 0): ?>
     <nav class="border-t border-white/5 mt-8 pt-6 flex flex-wrap justify-center gap-2" aria-label="Halaman informasi">
+      <a href="/" class="inline-flex items-center min-h-[44px] px-4 text-xs font-semibold text-text-onDark/70 hover:text-brand-accent border border-border rounded-lg bg-bg-card transition-all">Beranda</a>
       <?php foreach ($menuHalaman as $slug => $label): ?>
       <a href="/<?= h($slug) ?>" class="inline-flex items-center min-h-[44px] px-4 text-xs font-semibold text-text-onDark/70 hover:text-brand-accent border border-border rounded-lg bg-bg-card transition-all"><?= h($label) ?></a>
       <?php endforeach; ?>
     </nav>
-    <?php endif; ?>
     <div class="border-t border-white/5 mt-8 pt-6 text-center">
       <p class="text-xs text-text-onDark/40">&copy; <?= date('Y') ?> <span class="text-brand-accent font-bold"><?= h($domainName) ?></span>. Hak Cipta Dilindungi</p>
     </div>
