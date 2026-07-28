@@ -194,36 +194,9 @@ tailwind.config = {
           <img src="<?= h($logoSrc) ?>" alt="<?= h($domainName) ?>" width="180" height="58" class="h-9 md:h-12 w-auto">
         </a>
       </div>
-      <nav class="hidden md:flex flex-1 items-center gap-0.5 overflow-x-auto scrollbar-hide px-1">
-        <a href="<?= h($ctaDaftarUrl) ?>" class="px-2.5 py-1.5 text-[13px] md:text-sm font-medium whitespace-nowrap rounded-md transition-all text-brand-accent bg-brand-primary/10 border border-brand-primary/20">Slot</a>
-        <a href="<?= h($ctaDaftarUrl) ?>" class="px-2.5 py-1.5 text-[13px] md:text-sm font-medium whitespace-nowrap rounded-md transition-all text-text-onDark/70 hover:text-text-onDark hover:bg-white/5">Live Casino</a>
-        <a href="<?= h($ctaDaftarUrl) ?>" class="px-2.5 py-1.5 text-[13px] md:text-sm font-medium whitespace-nowrap rounded-md transition-all text-text-onDark/70 hover:text-text-onDark hover:bg-white/5">Togel</a>
-        <a href="<?= h($ctaDaftarUrl) ?>" class="px-2.5 py-1.5 text-[13px] md:text-sm font-medium whitespace-nowrap rounded-md transition-all text-text-onDark/70 hover:text-text-onDark hover:bg-white/5">Olahraga</a>
-        <a href="<?= h($ctaDaftarUrl) ?>" class="px-2.5 py-1.5 text-[13px] md:text-sm font-medium whitespace-nowrap rounded-md transition-all text-text-onDark/70 hover:text-text-onDark hover:bg-white/5">Promosi</a>
-      </nav>
       <div class="flex items-center gap-1.5 md:gap-2">
         <a href="<?= h($ctaDaftarUrl) ?>" class="h-8 md:h-9 px-3 md:px-4 flex items-center gap-1 bg-brand-primary text-white text-[12px] md:text-sm font-bold rounded-lg hover:bg-brand-primary/90 transition-all tracking-wide whitespace-nowrap">Daftar</a>
         <a href="<?= h($ctaLoginUrl) ?>" class="h-8 md:h-9 px-3 md:px-4 flex items-center gap-1 bg-white/10 text-brand-accent text-[12px] md:text-sm font-bold rounded-lg border border-white/10 hover:bg-white/20 transition-all whitespace-nowrap">Masuk</a>
-      </div>
-    </div>
-    <nav class="md:hidden flex items-center gap-1 overflow-x-auto scrollbar-hide pb-3 pt-0.5">
-      <a href="<?= h($ctaDaftarUrl) ?>" class="px-3 py-1.5 text-[12px] font-bold whitespace-nowrap rounded-lg transition-all border text-brand-accent bg-brand-primary/10 border-brand-primary/30">Slot</a>
-      <a href="<?= h($ctaDaftarUrl) ?>" class="px-3 py-1.5 text-[12px] font-bold whitespace-nowrap rounded-lg transition-all border text-text-onDark/70 bg-white/5 border-white/5">Live Casino</a>
-      <a href="<?= h($ctaDaftarUrl) ?>" class="px-3 py-1.5 text-[12px] font-bold whitespace-nowrap rounded-lg transition-all border text-text-onDark/70 bg-white/5 border-white/5">Togel</a>
-      <a href="<?= h($ctaDaftarUrl) ?>" class="px-3 py-1.5 text-[12px] font-bold whitespace-nowrap rounded-lg transition-all border text-text-onDark/70 bg-white/5 border-white/5">Olahraga</a>
-      <a href="<?= h($ctaDaftarUrl) ?>" class="px-3 py-1.5 text-[12px] font-bold whitespace-nowrap rounded-lg transition-all border text-text-onDark/70 bg-white/5 border-white/5">Promosi</a>
-    </nav>
-  </div>
-  <div class="border-t border-white/5 bg-black/20">
-    <div class="max-w-[1200px] mx-auto h-12 flex items-center px-4 gap-4">
-      <div class="flex-1 max-w-xl">
-        <input type="text" placeholder="Cari game..." class="w-full h-9 pl-4 pr-4 rounded-lg border border-white/10 bg-white/5 text-text-onDark text-sm focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-all placeholder:text-text-onDark/40">
-      </div>
-      <div class="flex items-center gap-1 ml-auto">
-        <span class="px-3 py-1.5 flex items-center gap-1.5 text-xs font-medium text-brand-accent">
-          <span class="hidden sm:inline">Promosi</span>
-          <span class="bg-brand-primary text-white text-[9px] px-1 py-0.5 rounded font-bold">Baru</span>
-        </span>
       </div>
     </div>
   </div>
@@ -242,6 +215,7 @@ tailwind.config = {
 
 <main class="max-w-[1200px] mx-auto px-4 py-8">
 
+<?php if (!$isHomepage): ?>
   <div class="flex flex-wrap items-center justify-between gap-4 py-2 border-b border-border mb-4">
     <nav class="flex items-center text-xs sm:text-sm overflow-x-auto whitespace-nowrap scrollbar-hide">
       <a href="/" class="text-text-muted hover:text-brand-primary transition-colors">Beranda</a>
@@ -251,6 +225,7 @@ tailwind.config = {
       <?php endif; ?>
     </nav>
   </div>
+<?php endif; ?>
 
   <div class="grid grid-cols-1 lg:grid-cols-[45%_1fr] gap-6 lg:gap-10 mt-4 md:mt-6 items-start">
 
