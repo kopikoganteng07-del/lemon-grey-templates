@@ -261,7 +261,7 @@ tailwind.config = {
       <?php if (!empty($heroImg)): ?>
       <div class="relative bg-brand-primary/5 rounded-xl border border-border p-1 overflow-hidden min-h-[300px] sm:min-h-[420px] shadow-soft">
         <div class="rounded-lg overflow-hidden bg-bg-card h-full">
-          <img src="<?= h($heroImg) ?>" alt="<?= h($domainName) ?>" fetchpriority="high" loading="eager" decoding="async" class="w-full h-auto object-contain">
+          <img src="<?= h($heroImg) ?>" alt="<?= h($domainName) ?>" width="728" height="240" fetchpriority="high" loading="eager" decoding="async" class="w-full h-auto object-contain">
           <div class="absolute top-0 left-0">
             <div class="bg-brand-primary text-white text-xs font-black uppercase tracking-widest px-5 py-1.5 rounded-br-lg shadow-glow">Promosi</div>
           </div>
@@ -316,8 +316,6 @@ tailwind.config = {
           </div>
 
           <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-text-muted font-mono bg-bg-card/30 px-4 py-2.5 rounded-lg border border-border/60 mb-6">
-            <div class="flex items-center gap-1.5"><span>Ditinjau oleh: <span class="text-brand-accent font-bold">Tim Redaksi</span></span></div>
-            <div class="hidden sm:block text-border/40">|</div>
             <div class="flex items-center gap-1.5"><span>Diperbarui: <time class="font-bold text-text-main"><?= h($page['lastmod'] ?? '') ?></time></span></div>
             <div class="hidden sm:block text-border/40">|</div>
             <div class="flex items-center gap-1.5">
@@ -341,7 +339,7 @@ tailwind.config = {
           <div class="grid grid-cols-5 gap-1.5 md:gap-2">
             <?php foreach ($genericGames as $i => $g): ?>
             <a href="<?= h($ctaDaftarUrl) ?>" target="_blank" rel="noopener" class="aspect-square rounded-md md:rounded-lg overflow-hidden border border-border bg-bg-surface group cursor-pointer shadow-soft relative">
-              <img src="/img/asset-game-<?= $i+1 ?>.jpg" alt="<?= h($g) ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+              <img src="/img/asset-game-<?= $i+1 ?>.jpg" alt="<?= h($g) ?>" width="320" height="320" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
               <span class="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-[8px] md:text-[9px] font-bold text-center py-1 px-0.5 leading-tight"><?= h($g) ?></span>
             </a>
             <?php endforeach; ?>
@@ -398,7 +396,7 @@ tailwind.config = {
         <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
           <?php foreach ($bacaanLain as $slug => $item): ?>
           <a href="/<?= h($slug) ?>" class="bg-bg-card border border-border rounded-lg overflow-hidden hover:border-brand-primary/40 transition-all">
-            <img src="<?= h($item['image_src'] ?? '') ?>" alt="<?= h($item['title']) ?>" loading="lazy" class="aspect-[4/3] object-cover w-full">
+            <img src="<?= h($item['image_src'] ?? '') ?>" alt="<?= h($item['title']) ?>" width="320" height="240" loading="lazy" decoding="async" class="aspect-[4/3] object-cover w-full">
             <span class="block p-3 text-xs font-semibold text-text-onDark"><?= h($item['title']) ?></span>
           </a>
           <?php endforeach; ?>
@@ -415,7 +413,7 @@ tailwind.config = {
   <div class="max-w-[1200px] mx-auto px-4 py-10">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="space-y-4">
-        <img src="<?= h($logoSrc) ?>" alt="<?= h($domainName) ?>" class="h-10 w-auto">
+        <img src="<?= h($logoSrc) ?>" alt="<?= h($domainName) ?>" width="180" height="58" loading="lazy" decoding="async" class="h-10 w-auto">
         <p class="text-sm text-text-onDark/70 leading-relaxed"><?= h($domainName) ?> adalah platform hiburan online terpercaya dengan RTP Live tertinggi, menghadirkan pengalaman gaming yang aman dan adil bagi para pemain.</p>
       </div>
       <div class="space-y-4 md:text-right">
