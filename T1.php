@@ -62,6 +62,11 @@ $origin = 'https://' . $domainName;
 $ogRel = $page['image_src'] ?? $bannerSrc ?? '';
 $ogAbs = $ogRel ? ((strpos($ogRel, 'http') === 0) ? $ogRel : $origin . $ogRel) : '';
 
+// datePublished dan dateModified sengaja bernilai sama: kita tidak menyimpan
+// tanggal terbit terpisah, dan mengarang tanggal terbit yang lebih tua justru
+// klaim palsu. Sama seperti T2, T3, T4.
+$dateMod = ($page['lastmod'] ?? date('Y-m-d')) . 'T00:00:00+07:00';
+
 // Menu halaman informasi. Dicocokkan dengan AKHIRAN slug, bukan slug persis,
 // karena staf memakai pola berawalan nama domain (mis. domain-link-alternatif).
 // Pola yang lebih panjang didahulukan supaya 'cara-daftar' tidak tertelan 'daftar'.
@@ -123,11 +128,33 @@ $genericProviders = ['Pragmatic Play','PG Soft','Habanero','Microgaming','Playte
 <meta property="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
-<?php if ($isHomepage): ?>
-{"@context":"https://schema.org","@type":"WebSite","name":<?= json_encode($page['title'], JSON_UNESCAPED_UNICODE) ?>,"url":<?= json_encode($page['canonical_url'], JSON_UNESCAPED_UNICODE) ?>}
-<?php else: ?>
-{"@context":"https://schema.org","@type":"Article","headline":<?= json_encode($page['h1'], JSON_UNESCAPED_UNICODE) ?>,"image":<?= json_encode($ogAbs, JSON_UNESCAPED_UNICODE) ?>,"dateModified":<?= json_encode($page['lastmod'] ?? '', JSON_UNESCAPED_UNICODE) ?>}
-<?php endif; ?>
+{
+"@context":"https://schema.org",
+"@graph":[
+{
+"@type":"Article",
+"headline":<?= json_encode($page['h1'], JSON_UNESCAPED_UNICODE) ?>,
+"description":<?= json_encode($page['meta_description'] ?? '', JSON_UNESCAPED_UNICODE) ?>,
+"image":<?= json_encode($ogAbs, JSON_UNESCAPED_UNICODE) ?>,
+"datePublished":<?= json_encode($dateMod, JSON_UNESCAPED_UNICODE) ?>,
+"dateModified":<?= json_encode($dateMod, JSON_UNESCAPED_UNICODE) ?>,
+"inLanguage":"id-ID",
+"author":{"@type":"Organization","name":<?= json_encode($domainName, JSON_UNESCAPED_UNICODE) ?>,"url":<?= json_encode($origin . '/', JSON_UNESCAPED_UNICODE) ?>},
+"publisher":{"@type":"Organization","name":<?= json_encode($domainName, JSON_UNESCAPED_UNICODE) ?>,"url":<?= json_encode($origin . '/', JSON_UNESCAPED_UNICODE) ?>,"logo":{"@type":"ImageObject","url":<?= json_encode($origin . $logoSrc, JSON_UNESCAPED_UNICODE) ?>}},
+"mainEntityOfPage":{"@type":"WebPage","@id":<?= json_encode($page['canonical_url'], JSON_UNESCAPED_UNICODE) ?>}
+},
+{
+"@type":"BreadcrumbList",
+"itemListElement":[
+{"@type":"ListItem","position":1,"name":"Beranda","item":<?= json_encode($origin . '/', JSON_UNESCAPED_UNICODE) ?>}<?php if (!$isHomepage): ?>,
+{"@type":"ListItem","position":2,"name":<?= json_encode($page['h1'], JSON_UNESCAPED_UNICODE) ?>,"item":<?= json_encode($page['canonical_url'], JSON_UNESCAPED_UNICODE) ?>}<?php endif; ?>
+
+]
+}<?php if ($isHomepage): ?>,
+{"@type":"WebSite","name":<?= json_encode($page['title'], JSON_UNESCAPED_UNICODE) ?>,"url":<?= json_encode($origin . '/', JSON_UNESCAPED_UNICODE) ?>}<?php endif; ?>
+
+]
+}
 </script>
 
 <?php if ($isHomepage): ?>
