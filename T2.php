@@ -44,6 +44,47 @@ $tglTampil = $ts ? (date('j', $ts) . ' ' . $bulanId[(int)date('n', $ts)] . ' ' .
 $semuaPost = array_filter($data, function ($item) {
 return isset($item['category']) && $item['category'] === 'post';
 });
+
+// og:image WAJIB URL mutlak. Jalur relatif membuat pratinjau bagikan di
+// WhatsApp dan Facebook gagal memuat gambar.
+$ogAbs = $ogImage ? ((strpos($ogImage, 'http') === 0) ? $ogImage : $origin . $ogImage) : '';
+
+// Menu halaman informasi. Dicocokkan dengan AKHIRAN slug, bukan slug persis,
+// karena staf memakai pola berawalan nama domain (mis. domain-link-alternatif).
+// Pola yang lebih panjang didahulukan supaya 'cara-daftar' tidak tertelan 'daftar'.
+// Satu label hanya dipakai sekali. Halaman yang belum ada tidak ditampilkan,
+// jadi tidak pernah ada tautan mati.
+$polaMenu = [
+'about-us'        => 'Tentang Kami',
+'tentang-kami'    => 'Tentang Kami',
+'contact-us'      => 'Kontak',
+'kontak'          => 'Kontak',
+'link-alternatif' => 'Link Alternatif',
+'cara-daftar'     => 'Cara Daftar',
+'daftar'          => 'Cara Daftar',
+'cara-masuk-akun' => 'Cara Masuk',
+'cara-masuk'      => 'Cara Masuk',
+'login'           => 'Cara Masuk',
+'disclaimer'      => 'Disclaimer',
+];
+
+$menuHalaman = [];
+$labelDipakai = [];
+foreach ($polaMenu as $pola => $label) {
+if (isset($labelDipakai[$label])) { continue; }
+foreach ($semuaPost as $slug => $item) {
+if (isset($menuHalaman[$slug])) { continue; }
+$s = strtolower(trim($slug));
+if ($s === $pola || substr($s, -(strlen($pola) + 1)) === '-' . $pola) {
+$menuHalaman[$slug] = $label;
+$labelDipakai[$label] = true;
+break;
+}
+}
+}
+// Artikel biasa dipisah dari menu supaya Disclaimer tidak ikut muncul di
+// daftar bacaan lain.
+$bacaanLain = array_diff_key($semuaPost, $menuHalaman);
 $papanRtp = [
 ['nama' => 'Gerbang Olympia',   'prov' => 'Pragmatic Play', 'rtp' => '96.5%',  'st' => 'TINGGI', 'kelas' => 'hi'],
 ['nama' => 'Mahjong Jalur 2',   'prov' => 'PG Soft',        'rtp' => '96.9%',  'st' => 'TINGGI', 'kelas' => 'hi'],
@@ -82,7 +123,7 @@ $faqList = [
 <meta property="og:url" content="<?= e($canonical) ?>">
 <meta property="og:title" content="<?= e($page['title']) ?>">
 <meta property="og:description" content="<?= e($page['meta_description']) ?>">
-<meta property="og:image" content="<?= e($ogImage) ?>">
+<meta property="og:image" content="<?= e($ogAbs) ?>">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
@@ -211,6 +252,8 @@ details p{padding:0 0 15px;color:#c9cfdb;font-size:15px;margin:0;max-width:68ch}
 
 a:focus-visible,summary:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.navinfo{border-bottom:1px solid rgba(255,255,255,.10);padding:10px 0}
+.navinfo .tagrow{margin:0}
 </style>
 </head>
 <body>
@@ -222,6 +265,17 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--amber);outline-off
 <a href="<?= e($daftarUrl) ?>" class="pill pill-fill" rel="nofollow">Daftar</a>
 </div>
 </header>
+
+<?php if (count($menuHalaman) > 0): ?>
+<nav class="navinfo" aria-label="Halaman informasi">
+<div class="shell">
+<div class="tagrow">
+<a href="/">Beranda</a>
+<?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
+</div>
+</div>
+</nav>
+<?php endif; ?>
 
 <main>
 <div class="shell">
@@ -304,11 +358,11 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--amber);outline-off
 </section>
 <?php endif; ?>
 
-<?php if (count($semuaPost) > 0): ?>
+<?php if (count($bacaanLain) > 0): ?>
 <section class="block">
 <h2><?= $isHome ? 'Bacaan lainnya' : 'Artikel terkait' ?></h2>
 <div class="tagrow">
-<?php foreach ($semuaPost as $slug => $item): ?>
+<?php foreach ($bacaanLain as $slug => $item): ?>
 <?php if (!$isHome && isset($page['canonical_url']) && rtrim($page['canonical_url'], '/') === rtrim($origin . '/' . $slug, '/')) continue; ?>
 <a href="/<?= e($slug) ?>"><?= e($item['title']) ?></a>
 <?php endforeach; ?>
@@ -326,6 +380,11 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--amber);outline-off
 <a href="<?= e($waUrl) ?>" rel="nofollow noopener" target="_blank">WhatsApp</a>
 <a href="<?= e($tgUrl) ?>" rel="nofollow noopener" target="_blank">Telegram</a>
 </div>
+<?php if (count($menuHalaman) > 0): ?>
+<div class="tagrow" style="margin-bottom:16px">
+<?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
+</div>
+<?php endif; ?>
 <p class="warnbox"><strong>Khusus 18+.</strong> Halaman ini berisi informasi mengenai angka RTP dan mekanisme permainan, bukan ajakan maupun jaminan kemenangan. Pahami risiko finansial dan tentukan batas bermain sendiri sebelum berpartisipasi.</p>
 <p style="margin-top:16px">&copy; <?= date('Y') ?> <?= e($host) ?></p>
 </div>
