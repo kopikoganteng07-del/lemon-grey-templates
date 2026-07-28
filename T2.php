@@ -85,6 +85,30 @@ break;
 // Artikel biasa dipisah dari menu supaya Disclaimer tidak ikut muncul di
 // daftar bacaan lain.
 $bacaanLain = array_diff_key($semuaPost, $menuHalaman);
+
+// Tautan internal di awal artikel: kemunculan PERTAMA nama situs di dalam
+// content_html ditautkan ke beranda. Dikerjakan saat render, jadi artikel lama
+// pun ikut mendapat tautan tanpa perlu regenerate.
+// Penggantian HANYA pada teks di luar tag, supaya nama situs yang kebetulan
+// berada di dalam atribut tidak ikut dirusak. Hanya satu kali per halaman.
+// Variabel sengaja bernama $namaTaut, bukan $namaSitus, karena $namaSitus
+// sudah dipakai untuk keperluan lain di template ini.
+$isiArtikel = $page['content_html'];
+$namaTaut   = explode('.', $host)[0];
+if ($namaTaut !== '' && $isiArtikel !== '') {
+    $bagian = preg_split('/(<[^>]*>)/', $isiArtikel, -1, PREG_SPLIT_DELIM_CAPTURE);
+    $sudah = false;
+    foreach ($bagian as $i => $b) {
+        if ($sudah || $b === '' || $b[0] === '<') { continue; }
+        $pos = stripos($b, $namaTaut);
+        if ($pos !== false) {
+            $asli = substr($b, $pos, strlen($namaTaut));
+            $bagian[$i] = substr($b, 0, $pos) . '<a href="/">' . $asli . '</a>' . substr($b, $pos + strlen($namaTaut));
+            $sudah = true;
+        }
+    }
+    if ($sudah) { $isiArtikel = implode('', $bagian); }
+}
 $papanRtp = [
 ['nama' => 'Gerbang Olympia',   'prov' => 'Pragmatic Play', 'rtp' => '96.5%',  'st' => 'TINGGI', 'kelas' => 'hi'],
 ['nama' => 'Mahjong Jalur 2',   'prov' => 'PG Soft',        'rtp' => '96.9%',  'st' => 'TINGGI', 'kelas' => 'hi'],
@@ -186,7 +210,7 @@ img{max-width:100%}
 .masthead{padding:34px 0 26px;border-bottom:1px solid var(--line)}
 .kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin:0 0 12px}
 h1{font-family:'Sora',sans-serif;font-weight:800;font-size:clamp(28px,7vw,40px);line-height:1.15;letter-spacing:-.03em;margin:0 0 14px}
-.standfirst{font-size:17px;color:#c6ccd9;margin:0 0 18px;max-width:62ch}
+.standfirst{font-size:17px;color:#c6ccd9;margin:0 0 18px}
 .stampline{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0}
 .blip{width:7px;height:7px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 3px rgba(61,220,151,.16)}
 .crumb{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);padding:14px 0 0}
@@ -228,7 +252,7 @@ p{margin:0 0 14px}
 .callout p{color:#c6ccd9;font-size:15px}
 .pill-big{min-height:52px;font-size:16px;padding:0 30px;margin-top:6px}
 
-.readable p,.readable ul,.readable ol{max-width:68ch;color:#c9cfdb}
+.readable p,.readable ul,.readable ol{color:#c9cfdb}
 .readable p,.readable li{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .readable ul,.readable ol{padding-left:20px;margin:0 0 14px}
 .readable li{margin-bottom:6px}
@@ -343,7 +367,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--amber);outline-off
 <?php endif; ?>
 
 <section class="block readable">
-<?= $page['content_html'] ?>
+<?= $isiArtikel ?>
 </section>
 
 <?php if ($isHome): ?>
@@ -382,6 +406,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--amber);outline-off
 </div>
 <?php if (count($menuHalaman) > 0): ?>
 <div class="tagrow" style="margin-bottom:16px">
+<a href="/">Beranda</a>
 <?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
 </div>
 <?php endif; ?>
