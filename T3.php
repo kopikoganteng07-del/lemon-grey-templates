@@ -46,6 +46,47 @@ $semuaPost = array_filter($data, function ($item) {
 return isset($item['category']) && $item['category'] === 'post';
 });
 
+// og:image WAJIB URL mutlak. Jalur relatif membuat pratinjau bagikan di
+// WhatsApp dan Facebook gagal memuat gambar.
+$ogAbs = $ogImage ? ((strpos($ogImage, 'http') === 0) ? $ogImage : $origin . $ogImage) : '';
+
+// Menu halaman informasi. Dicocokkan dengan AKHIRAN slug, bukan slug persis,
+// karena staf memakai pola berawalan nama domain (mis. domain-link-alternatif).
+// Pola yang lebih panjang didahulukan supaya 'cara-daftar' tidak tertelan 'daftar'.
+// Satu label hanya dipakai sekali. Halaman yang belum ada tidak ditampilkan,
+// jadi tidak pernah ada tautan mati.
+$polaMenu = [
+'about-us'        => 'Tentang Kami',
+'tentang-kami'    => 'Tentang Kami',
+'contact-us'      => 'Kontak',
+'kontak'          => 'Kontak',
+'link-alternatif' => 'Link Alternatif',
+'cara-daftar'     => 'Cara Daftar',
+'daftar'          => 'Cara Daftar',
+'cara-masuk-akun' => 'Cara Masuk',
+'cara-masuk'      => 'Cara Masuk',
+'login'           => 'Cara Masuk',
+'disclaimer'      => 'Disclaimer',
+];
+
+$menuHalaman = [];
+$labelDipakai = [];
+foreach ($polaMenu as $pola => $label) {
+if (isset($labelDipakai[$label])) { continue; }
+foreach ($semuaPost as $slug => $item) {
+if (isset($menuHalaman[$slug])) { continue; }
+$s = strtolower(trim($slug));
+if ($s === $pola || substr($s, -(strlen($pola) + 1)) === '-' . $pola) {
+$menuHalaman[$slug] = $label;
+$labelDipakai[$label] = true;
+break;
+}
+}
+}
+// Artikel biasa dipisah dari menu supaya Disclaimer tidak ikut muncul di
+// daftar bacaan lain.
+$bacaanLain = array_diff_key($semuaPost, $menuHalaman);
+
 $namaSitus = explode('.', $host)[0];
 
 $railKategori = [
@@ -105,7 +146,7 @@ $ulasan = [
 <meta property="og:url" content="<?= e($canonical) ?>">
 <meta property="og:title" content="<?= e($page['title']) ?>">
 <meta property="og:description" content="<?= e($page['meta_description']) ?>">
-<meta property="og:image" content="<?= e($ogImage) ?>">
+<meta property="og:image" content="<?= e($ogAbs) ?>">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
@@ -243,6 +284,8 @@ footer{padding:26px 0 30px;color:#6b7280;font-size:14px}
 
 a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+.navinfo{border-bottom:1px solid rgba(0,0,0,.12);padding:10px 0}
+.navinfo .flinks{margin:0}
 </style>
 </head>
 <body>
@@ -259,6 +302,17 @@ a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 </nav>
 </div>
 </header>
+
+<?php if (count($menuHalaman) > 0): ?>
+<nav class="navinfo" aria-label="Halaman informasi">
+<div class="wrap">
+<div class="flinks">
+<a href="/">Beranda</a>
+<?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
+</div>
+</div>
+</nav>
+<?php endif; ?>
 
 <main>
 <div class="wrap">
@@ -329,12 +383,12 @@ a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 </div>
 <?php endif; ?>
 
-<?php if (count($semuaPost) > 0): ?>
+<?php if (count($bacaanLain) > 0): ?>
 <div class="panel">
 <h2><?= $isHome ? 'Bacaan lainnya' : 'Artikel terkait' ?></h2>
 <div class="rule"></div>
 <div class="flinks">
-<?php foreach ($semuaPost as $slug => $item): ?>
+<?php foreach ($bacaanLain as $slug => $item): ?>
 <?php if (!$isHome && isset($page['canonical_url']) && rtrim($page['canonical_url'], '/') === rtrim($origin . '/' . $slug, '/')) continue; ?>
 <a href="/<?= e($slug) ?>"><?= e($item['title']) ?></a>
 <?php endforeach; ?>
@@ -351,6 +405,11 @@ a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 <a href="<?= e($waUrl) ?>" rel="nofollow noopener" target="_blank">WhatsApp</a>
 <a href="<?= e($tgUrl) ?>" rel="nofollow noopener" target="_blank">Telegram</a>
 </div>
+<?php if (count($menuHalaman) > 0): ?>
+<div class="flinks" style="margin-bottom:16px">
+<?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
+</div>
+<?php endif; ?>
 <p class="warn"><strong>Khusus 18+.</strong> Halaman ini berisi informasi umum mengenai akses dan mekanisme layanan, bukan ajakan maupun jaminan kemenangan. Pahami risiko finansial dan tentukan batas bermain sendiri sebelum berpartisipasi.</p>
 <p style="margin-top:14px">&copy; <?= date('Y') ?> <?= e($host) ?></p>
 </div>
