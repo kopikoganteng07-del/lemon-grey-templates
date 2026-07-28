@@ -278,7 +278,7 @@ tailwind.config = {
             </div>
             <div class="flex-1 space-y-2">
               <?php foreach (['5'=>100,'4'=>0,'3'=>0,'2'=>0,'1'=>0] as $star => $pct): ?>
-              <div class="flex-items-center gap-2">
+              <div class="flex items-center gap-2">
                 <span class="text-[10px] font-bold text-text-onDark/40 w-3"><?= $star ?></span>
                 <div class="flex-1 h-2.5 bg-black/40 rounded-md overflow-hidden">
                   <div class="h-full bg-brand-primary rounded-md" style="width:<?= $pct ?>%"></div>
@@ -304,7 +304,7 @@ tailwind.config = {
 
           <h1 class="text-heading-1 md:text-[30px] font-bold text-brand-secondary leading-tight"><?= h($page['h1']) ?></h1>
 
-          <div class="prose prose-invert max-w-none text-text-onDark/80 [&_h2]:text-brand-accent [&_h2]:text-xl [&_h2]:font-bold [&_h2]:mt-6 [&_a]:text-brand-accent">
+          <div class="max-w-none text-text-onDark/80 [&_p]:text-justify [&_p]:hyphens-auto [&_p]:mb-4 [&_p]:leading-relaxed [&_h2]:text-brand-accent [&_h2]:text-xl [&_h2]:font-bold [&_h2]:mt-6 [&_h2]:mb-2 [&_h3]:text-base [&_h3]:font-bold [&_h3]:mt-4 [&_h3]:mb-1 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:mb-4 [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:mb-4 [&_li]:mb-1.5 [&_li]:text-justify [&_a]:text-brand-accent [&_a]:underline">
             <?= $page['content_html'] ?>
           </div>
 
