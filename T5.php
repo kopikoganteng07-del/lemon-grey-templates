@@ -252,8 +252,8 @@ a{color:inherit}
 /* ---------- kepala ---------- */
 .v-kepala{position:sticky;top:0;z-index:60;background:var(--v-dalam);border-bottom:2px solid var(--v-emas)}
 .v-kepala .v-wrap{display:grid;grid-template-columns:46px 1fr 46px;align-items:center;padding:9px 12px}
-.v-kepala a.v-merek{grid-column:2;justify-self:center}
-.v-kepala img{height:40px;width:auto}
+.v-kepala a.v-logo{grid-column:2;justify-self:center}
+.v-kepala img{height:40px;width:auto;display:block}
 .v-burger{grid-column:3;display:grid;gap:5px;align-content:center;justify-items:center;min-width:46px;min-height:46px;text-decoration:none;border-radius:7px;border:1px solid var(--v-naik)}
 .v-burger span{display:block;width:24px;height:3px;border-radius:2px;background:var(--v-teks)}
 .v-menu{grid-column:3;position:relative;justify-self:end}
@@ -380,7 +380,7 @@ a:focus-visible,input:focus-visible{outline:3px solid var(--v-emas);outline-offs
 
 <header class="v-kepala">
 <div class="v-wrap">
-<a class="v-merek" href="/"><img src="<?= e($logoSrc) ?>" width="190" height="40" alt="<?= e($host) ?>"></a>
+<a class="v-logo" href="/"><img src="<?= e($logoSrc) ?>" width="190" height="40" alt="<?= e($host) ?>"></a>
 <?php if (count($menu) > 0): ?>
 <details class="v-menu">
 <summary aria-label="Buka menu halaman"><span></span><span></span><span></span></summary>
