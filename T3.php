@@ -87,6 +87,30 @@ break;
 // daftar bacaan lain.
 $bacaanLain = array_diff_key($semuaPost, $menuHalaman);
 
+// Tautan internal di awal artikel: kemunculan PERTAMA nama situs di dalam
+// content_html ditautkan ke beranda. Dikerjakan saat render, jadi artikel lama
+// pun ikut mendapat tautan tanpa perlu regenerate.
+// Penggantian HANYA pada teks di luar tag, supaya nama situs yang kebetulan
+// berada di dalam atribut tidak ikut dirusak. Hanya satu kali per halaman.
+// Variabel sengaja bernama $namaTaut, bukan $namaSitus, karena $namaSitus
+// sudah dipakai untuk keperluan lain di template ini.
+$isiArtikel = $page['content_html'];
+$namaTaut   = explode('.', $host)[0];
+if ($namaTaut !== '' && $isiArtikel !== '') {
+    $bagian = preg_split('/(<[^>]*>)/', $isiArtikel, -1, PREG_SPLIT_DELIM_CAPTURE);
+    $sudah = false;
+    foreach ($bagian as $i => $b) {
+        if ($sudah || $b === '' || $b[0] === '<') { continue; }
+        $pos = stripos($b, $namaTaut);
+        if ($pos !== false) {
+            $asli = substr($b, $pos, strlen($namaTaut));
+            $bagian[$i] = substr($b, 0, $pos) . '<a href="/">' . $asli . '</a>' . substr($b, $pos + strlen($namaTaut));
+            $sudah = true;
+        }
+    }
+    if ($sudah) { $isiArtikel = implode('', $bagian); }
+}
+
 $namaSitus = explode('.', $host)[0];
 
 $railKategori = [
@@ -250,7 +274,7 @@ h1{font-size:clamp(24px,5.6vw,32px);font-weight:800;margin:20px 0 10px}
 .notice{display:flex;gap:12px;align-items:flex-start;background:#eef0ff;border:1px solid #ccd2ff;border-radius:10px;padding:14px 16px;margin:0 0 20px;font-size:15px}
 .notice em{font-style:normal;color:var(--blue);font-size:18px;line-height:1}
 
-.prose p,.prose ul,.prose ol{max-width:70ch;color:#3c3c47}
+.prose p,.prose ul,.prose ol{color:#3c3c47}
 .prose p{text-align:justify;hyphens:auto;margin:0 0 14px}
 .prose h2{font-size:clamp(20px,4.6vw,25px);font-weight:800;margin:0 0 12px}
 .prose h3{font-size:18px;margin:22px 0 8px}
@@ -359,7 +383,7 @@ a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 <?php endif; ?>
 
 <div class="panel prose">
-<?= $page['content_html'] ?>
+<?= $isiArtikel ?>
 </div>
 
 <?php if ($isHome): ?>
@@ -407,6 +431,7 @@ a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 </div>
 <?php if (count($menuHalaman) > 0): ?>
 <div class="flinks" style="margin-bottom:16px">
+<a href="/">Beranda</a>
 <?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
 </div>
 <?php endif; ?>
