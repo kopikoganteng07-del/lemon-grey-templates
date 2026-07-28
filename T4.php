@@ -46,6 +46,47 @@ $semuaPost = array_filter($data, function ($item) {
 return isset($item['category']) && $item['category'] === 'post';
 });
 
+// og:image WAJIB URL mutlak. Jalur relatif membuat pratinjau bagikan di
+// WhatsApp dan Facebook gagal memuat gambar.
+$ogAbs = $ogImage ? ((strpos($ogImage, 'http') === 0) ? $ogImage : $origin . $ogImage) : '';
+
+// Menu halaman informasi. Dicocokkan dengan AKHIRAN slug, bukan slug persis,
+// karena staf memakai pola berawalan nama domain (mis. domain-link-alternatif).
+// Pola yang lebih panjang didahulukan supaya 'cara-daftar' tidak tertelan 'daftar'.
+// Satu label hanya dipakai sekali. Halaman yang belum ada tidak ditampilkan,
+// jadi tidak pernah ada tautan mati.
+$polaMenu = [
+'about-us'        => 'Tentang Kami',
+'tentang-kami'    => 'Tentang Kami',
+'contact-us'      => 'Kontak',
+'kontak'          => 'Kontak',
+'link-alternatif' => 'Link Alternatif',
+'cara-daftar'     => 'Cara Daftar',
+'daftar'          => 'Cara Daftar',
+'cara-masuk-akun' => 'Cara Masuk',
+'cara-masuk'      => 'Cara Masuk',
+'login'           => 'Cara Masuk',
+'disclaimer'      => 'Disclaimer',
+];
+
+$menuHalaman = [];
+$labelDipakai = [];
+foreach ($polaMenu as $pola => $label) {
+if (isset($labelDipakai[$label])) { continue; }
+foreach ($semuaPost as $slug => $item) {
+if (isset($menuHalaman[$slug])) { continue; }
+$s = strtolower(trim($slug));
+if ($s === $pola || substr($s, -(strlen($pola) + 1)) === '-' . $pola) {
+$menuHalaman[$slug] = $label;
+$labelDipakai[$label] = true;
+break;
+}
+}
+}
+// Artikel biasa dipisah dari menu supaya Disclaimer tidak ikut muncul di
+// daftar bacaan lain.
+$bacaanLain = array_diff_key($semuaPost, $menuHalaman);
+
 $namaSitus = explode('.', $host)[0];
 
 $svg = [
@@ -132,7 +173,7 @@ $faqList = [
 <meta property="og:url" content="<?= e($canonical) ?>">
 <meta property="og:title" content="<?= e($page['title']) ?>">
 <meta property="og:description" content="<?= e($page['meta_description']) ?>">
-<meta property="og:image" content="<?= e($ogImage) ?>">
+<meta property="og:image" content="<?= e($ogAbs) ?>">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
@@ -263,6 +304,8 @@ footer img{margin:0 auto 18px;height:40px;width:auto}
 a:focus-visible{outline:3px solid var(--k-emas);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto !important}}
 @media (max-width:359px){.k-menu{grid-template-columns:repeat(3,1fr)}}
+.navinfo{border-bottom:1px solid rgba(255,255,255,.10);padding:10px 0}
+.navinfo .k-tautan{margin:0}
 </style>
 </head>
 <body>
@@ -273,6 +316,17 @@ a:focus-visible{outline:3px solid var(--k-emas);outline-offset:2px}
 <a class="k-burger" href="#k-lainnya" aria-label="Lompat ke daftar halaman"><span></span><span></span><span></span></a>
 </div>
 </header>
+
+<?php if (count($menuHalaman) > 0): ?>
+<nav class="navinfo" aria-label="Halaman informasi">
+<div class="k-lebar">
+<div class="k-tautan">
+<a href="/">Beranda</a>
+<?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
+</div>
+</div>
+</nav>
+<?php endif; ?>
 
 <?php if (!empty($banner1)): ?>
 <div class="k-spanduk"><a href="<?= e($daftarUrl) ?>" rel="nofollow"><img src="<?= e($banner1) ?>" width="728" height="300" alt="Banner <?= e($host) ?>" fetchpriority="high" decoding="async"></a></div>
@@ -363,11 +417,11 @@ a:focus-visible{outline:3px solid var(--k-emas);outline-offset:2px}
 </div></fieldset>
 <?php endif; ?>
 
-<?php if (count($semuaPost) > 0): ?>
+<?php if (count($bacaanLain) > 0): ?>
 <section id="k-lainnya">
 <p class="k-blok"><?= $isHome ? 'Bacaan Lain' : 'Halaman Terkait' ?></p>
 <div class="k-tautan">
-<?php foreach ($semuaPost as $slug => $item): ?>
+<?php foreach ($bacaanLain as $slug => $item): ?>
 <?php if (!$isHome && isset($page['canonical_url']) && rtrim($page['canonical_url'], '/') === rtrim($origin . '/' . $slug, '/')) continue; ?>
 <a href="/<?= e($slug) ?>"><?= e($item['title']) ?></a>
 <?php endforeach; ?>
@@ -381,6 +435,11 @@ a:focus-visible{outline:3px solid var(--k-emas);outline-offset:2px}
 <footer>
 <div class="k-lebar">
 <img src="<?= e($logoSrc) ?>" width="180" height="40" alt="<?= e($host) ?>" loading="lazy" decoding="async">
+<?php if (count($menuHalaman) > 0): ?>
+<div class="k-tautan" style="margin-bottom:16px">
+<?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
+</div>
+<?php endif; ?>
 <p class="k-ingat"><strong>Khusus 18+.</strong> Halaman ini memuat informasi umum mengenai akses dan mekanisme layanan, bukan ajakan maupun jaminan kemenangan. Nama permainan dan penyedia dicantumkan sebagai label tampilan, bukan katalog resmi. Pahami risiko finansial dan tentukan batas sendiri sebelum berpartisipasi.<br><br>&copy; <?= date('Y') ?> <?= e($host) ?></p>
 </div>
 </footer>
