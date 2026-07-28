@@ -104,6 +104,28 @@ foreach ($polaMenu as $pola => $label) {
 // "Artikel Terbaru" lengkap dengan thumbnail.
 $bacaanLain = array_diff_key($allPosts, $menuHalaman);
 
+// Tautan internal di awal artikel: kemunculan PERTAMA nama situs di dalam
+// content_html ditautkan ke beranda. Berlaku juga untuk artikel lama, karena
+// dikerjakan saat render, bukan saat generate.
+// Penggantian HANYA pada teks di luar tag, supaya nama situs yang kebetulan
+// berada di dalam atribut tidak ikut dirusak. Hanya satu kali per halaman.
+$isiArtikel = $page['content_html'];
+$namaSitus  = explode('.', $domainName)[0];
+if ($namaSitus !== '' && $isiArtikel !== '') {
+    $bagian = preg_split('/(<[^>]*>)/', $isiArtikel, -1, PREG_SPLIT_DELIM_CAPTURE);
+    $sudah = false;
+    foreach ($bagian as $i => $b) {
+        if ($sudah || $b === '' || $b[0] === '<') { continue; }
+        $pos = stripos($b, $namaSitus);
+        if ($pos !== false) {
+            $asli = substr($b, $pos, strlen($namaSitus));
+            $bagian[$i] = substr($b, 0, $pos) . '<a href="/">' . $asli . '</a>' . substr($b, $pos + strlen($namaSitus));
+            $sudah = true;
+        }
+    }
+    if ($sudah) { $isiArtikel = implode('', $bagian); }
+}
+
 // Data generik hardcode (sama di semua domain T1 - dikonfirmasi user)
 $genericGames = ['Naga Emas Beruntung','Harta Karun Kerajaan','Roda Fortuna Ajaib','Kembang Api Kemenangan','Singa Perkasa Jaya'];
 $genericProviders = ['Pragmatic Play','PG Soft','Habanero','Microgaming','Playtech','Evolution','JILI','CQ9'];
@@ -307,7 +329,7 @@ tailwind.config = {
           <h1 class="text-heading-1 md:text-[30px] font-bold text-brand-secondary leading-tight"><?= h($page['h1']) ?></h1>
 
           <div class="max-w-none text-text-onDark/80 [&_p]:text-justify [&_p]:hyphens-auto [&_p]:mb-4 [&_p]:leading-relaxed [&_h2]:text-brand-accent [&_h2]:text-xl [&_h2]:font-bold [&_h2]:mt-6 [&_h2]:mb-2 [&_h3]:text-base [&_h3]:font-bold [&_h3]:mt-4 [&_h3]:mb-1 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:mb-4 [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:mb-4 [&_li]:mb-1.5 [&_li]:text-justify [&_a]:text-brand-accent [&_a]:underline">
-            <?= $page['content_html'] ?>
+            <?= $isiArtikel ?>
           </div>
 
           <div class="flex items-center gap-2">
