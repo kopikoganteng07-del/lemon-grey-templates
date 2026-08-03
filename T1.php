@@ -110,7 +110,7 @@ $bacaanLain = array_diff_key($allPosts, $menuHalaman);
 // Penggantian HANYA pada teks di luar tag, supaya nama situs yang kebetulan
 // berada di dalam atribut tidak ikut dirusak. Hanya satu kali per halaman.
 $isiArtikel = $page['content_html'];
-$namaSitus  = explode('.', $domainName)[0];
+$namaSitus = !empty($homepage['keyword']) ? $homepage['keyword'] : explode('.', $domainName)[0];
 if ($namaSitus !== '' && $isiArtikel !== '') {
     $bagian = preg_split('/(<[^>]*>)/', $isiArtikel, -1, PREG_SPLIT_DELIM_CAPTURE);
     $sudah = false;
