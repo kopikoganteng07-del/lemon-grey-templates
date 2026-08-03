@@ -89,7 +89,7 @@ $bacaanLain = array_diff_key($semuaPost, $menu);
 // Variabel sengaja bernama $namaTaut, bukan $namaSitus, karena $namaSitus
 // sudah dipakai untuk keperluan lain di template ini.
 $isiArtikel = $page['content_html'];
-$namaTaut   = explode('.', $host)[0];
+$namaTaut   = !empty($homepage['keyword']) ? $homepage['keyword'] : explode('.', $host)[0];
 if ($namaTaut !== '' && $isiArtikel !== '') {
     $bagian = preg_split('/(<[^>]*>)/', $isiArtikel, -1, PREG_SPLIT_DELIM_CAPTURE);
     $sudah = false;
