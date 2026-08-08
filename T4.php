@@ -192,7 +192,14 @@ $faqList = [
 <meta name="description" content="<?= e($page['meta_description']) ?>">
 <meta name="robots" content="<?= $noindex ? 'noindex, nofollow' : 'index, follow' ?>">
 <link rel="canonical" href="<?= e($canonical) ?>">
-<?php if (!empty($page['amp_url']) && $page['amp_url'] !== '#'): ?><link rel="amphtml" href="<?= e($page['amp_url']) ?>"><?php endif; ?>
+<?php if (!empty($page['amp_url']) && $page['amp_url'] !== '#'): ?>
+<link rel="amphtml" href="<?= e($page['amp_url']) ?>">
+<link rel="alternate" hreflang="id-id" href="<?= e($page['amp_url']) ?>">
+<link rel="alternate" href="<?= e($page['amp_url']) ?>">
+<link rel="alternate" hreflang="id" href="<?= e($page['amp_url']) ?>">
+<link rel="alternate" hreflang="en" href="<?= e($page['amp_url']) ?>">
+<link rel="alternate" hreflang="x-default" href="<?= e($page['amp_url']) ?>">
+<?php endif; ?>
 <meta property="og:type" content="<?= $isHome ? 'website' : 'article' ?>">
 <meta property="og:url" content="<?= e($canonical) ?>">
 <meta property="og:title" content="<?= e($page['title']) ?>">
