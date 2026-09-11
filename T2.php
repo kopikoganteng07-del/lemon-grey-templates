@@ -31,6 +31,7 @@ $tgUrl      = $homepage['telegram_cta']   ?? '#';
 $daftarUrl  = $homepage['cta_daftar_url'] ?? '#';
 $loginUrl   = $homepage['cta_login_url']  ?? '#';
 
+$gscToken = $homepage['gsc_token'] ?? '';
 $noindex    = !empty($page['noindex']);
 $lang       = $page['lang'] ?? 'id';
 $lastmod    = $page['lastmod'] ?? date('Y-m-d');
@@ -141,6 +142,7 @@ $faqList = [
 <title><?= e($page['title']) ?></title>
 <meta name="description" content="<?= e($page['meta_description']) ?>">
 <meta name="robots" content="<?= $noindex ? 'noindex, nofollow' : 'index, follow' ?>">
+<?php if (!empty($gscToken)): ?><meta name="google-site-verification" content="<?= e($gscToken) ?>" /><?php endif; ?>
 <link rel="canonical" href="<?= e($canonical) ?>">
 <?php if (!empty($page['amp_url']) && $page['amp_url'] !== '#'): ?>
 <link rel="amphtml" href="<?= e($page['amp_url']) ?>">
