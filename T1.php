@@ -47,6 +47,7 @@ $telegramCta  = $homepage['telegram_cta']  ?? '#';
 $ctaDaftarUrl = $homepage['cta_daftar_url'] ?? '#';
 $ctaLoginUrl  = $homepage['cta_login_url']  ?? '#';
 
+$gscToken = $homepage['gsc_token'] ?? '';
 $noindex = !empty($page['noindex']);
 $lang    = $page['lang'] ?? 'id';
 $heroImg = $isHomepage ? $bannerSrc : ($page['image_src'] ?? '');
@@ -140,6 +141,7 @@ $genericProviders = ['Pragmatic Play','PG Soft','Habanero','Microgaming','Playte
 <meta name="title" content="<?= h($page['title']) ?>">
 <meta name="description" content="<?= h($page['meta_description']) ?>">
 <meta name="robots" content="<?= $noindex ? 'noindex, nofollow' : 'index, follow' ?>">
+<?php if (!empty($gscToken)): ?><meta name="google-site-verification" content="<?= h($gscToken) ?>" /><?php endif; ?>
 <link rel="canonical" href="<?= h($page['canonical_url']) ?>">
 <?php if (!empty($page['amp_url']) && $page['amp_url'] !== '#'): ?>
 <link rel="amphtml" href="<?= h($page['amp_url']) ?>">
