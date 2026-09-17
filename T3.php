@@ -57,6 +57,12 @@ $ogAbs = $ogImage ? ((strpos($ogImage, 'http') === 0) ? $ogImage : $origin . $og
 // Satu label hanya dipakai sekali. Halaman yang belum ada tidak ditampilkan,
 // jadi tidak pernah ada tautan mati.
 $polaMenu = [
+// Kategori permainan: menu utama (header) begitu halamannya ada.
+'slot'            => 'Slot',
+'sportsbook'      => 'Sportsbook',
+'casino'          => 'Casino',
+'togel'           => 'Togel',
+// Halaman informasi: cukup footer.
 'about-us'        => 'Tentang Kami',
 'tentang-kami'    => 'Tentang Kami',
 'contact-us'      => 'Kontak',
@@ -87,6 +93,17 @@ break;
 // Artikel biasa dipisah dari menu supaya Disclaimer tidak ikut muncul di
 // daftar bacaan lain.
 $bacaanLain = array_diff_key($semuaPost, $menuHalaman);
+
+// Pembagian menu (revisi 17/9): menu utama (header) = kategori permainan +
+// navigasi berguna (Link Alternatif, Cara Daftar, Cara Masuk).
+// Halaman informasi (Tentang Kami, Kontak, Disclaimer) cukup footer.
+$labelHanyaFooter = ['Tentang Kami', 'Kontak', 'Disclaimer'];
+$menuHeader = [];
+foreach ($menuHalaman as $slugMenu => $labelMenu) {
+    if (!in_array($labelMenu, $labelHanyaFooter, true)) {
+        $menuHeader[$slugMenu] = $labelMenu;
+    }
+}
 
 // Tautan internal di awal artikel: kemunculan PERTAMA nama situs di dalam
 // content_html ditautkan ke beranda. Dikerjakan saat render, jadi artikel lama
@@ -336,12 +353,12 @@ a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 </div>
 </header>
 
-<?php if (count($menuHalaman) > 0): ?>
+<?php if (count($menuHeader) > 0): ?>
 <nav class="navinfo" aria-label="Halaman informasi">
 <div class="wrap">
 <div class="flinks">
 <a href="/">Beranda</a>
-<?php foreach ($menuHalaman as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
+<?php foreach ($menuHeader as $slug => $label): ?><a href="/<?= e($slug) ?>"><?= e($label) ?></a><?php endforeach; ?>
 </div>
 </div>
 </nav>
