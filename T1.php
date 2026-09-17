@@ -74,6 +74,12 @@ $dateMod = ($page['lastmod'] ?? date('Y-m-d')) . 'T00:00:00+07:00';
 // Satu label hanya dipakai sekali, sehingga menu tidak pernah punya dua tautan sama.
 // Halaman yang belum ada otomatis tidak ditampilkan, jadi tidak pernah ada tautan mati.
 $polaMenu = [
+    // Kategori permainan: tampil di menu utama (header) begitu halamannya ada.
+    'slot'            => 'Slot',
+    'sportsbook'      => 'Sportsbook',
+    'casino'          => 'Casino',
+    'togel'           => 'Togel',
+    // Halaman informasi: cukup tampil di footer.
     'about-us'        => 'Tentang Kami',
     'tentang-kami'    => 'Tentang Kami',
     'contact-us'      => 'Kontak',
@@ -104,6 +110,17 @@ foreach ($polaMenu as $pola => $label) {
 // Artikel biasa dipisah dari menu supaya Disclaimer tidak nongol di grid
 // "Artikel Terbaru" lengkap dengan thumbnail.
 $bacaanLain = array_diff_key($allPosts, $menuHalaman);
+
+// Pembagian menu (revisi 17/9): menu utama (header) berisi kategori permainan
+// plus halaman navigasi berguna (Link Alternatif, Cara Daftar, Cara Masuk).
+// Halaman informasi (Tentang Kami, Kontak, Disclaimer) cukup tampil di footer.
+$labelHanyaFooter = ['Tentang Kami', 'Kontak', 'Disclaimer'];
+$menuHeader = [];
+foreach ($menuHalaman as $slugMenu => $labelMenu) {
+    if (!in_array($labelMenu, $labelHanyaFooter, true)) {
+        $menuHeader[$slugMenu] = $labelMenu;
+    }
+}
 
 // Tautan internal di awal artikel: kemunculan PERTAMA nama situs di dalam
 // content_html ditautkan ke beranda. Berlaku juga untuk artikel lama, karena
@@ -260,11 +277,11 @@ tailwind.config = {
   </div>
 </header>
 
-<?php if (count($menuHalaman) > 0): ?>
-<nav class="bg-bg-surface/60 border-b border-border" aria-label="Halaman informasi">
+<?php if (count($menuHeader) > 0): ?>
+<nav class="bg-bg-surface/60 border-b border-border" aria-label="Navigasi utama">
   <div class="max-w-[1200px] mx-auto px-4 flex items-center gap-1 overflow-x-auto scrollbar-hide">
     <a href="/" class="min-h-[44px] flex items-center px-3 text-[12px] md:text-sm font-semibold whitespace-nowrap rounded-md text-text-onDark/70 hover:text-brand-accent hover:bg-white/5 transition-all">Beranda</a>
-    <?php foreach ($menuHalaman as $slug => $label): ?>
+    <?php foreach ($menuHeader as $slug => $label): ?>
     <a href="/<?= h($slug) ?>" class="min-h-[44px] flex items-center px-3 text-[12px] md:text-sm font-semibold whitespace-nowrap rounded-md text-text-onDark/70 hover:text-brand-accent hover:bg-white/5 transition-all"><?= h($label) ?></a>
     <?php endforeach; ?>
   </div>
