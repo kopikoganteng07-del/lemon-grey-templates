@@ -53,6 +53,12 @@ return isset($item['category']) && $item['category'] === 'post';
 // berawalan nama domain: zeus123-link-alternatif, zeus123-login, dan seterusnya.
 // Pola yang lebih panjang didahulukan supaya 'cara-daftar' tidak tertelan 'daftar'.
 $polaMenu = [
+// Kategori permainan: menu utama (header) begitu halamannya ada.
+'slot'            => 'Slot',
+'sportsbook'      => 'Sportsbook',
+'casino'          => 'Casino',
+'togel'           => 'Togel',
+// Halaman informasi: cukup footer.
 'about-us'        => 'Tentang Kami',
 'tentang-kami'    => 'Tentang Kami',
 'contact-us'      => 'Kontak',
@@ -81,6 +87,16 @@ break;
 }
 }
 $bacaanLain = array_diff_key($semuaPost, $menu);
+
+// Pembagian menu (revisi 17/9): menu utama (header) = kategori permainan +
+// navigasi berguna; halaman informasi cukup footer.
+$labelHanyaFooter = ['Tentang Kami', 'Kontak', 'Disclaimer'];
+$menuHeader = [];
+foreach ($menu as $slugMenu => $labelMenu) {
+    if (!in_array($labelMenu, $labelHanyaFooter, true)) {
+        $menuHeader[$slugMenu] = $labelMenu;
+    }
+}
 
 // Tautan internal di awal artikel: kemunculan PERTAMA nama situs di dalam
 // content_html ditautkan ke beranda. Dikerjakan saat render, jadi artikel lama
@@ -395,7 +411,7 @@ a:focus-visible,input:focus-visible{outline:3px solid var(--v-emas);outline-offs
 <summary aria-label="Buka menu halaman"><span></span><span></span><span></span></summary>
 <nav aria-label="Menu halaman">
 <a href="/">Beranda</a>
-<?php foreach ($menu as $s => $label): ?><a href="/<?= e($s) ?>"><?= e($label) ?></a><?php endforeach; ?>
+<?php foreach ($menuHeader as $s => $label): ?><a href="/<?= e($s) ?>"><?= e($label) ?></a><?php endforeach; ?>
 </nav>
 </details>
 <?php else: ?>
