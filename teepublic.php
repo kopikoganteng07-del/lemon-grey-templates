@@ -763,7 +763,6 @@ Design ID:
 <div class='m-design__product' data-controller='rudderstack--link-clicked' data-rudderstack--link-clicked-location-value='pdp'>
 <div class='m-design-details__title'>
 <h1 class='h__h1--sm h--no-s-b' title='%%TITLE%%'>%%TITLE%%</h1>
-<div class='lg-dynamic-content'>%%CONTENT%%</div>
 <div class='m-design__prices'>
 <span class='m-design__price m-design__price--sale jsProductSalePrice'>
 $15
