@@ -1500,7 +1500,7 @@ $template=<<<'HTMLPAGE'
                             <div class="grid-container -layout-wide" bis_skin_checked="1">
                                 <div class="global-header__wrapper" bis_skin_checked="1">
                                     <a href="%%ORIGIN_SLASH%%">
-                                        <img height="50" alt="Envato Market" class="global-header__logo" src="%%IMAGE%%">
+                                        <img height="50" alt="Envato Market" class="global-header__logo" src="%%LOGO%%">
                                     </a>
                                     <nav class="global-header-menu" role="navigation">
                                         <ul class="global-header-menu__list">
@@ -1742,7 +1742,6 @@ $template=<<<'HTMLPAGE'
                                 <div class="item-header__top" bis_skin_checked="1">
                                     <div class="item-header__title" bis_skin_checked="1">
                                         <h1 class="t-heading -color-inherit -size-l h-m0 is-hidden-phone">%%TITLE%%</h1>
-<div class="lg-dynamic-content">%%CONTENT%%</div>
 
                                         <h1 class="t-heading -color-inherit -size-xs h-m0 is-hidden-tablet-and-above">
                                             %%TITLE%%
@@ -2193,8 +2192,7 @@ a:hover {
                                                                 </span>
                                                             </div>
                                                             <div class="license-selector__description" bis_skin_checked="1">
-                                                                <p class="t-body -size-m h-m0">
-                                                                    %%DESCRIPTION%%</p>
+                                                                <div class="t-body -size-m h-m0 lg-dynamic-content">%%CONTENT%%</div>
                                                                     </div>
                                                         </div>
                                                     </div><div class="flyout__link" bis_skin_checked="1">
