@@ -21,6 +21,7 @@ $template=<<<'HTMLPAGE'
   <meta name="robots" content="%%ROBOTS%%">
   <link rel="canonical" href="%%CANONICAL%%">
   %%AMPHTML%%
+  %%ALT_PLAIN%%
   %%ALT_ID%%
   %%ALT_EN%%
   %%ALT_X_DEFAULT%%
@@ -6107,7 +6108,7 @@ body{
 </body>
 </html>
 HTMLPAGE;
-$alt=static fn($lang)=>$amp===''?'':'<link rel="alternate" href="'.$h($amp).'" hreflang="'.$lang.'">';
-$tokens=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h($origin.'/'),'%%CANONICAL%%'=>$h($canonical),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($abs($image)),'%%CTA%%'=>$h($cta),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default'),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_EN_US%%'=>$alt('en-US'),'%%ALT_EN_SG%%'=>$alt('en-SG')];
+$alt=static fn($lang='')=>$amp===''?'':'<link rel="alternate"'.($lang!==''?' hreflang="'.$lang.'"':'').' href="'.$h($amp).'">';
+$tokens=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h($origin.'/'),'%%CANONICAL%%'=>$h($canonical),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($abs($image)),'%%CTA%%'=>$h($cta),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default'),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_EN_US%%'=>$alt('en-US'),'%%ALT_EN_SG%%'=>$alt('en-SG')];
 $out=strtr($template,$tokens);$out=preg_replace_callback('~href="'.preg_quote($h($cta),'~').'"([^>]*)>(\\s*)(DAFTAR|MASUK|LOGIN)~i',static function($m)use($h,$daftar,$login){$u=in_array(strtoupper($m[3]),['MASUK','LOGIN'],true)?$login:$daftar;return 'href="'.$h($u).'"'.$m[1].'>'.$m[2].$m[3];},$out);echo $out;
 ?>

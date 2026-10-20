@@ -48,6 +48,7 @@ $template = <<<'HTMLPAGE'
     <script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script>
     <script type="text/javascript" async="" src="https://tag.rmp.rakuten.com/124165.ct.js"></script>
     %%AMPHTML%%
+%%ALT_PLAIN%%
 %%ALT_ID%%
 %%ALT_ID_ID%%
 %%ALT_X_DEFAULT%%
@@ -4362,7 +4363,7 @@ $tokens = [
  '%%LOGO%%'=>$esc($logo), '%%FAVICON%%'=>$esc($favicon), '%%IMAGE%%'=>$esc($absolute($image)),
  '%%CTA%%'=>$esc($cta), '%%ROBOTS%%'=>$robots,
  '%%GSC_META%%'=>$gsc !== '' ? '<meta name="google-site-verification" content="'.$esc($gsc).'" />' : '',
- '%%AMPHTML%%'=>$ampTag, '%%ALT_ID%%'=>$alt('id'), '%%ALT_ID_ID%%'=>$alt('id-id'),
+ '%%AMPHTML%%'=>$ampTag, '%%ALT_PLAIN%%'=>$alt(''), '%%ALT_ID%%'=>$alt('id'), '%%ALT_ID_ID%%'=>$alt('id-id'),
  '%%ALT_X_DEFAULT%%'=>$alt('x-default'), '%%ALT_EN%%'=>$alt('en')
 ];
 // Preserve distinct daftar/login targets in the unchanged source layout.
