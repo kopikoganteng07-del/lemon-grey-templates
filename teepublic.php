@@ -88,7 +88,7 @@ $template=<<<'HTMLPAGE'
 <meta content='%%ROBOTS%%' name='robots'>
 %%GSC_META%%
 <meta content='%%DESCRIPTION%%' name='description'>
-<meta name="keywords" content="%%SITE%%, KILAT 88">
+<meta name="keywords" content="%%SITE%%">
 <meta property="og:title" content="%%TITLE%%">
 <meta property="og:description" content="%%DESCRIPTION%%">
 <meta property="og:price:amount" content="10.000">
