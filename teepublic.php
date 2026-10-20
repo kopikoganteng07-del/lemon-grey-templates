@@ -289,9 +289,9 @@ SLOT88
 
 </span>
 
-</a><a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="KILAT 88" data-href="%%ORIGIN_SLASH%%" title="KILAT 88" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
+</a><a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="%%SITE%%" data-href="%%ORIGIN_SLASH%%" title="%%SITE%%" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
 <span class='link__content'>
-KILAT 88
+%%SITE%%
 
 </span>
 
@@ -619,7 +619,7 @@ Please enable Javascript and return here.
     {
       "@type": "Product",
       "@id": "%%ORIGIN_SLASH%%",
-      "name": "%%SITE%% 🏆 SLOT88 & Situs KILAT 88 Resmi Terbaik 2026",
+      "name": "%%SITE%% 🏆 SLOT88 & Situs %%SITE%% Resmi Terbaik 2026",
       "description": "%%SITE%% adalah situs slot online gampang maxwin resmi terbaik tahun 2026 dengan label grup 88 yang menjadmin membayar semua kemenangan pemain.",
       "sku": "OLX-4D-2026",
       "brand": {
@@ -630,7 +630,7 @@ Please enable Javascript and return here.
         "%%IMAGE%%",
         "%%IMAGE%%"
       ],
-      "category": "%%SITE%% > %%SITE%% LOGIN > SLOT MAXWIN > KILAT 88 > GAME SLOT",
+      "category": "%%SITE%% > %%SITE%% LOGIN > SLOT MAXWIN > %%SITE%% > GAME SLOT",
       "offers": {
         "@type": "Offer",
         "url": "%%ORIGIN_SLASH%%",
@@ -2055,7 +2055,7 @@ Pada akhirnya, <strong>%%SITE%%</strong> merepresentasikan konsep gaming yang me
 
 <a href="%%ORIGIN_SLASH%%" class="link vc-pill vc-pill--on-light link--default">
 <span class='link__content'>
-KILAT 88
+%%SITE%%
 </span>
 </a>
 
