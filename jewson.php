@@ -1,21 +1,17 @@
 <?php
 /**
- * AGEN138 - Template T1 (adapted)
- * Engine dinamis baca /data/data.json - skema sama dengan Lemon-Grey T1
- * + field tambahan: testimonials, faqs, footer_links, floating_buttons, recommendations
+ * Jewson T1 — Template AGEN138 (adapted)
+ * Baca /data/data.json. Skema default LG + field tambahan:
+ * trending_tags, testimonials, faqs, footer_links, floating_buttons,
+ * recommendations, organization, sku, price, price_currency
  */
 
 $id   = (isset($_GET['id']) && $_GET['id'] !== '') ? $_GET['id'] : 'homepage';
 $file = __DIR__ . '/data/data.json';
 
-if (!file_exists($file)) {
-    http_response_code(500);
-    exit('data.json tidak ditemukan.');
-}
-
+if (!file_exists($file)) { http_response_code(500); exit('data.json tidak ditemukan.'); }
 $data = json_decode(file_get_contents($file), true);
 $page = isset($data[$id]) ? $data[$id] : null;
-
 if (!$page) {
     http_response_code(404);
     exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><title>404</title></head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');
@@ -23,34 +19,30 @@ if (!$page) {
 
 function h($str) { return htmlspecialchars($str ?? '', ENT_QUOTES, 'UTF-8'); }
 
-$homepage    = $data['homepage'] ?? [];
-$isHomepage  = ($page['category'] === 'homepage');
-$domainName  = $_SERVER['HTTP_HOST'];
-$origin      = 'https://' . $domainName;
+$homepage   = $data['homepage'] ?? [];
+$isHomepage = ($page['category'] === 'homepage');
+$domainName = $_SERVER['HTTP_HOST'];
+$origin     = 'https://' . $domainName;
 
 $logoSrc      = $homepage['logo_src']      ?? '/img/logo.png';
 $faviconSrc   = $homepage['favicon_src']   ?? '/img/favicon.png';
 $bannerSrc    = $homepage['banner_src']    ?? ($homepage['image_src'] ?? '');
-$whatsappCta  = $homepage['whatsapp_cta']  ?? '#';
-$telegramCta  = $homepage['telegram_cta']  ?? '#';
 $ctaDaftarUrl = $homepage['cta_daftar_url'] ?? '#';
 $ctaLoginUrl  = $homepage['cta_login_url']  ?? '#';
 $keyword      = $homepage['keyword']       ?? $domainName;
 $gscToken     = $homepage['gsc_token']     ?? '';
-
-$lang    = $page['lang'] ?? 'id';
-$noindex = !empty($page['noindex']);
-$heroImg = $isHomepage ? ($bannerSrc ?: ($page['image_src'] ?? '')) : ($page['image_src'] ?? '');
+$lang         = $page['lang'] ?? 'id';
+$noindex      = !empty($page['noindex']);
+$heroImg      = $isHomepage ? ($bannerSrc ?: ($page['image_src'] ?? '')) : ($page['image_src'] ?? '');
 
 $allPosts = array_filter($data, fn($item) => isset($item['category']) && $item['category'] === 'post');
 
-// og:image & schema WAJIB URL mutlak
+// og:image absolut
 $ogRel = $page['image_src'] ?? $bannerSrc ?? '';
 $ogAbs = $ogRel ? ((strpos($ogRel, 'http') === 0) ? $ogRel : $origin . $ogRel) : '';
-
 $dateMod = ($page['lastmod'] ?? date('Y-m-d')) . 'T00:00:00+07:00';
 
-// Menu halaman (sama seperti template asal)
+// Menu (pola sama seperti t1.php)
 $polaMenu = [
     'slot'=>'Slot','sportsbook'=>'Sportsbook','casino'=>'Casino','togel'=>'Togel',
     'about-us'=>'Tentang Kami','tentang-kami'=>'Tentang Kami',
@@ -59,17 +51,14 @@ $polaMenu = [
     'cara-masuk-akun'=>'Cara Masuk','cara-masuk'=>'Cara Masuk','login'=>'Cara Masuk',
     'disclaimer'=>'Disclaimer',
 ];
-$menuHalaman = [];
-$labelDipakai = [];
+$menuHalaman = []; $labelDipakai = [];
 foreach ($polaMenu as $pola => $label) {
     if (isset($labelDipakai[$label])) continue;
     foreach ($allPosts as $slug => $item) {
         if (isset($menuHalaman[$slug])) continue;
         $s = strtolower(trim($slug));
         if ($s === $pola || substr($s, -(strlen($pola) + 1)) === '-' . $pola) {
-            $menuHalaman[$slug] = $label;
-            $labelDipakai[$label] = true;
-            break;
+            $menuHalaman[$slug] = $label; $labelDipakai[$label] = true; break;
         }
     }
 }
@@ -80,9 +69,9 @@ foreach ($menuHalaman as $slugMenu => $labelMenu) {
 }
 $bacaanLain = array_diff_key($allPosts, $menuHalaman);
 
-// Autolink nama situs pertama kali di content_html
+// Autolink nama situs pertama di content_html
 $isiArtikel = $page['content_html'] ?? '';
-$namaSitus  = !empty($homepage['keyword']) ? $homepage['keyword'] : explode('.', $domainName)[0];
+$namaSitus = !empty($homepage['keyword']) ? $homepage['keyword'] : explode('.', $domainName)[0];
 if ($namaSitus !== '' && $isiArtikel !== '') {
     $bagian = preg_split('/(<[^>]*>)/', $isiArtikel, -1, PREG_SPLIT_DELIM_CAPTURE);
     $sudah = false;
@@ -98,17 +87,17 @@ if ($namaSitus !== '' && $isiArtikel !== '') {
     if ($sudah) $isiArtikel = implode('', $bagian);
 }
 
-// Data homepage fields (dengan default)
-$trendingTags      = $homepage['trending_tags'] ?? [];
-$testimonials      = $homepage['testimonials'] ?? [];
-$faqs              = $homepage['faqs'] ?? [];
-$footerLinks       = $homepage['footer_links'] ?? [];
-$floatingButtons   = $homepage['floating_buttons'] ?? [];
-$recommendations   = $homepage['recommendations'] ?? [];
-$org               = $homepage['organization'] ?? [];
-$sku               = $homepage['sku'] ?? $keyword;
-$price             = $homepage['price'] ?? '10000';
-$priceCurrency     = $homepage['price_currency'] ?? 'IDR';
+// Field tambahan jewson.php (dengan default)
+$trendingTags    = $homepage['trending_tags']    ?? [];
+$testimonials    = $homepage['testimonials']    ?? [];
+$faqs            = $homepage['faqs']            ?? [];
+$footerLinks     = $homepage['footer_links']     ?? [];
+$floatingButtons = $homepage['floating_buttons'] ?? [];
+$recommendations = $homepage['recommendations'] ?? [];
+$org             = $homepage['organization']    ?? [];
+$sku             = $homepage['sku']             ?? $keyword;
+$price           = $homepage['price']           ?? '10000';
+$priceCurrency   = $homepage['price_currency']  ?? 'IDR';
 ?>
 <!DOCTYPE html>
 <html lang="<?= h($lang) ?>">
@@ -166,11 +155,12 @@ $priceCurrency     = $homepage['price_currency'] ?? 'IDR';
           "@type":"Organization",
           "name":<?= json_encode($keyword, JSON_UNESCAPED_UNICODE) ?>,
           "url":<?= json_encode($origin . '/', JSON_UNESCAPED_UNICODE) ?>,
-          "logo":<?= json_encode($logoSrc, JSON_UNESCAPED_UNICODE) ?>,
+          "logo":<?= json_encode($origin . $logoSrc, JSON_UNESCAPED_UNICODE) ?>,
           "address":<?= json_encode($org['address'] ?? '', JSON_UNESCAPED_UNICODE) ?>,
           "telephone":<?= json_encode($org['telephone'] ?? '', JSON_UNESCAPED_UNICODE) ?>,
           "email":<?= json_encode($org['email'] ?? '', JSON_UNESCAPED_UNICODE) ?>
-        },
+        }
+        <?php if (!empty($faqs)): ?>,
         {
           "@type":"FAQPage",
           "mainEntity":[
@@ -180,30 +170,23 @@ $priceCurrency     = $homepage['price_currency'] ?? 'IDR';
           ]
         }
         <?php endif; ?>
+        <?php endif; ?>
       ]
     }
     </script>
 
-    <!-- Fonts & core CSS (dari aset Jewson, dibiarkan agar visual sama) -->
+    <!-- CSS Jewson (dibiarkan agar visual sama) -->
     <link rel="preconnect" href="https://use.typekit.net" crossorigin />
     <link rel="preload" as="style" href="https://use.typekit.net/gdr0xyc.css" />
     <link rel="stylesheet" href="https://use.typekit.net/gdr0xyc.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://use.typekit.net/gdr0xyc.css" /></noscript>
-
-    <link rel="stylesheet" type="text/css" media="all"
-        href="https://www.jewson.co.uk/_ui/responsive/theme-jewson/css/core.css?version=1f4233737e50f6d7a25fd1c1a0884a0f" />
-    <link rel="preload" type="text/css" media="all"
-        href="https://www.jewson.co.uk/_ui/responsive/theme-jewson/css/site.css?version=1f4233737e50f6d7a25fd1c1a0884a0f"
-        as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-        <link rel="stylesheet" type="text/css" media="all"
-            href="https://www.jewson.co.uk/_ui/responsive/theme-jewson/css/site.css?version=1f4233737e50f6d7a25fd1c1a0884a0f" />
-    </noscript>
-
+    <link rel="stylesheet" type="text/css" media="all" href="https://www.jewson.co.uk/_ui/responsive/theme-jewson/css/core.css?version=1f4233737e50f6d7a25fd1c1a0884a0f" />
+    <link rel="preload" type="text/css" media="all" href="https://www.jewson.co.uk/_ui/responsive/theme-jewson/css/site.css?version=1f4233737e50f6d7a25fd1c1a0884a0f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" type="text/css" media="all" href="https://www.jewson.co.uk/_ui/responsive/theme-jewson/css/site.css?version=1f4233737e50f6d7a25fd1c1a0884a0f" /></noscript>
     <script>document.createElement("picture");</script>
 
     <style>
-        /* ===== Blok CSS custom AGEN138 (diringkas dari file asal) ===== */
+        /* Blok CSS AGEN138 (diringkas — sama dengan versi sebelumnya) */
         .CTAAGEN138468516465{display:flex;width:100%;max-width:2000px;border:2px solid #fff;border-radius:8px;overflow:hidden;box-shadow:0 0 20px rgba(106,13,173,.6);animation:glowing 2s infinite alternate}
         .m-btn{flex:1;padding:15px 0;text-align:center;text-decoration:none;color:#fff;font:900 18px Arial,sans-serif;letter-spacing:1px;background:linear-gradient(180deg,#0047cc 0,#000 100%);position:relative;overflow:hidden;transition:.3s;display:block;border-right:1px solid rgba(255,255,255,.3)}
         .m-btn:last-child{border-right:none}
@@ -310,8 +293,8 @@ $priceCurrency     = $homepage['price_currency'] ?? 'IDR';
 
         <?php if (!$isHomepage): ?>
         <ol class="breadcrumb js-breadcrumbs">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/"><span class="breadcrumb__inner breadcrumb__inner--text">Beranda</span></a></li>
-            <li class="breadcrumb__item"><span class="breadcrumb__inner breadcrumb__inner--text"><?= h($page['h1']) ?></span></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Beranda</a></li>
+            <li class="breadcrumb__item"><?= h($page['h1']) ?></li>
         </ol>
         <?php endif; ?>
 
@@ -324,8 +307,7 @@ $priceCurrency     = $homepage['price_currency'] ?? 'IDR';
                             <div class="glider-slider__slide">
                                 <div class="zoom product-details-carousel__zoom">
                                     <a href="<?= h($heroImg) ?>" data-component="zoom">
-                                        <img src="<?= h($heroImg) ?>" width="100%"
-                                             alt="<?= h($page['h1']) ?>" title="<?= h($page['h1']) ?>" />
+                                        <img src="<?= h($heroImg) ?>" width="100%" alt="<?= h($page['h1']) ?>" title="<?= h($page['h1']) ?>" />
                                     </a>
                                 </div>
                             </div>
@@ -373,7 +355,6 @@ $priceCurrency     = $homepage['price_currency'] ?? 'IDR';
             </div>
         </div>
 
-        <!-- Blok deskripsi tambahan -->
         <?php if (!empty($isiArtikel) && $isHomepage): ?>
         <div class="wrapstarlinkalternatif">
             <div class="wrapstarlink"><?= $isiArtikel ?></div>
@@ -427,7 +408,7 @@ $priceCurrency     = $homepage['price_currency'] ?? 'IDR';
         <?php if (!empty($recommendations)): ?>
         <div class="product-recommendations-carousel">
             <h2 class="mb-1">Pelanggan juga membeli</h2>
-            <div class="glider-track" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
                 <?php foreach ($recommendations as $r): ?>
                 <div class="product product--carousel">
                     <a href="<?= h($r['url'] ?? '/') ?>" class="link-header link-header--primary">
@@ -479,11 +460,7 @@ $priceCurrency     = $homepage['price_currency'] ?? 'IDR';
                 <div class="accordion accordion--xs accordion--all js-accordion col-12">
                     <div class="row m-0">
                         <?php
-                        $footerCols = [
-                            'helpful' => 'Helpful links',
-                            'company' => 'Our company',
-                            'legal'   => 'Legal',
-                        ];
+                        $footerCols = ['helpful'=>'Helpful links','company'=>'Our company','legal'=>'Legal'];
                         foreach ($footerCols as $key => $heading):
                             if (empty($footerLinks[$key])) continue;
                         ?>
@@ -531,9 +508,7 @@ $priceCurrency     = $homepage['price_currency'] ?? 'IDR';
                 <div class="col-12"><hr class="footer__hr" /></div>
                 <div class="col-12">
                     <div class="footer__copyright">
-                        <span class="footer__small">
-                            <div class="content"><?= date('Y') ?> <?= h($keyword) ?></div>
-                        </span>
+                        <span class="footer__small"><div class="content"><?= date('Y') ?> <?= h($keyword) ?></div></span>
                     </div>
                 </div>
             </div>
@@ -541,12 +516,11 @@ $priceCurrency     = $homepage['price_currency'] ?? 'IDR';
     </div>
 </footer>
 
-<!-- ============ FLOATING BUTTONS (footer-floating-star) ============ -->
+<!-- ============ FLOATING BUTTONS ============ -->
 <?php if (!empty($floatingButtons)): ?>
 <div class="footer-floating-star">
     <?php foreach ($floatingButtons as $btn): ?>
-    <a href="<?= h($btn['url']) ?>" class="footer-btn-star <?= h($btn['class'] ?? '') ?>"
-       target="_blank" rel="nofollow noopener">
+    <a href="<?= h($btn['url']) ?>" class="footer-btn-star <?= h($btn['class'] ?? '') ?>" target="_blank" rel="nofollow noopener">
         <img src="<?= h($faviconSrc) ?>" alt="<?= h($btn['label']) ?>" /> <?= h($btn['label']) ?>
     </a>
     <?php endforeach; ?>
