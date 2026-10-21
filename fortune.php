@@ -23,81 +23,81 @@ $template=<<<'HTMLPAGE'
 		
 <!-- GLOBAL: loads on every pages -->
 
-	<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://batik138-aset.pages.dev/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	
 
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/font-awesome/css/all.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/font-awesome/css/fontawesome-450.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/jquery-ui/jquery-ui.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/scroll-bar/jquery.mCustomScrollbar.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://batik138-aset.pages.dev/assets/libs/font-awesome/css/all.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://batik138-aset.pages.dev/assets/libs/font-awesome/css/fontawesome-450.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://batik138-aset.pages.dev/assets/libs/jquery-ui/jquery-ui.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://batik138-aset.pages.dev/assets/libs/scroll-bar/jquery.mCustomScrollbar.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/fonts.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://batik138-aset.pages.dev/assets/assets/css/fonts.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript>
-	<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/font-awesome/css/all.min.css" rel="stylesheet">
-	<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/font-awesome/css/fontawesome-450.min.css" rel="stylesheet">
-	<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/jquery-ui/jquery-ui.css" rel="stylesheet">
-	<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/scroll-bar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
-	<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/fonts.css" rel="stylesheet">
+	<link href="https://batik138-aset.pages.dev/assets/libs/font-awesome/css/all.min.css" rel="stylesheet">
+	<link href="https://batik138-aset.pages.dev/assets/libs/font-awesome/css/fontawesome-450.min.css" rel="stylesheet">
+	<link href="https://batik138-aset.pages.dev/assets/libs/jquery-ui/jquery-ui.css" rel="stylesheet">
+	<link href="https://batik138-aset.pages.dev/assets/libs/scroll-bar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+	<link href="https://batik138-aset.pages.dev/assets/assets/css/fonts.css" rel="stylesheet">
 </noscript>
 
 
 
 <!--- CSS SEMENTARA DEVELOPING UNTUK DIPINDAH --->
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-sementara-d97d7c12da.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-sementara-d97d7c12da.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript>
-	<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-sementara-d97d7c12da.css" rel="stylesheet">
+	<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-sementara-d97d7c12da.css" rel="stylesheet">
 </noscript>
 
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/jquery-toast/css/jquery.toast.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/jquery-toast/css/jquery.toast.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript>
-	<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/jquery-toast/css/jquery.toast.css" rel="stylesheet">
+	<link href="https://batik138-aset.pages.dev/assets/libs/jquery-toast/css/jquery.toast.css" rel="stylesheet">
 </noscript>
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/sweetalert/sweetalert.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/sweetalert/sweetalert.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript>
-	<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/sweetalert/sweetalert.css" rel="stylesheet">
+	<link href="https://batik138-aset.pages.dev/assets/libs/sweetalert/sweetalert.css" rel="stylesheet">
 </noscript>
 
-	<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/daterangepicker/css/daterangepicker.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/daterangepicker/css/daterangepicker.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
-		<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/daterangepicker/css/daterangepicker.css" rel="stylesheet">
+		<link href="https://batik138-aset.pages.dev/assets/libs/daterangepicker/css/daterangepicker.css" rel="stylesheet">
 	</noscript>
 	
 <!-- HOME: loads on index.php -->
 <!-- OWL Carousel 2 Core CSS -->
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/owl-carousel/owl.carousel.css" as="style">
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/owl-carousel/sa-owl-theme.css" as="style">
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/owl-carousel/animate.min.css" as="style">
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/owl-carousel/owl.carousel.css" as="style">
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/owl-carousel/sa-owl-theme.css" as="style">
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/owl-carousel/animate.min.css" as="style">
 
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/owl-carousel/owl.carousel.css" rel="stylesheet">
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/owl-carousel/sa-owl-theme.css" rel="stylesheet">
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/owl-carousel/animate.min.css" rel="stylesheet">
+<link href="https://batik138-aset.pages.dev/assets/libs/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="https://batik138-aset.pages.dev/assets/libs/owl-carousel/sa-owl-theme.css" rel="stylesheet">
+<link href="https://batik138-aset.pages.dev/assets/libs/owl-carousel/animate.min.css" rel="stylesheet">
 
 <!-- Odometer Core CSS -->
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/odometer/odometer-theme-minimal.css" as="style">
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/odometer/odometer-theme-minimal.css" as="style">
 
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/odometer/odometer-theme-minimal.css" rel="stylesheet">
+<link href="https://batik138-aset.pages.dev/assets/libs/odometer/odometer-theme-minimal.css" rel="stylesheet">
 <!-- Main Theme Core CSS -->
 
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-root-7cc0e5ad07.css" rel="stylesheet">
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-280a70ccf5.css" rel="stylesheet">
+<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-root-7cc0e5ad07.css" rel="stylesheet">
+<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-280a70ccf5.css" rel="stylesheet">
 
 
 
-<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-adaptedbrand-85f6114aa3.css" rel="stylesheet">
+<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-adaptedbrand-85f6114aa3.css" rel="stylesheet">
 
 
 
-		<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-FORMINBODY-7cc0e5ad07.css" rel="stylesheet">
-				<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-FORMFLOATINGINBODY-7cc0e5ad07.css" rel="stylesheet">
-				<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-OWLCAROUSEL-7cc0e5ad07.css" rel="stylesheet">
-				<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-DATERANGEPICKER-7cc0e5ad07.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-FORMINBODY-7cc0e5ad07.css" rel="stylesheet">
+				<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-FORMFLOATINGINBODY-7cc0e5ad07.css" rel="stylesheet">
+				<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-OWLCAROUSEL-7cc0e5ad07.css" rel="stylesheet">
+				<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-DATERANGEPICKER-7cc0e5ad07.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		
 		<noscript>
-			<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-DATERANGEPICKER-7cc0e5ad07.css" rel="stylesheet">
+			<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-DATERANGEPICKER-7cc0e5ad07.css" rel="stylesheet">
 		</noscript>
-				<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme-TOGEL-7cc0e5ad07.css" rel="stylesheet">
-				<link href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/css/theme_pid_home-339ab579e3.css" rel="stylesheet">
+				<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-TOGEL-7cc0e5ad07.css" rel="stylesheet">
+				<link href="https://batik138-aset.pages.dev/assets/assets/css/theme_pid_home-339ab579e3.css" rel="stylesheet">
 				
 						
 
@@ -115,7 +115,7 @@ $template=<<<'HTMLPAGE'
 	<div class="container">
 		<div class="main-download-apk">
 			<div class="logo-download-apk">
-				<img class="img-fluid d-block" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/android-download-apk.webp">
+				<img class="img-fluid d-block" src="https://batik138-aset.pages.dev/assets/assets/images/icon/android-download-apk.webp">
 			</div>
 			
 			<div class="content-download-apk">
@@ -126,7 +126,7 @@ $template=<<<'HTMLPAGE'
 			<div class="action-download-apk">
 				<a href="#" id="close-download-apk" class="close-download-apk" title="Tutup">x</a>
 				
-										<button class="btn btn-sm btn-main btn-capsule" onclick="document.location = 'https://batik138-aset.pages.dev/mirror/batik138masuk.com/file_downloader-bbae9f5744.php';">Unduh</button>
+										<button class="btn btn-sm btn-main btn-capsule" onclick="document.location = '#';">Unduh</button>
 									</div>
 		</div>
 	</div>
@@ -138,7 +138,7 @@ $template=<<<'HTMLPAGE'
 			<div class="row logo-header-row align-items-center">
 				<div class="col-xl-4 col-lg-3 col-12 logo-header-col">
 					<div class="logo-header mt-sm-4 mt-md-0">
-								<a class="d-table" href="https://batik138masuk.com/">
+								<a class="d-table" href="%%ORIGIN_SLASH%%">
 			<img class="img-fluid d-block" src="%%LOGO%%" alt="%%SITE%%">
 					</a>
 							</div>
@@ -189,8 +189,8 @@ $template=<<<'HTMLPAGE'
 							<input type="hidden" id="form_instance" name="form_instance" class="collect-this" value="login_head_one">
 						
 							<div class="col-12">
-								<a class="btn btn-white-dark btn-sm flex-fill btn-google" href="" data-hmterm="user_login_with_google" onclick="user_login_with_google(); return false;"><img src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/Google__logo-f67bbdbffc.webp">Google</a>
-								<a class="btn btn-white-dark btn-sm flex-fill btn-google" href="https://t.me/batik138_bot"><img src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/Telegram__logo-f67bbdbffc.webp">Telegram<!--i class="fa fa-telegram fs-6" aria-hidden="true"></i> Telegram--></a>
+								<a class="btn btn-white-dark btn-sm flex-fill btn-google" href="" data-hmterm="user_login_with_google" onclick="user_login_with_google(); return false;"><img src="https://batik138-aset.pages.dev/assets/assets/images/icon/Google__logo-f67bbdbffc.webp">Google</a>
+								<a class="btn btn-white-dark btn-sm flex-fill btn-google" href="https://t.me/batik138_bot"><img src="https://batik138-aset.pages.dev/assets/assets/images/icon/Telegram__logo-f67bbdbffc.webp">Telegram<!--i class="fa fa-telegram fs-6" aria-hidden="true"></i> Telegram--></a>
 							</div>
 							
 							<div class="col-12">
@@ -217,7 +217,7 @@ $template=<<<'HTMLPAGE'
 										<i class="fa fa-eye-slash" id="PasswordHeadEye" onclick="seehidepassword('#PasswordHead','#'+this.id);"></i>
 									</span>
 								</div>
-								<small id="passwordHelp" class="form-text text-muted" style="font-size: 0.6em;"><a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/forgot-password.php">Lupa kata sandi?</a></small>
+								<small id="passwordHelp" class="form-text text-muted" style="font-size: 0.6em;"><a href="#">Lupa kata sandi?</a></small>
 							</div>
 							
 							<div class="col-12 d-flex mt-sm-2 mt-md-0 flex-column" style="height: 2em;">
@@ -239,7 +239,7 @@ $template=<<<'HTMLPAGE'
 								</div>
 																<div class="col-12 mt-2">
 									<!--download apk-->
-																			<button type="button" class="btn btn-sm btn-warning btn-shortcut w-100" onclick="document.location = 'https://batik138-aset.pages.dev/mirror/batik138masuk.com/file_downloader-bbae9f5744.php';">Download APK</button>
+																			<button type="button" class="btn btn-sm btn-warning btn-shortcut w-100" onclick="document.location = '#';">Download APK</button>
 																			
 								</div>
 															</div>
@@ -266,8 +266,8 @@ $template=<<<'HTMLPAGE'
 			<nav class="navbar navbar-expand-md navbar-slide">
 				
 				<div class="login-register-aside-navbar-toggler d-none">
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/login.php" class="btn btn-main btn-sm flex-fill">Masuk</a>
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/register.php" class="btn btn-main-dark btn-sm flex-fill ms-md-1 ms-lg-1">Daftar</a>
+					<a href="%%CTA_LOGIN%%" class="btn btn-main btn-sm flex-fill">Masuk</a>
+					<a href="%%CTA_DAFTAR%%" class="btn btn-main-dark btn-sm flex-fill ms-md-1 ms-lg-1">Daftar</a>
 				</div>
 			
 				<div class="m-auto d-md-none navbar-toggler-wrap">
@@ -278,7 +278,7 @@ $template=<<<'HTMLPAGE'
 				
 				<div class="offcanvas offcanvas-start bg-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 					<div class="offcanvas-header pt-2 pb-1">
-								<a class="navbar-brand d-table" href="https://batik138masuk.com/">
+								<a class="navbar-brand d-table" href="%%ORIGIN_SLASH%%">
 			<img src="%%LOGO%%" width="1774" height="887" srcset="" class="img-fluid d-block" alt="%%SITE%%" alt="logo_batik--1789461757" style="width: 100%; height: auto; aspect-ratio: 2;">		</a>
 								
 						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -305,10 +305,10 @@ $template=<<<'HTMLPAGE'
 													<small id="passwordHelp" class="form-text text-light" style="font-size: 0.8em;">Masuk dengan</small>
 												</div>
 												<div class="col-6">
-													<a class="btn btn-white-dark btn-sm flex-fill btn-google" data-hmterm="user_login_with_google" href="" onclick="user_login_with_google(); return false;"><img src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/Google__logo-f67bbdbffc.webp">Google</a>
+													<a class="btn btn-white-dark btn-sm flex-fill btn-google" data-hmterm="user_login_with_google" href="" onclick="user_login_with_google(); return false;"><img src="https://batik138-aset.pages.dev/assets/assets/images/icon/Google__logo-f67bbdbffc.webp">Google</a>
 												</div>
 												<div class="col-6">
-													<a class="btn btn-white-dark btn-sm flex-fill btn-google" href="https://t.me/batik138_bot"><img src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/Telegram__logo-f67bbdbffc.webp">Telegram<!--i class="fa fa-telegram fs-6" aria-hidden="true"></i> Telegram --></a>
+													<a class="btn btn-white-dark btn-sm flex-fill btn-google" href="https://t.me/batik138_bot"><img src="https://batik138-aset.pages.dev/assets/assets/images/icon/Telegram__logo-f67bbdbffc.webp">Telegram<!--i class="fa fa-telegram fs-6" aria-hidden="true"></i> Telegram --></a>
 												</div>
 											</div>
 											
@@ -340,7 +340,7 @@ $template=<<<'HTMLPAGE'
 														<i class="fa fa-eye-slash" id="PasswordHeadEye" onclick="seehidepassword('#PasswordHead','#'+this.id);"></i>
 													</span>
 												</div>
-												<small id="passwordHelp" class="form-text" style="font-size: 0.7em;"><a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/forgot-password.php">Lupa kata sandi?</a></small>
+												<small id="passwordHelp" class="form-text" style="font-size: 0.7em;"><a href="#">Lupa kata sandi?</a></small>
 											</div>
 											
 											<div class="col-12 d-flex mt-sm-2 mt-md-0" style="height: 2em;">
@@ -374,10 +374,10 @@ $template=<<<'HTMLPAGE'
 								
 							</li>
 							<li class="nav-item nav-home d-none d-md-block">
-								<a class="nav-link active" aria-current="page" href="https://batik138masuk.com/"><i class="fa fa-house"></i></a>
+								<a class="nav-link active" aria-current="page" href="%%ORIGIN_SLASH%%"><i class="fa fa-house"></i></a>
 							</li>
 							<li class="nav-item d-md-block d-md-none">
-								<a class="nav-link" href="https://batik138masuk.com/">Home</a>
+								<a class="nav-link" href="%%ORIGIN_SLASH%%">Home</a>
 							</li>
 								<li class="nav-item dropdown has-megamenu open-onhover d-nonex d-md-blockx">
 		<a class="nav-link no-chevron dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -390,7 +390,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('SA','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Dragon" alt="h5g_5dragonslot" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Dragon" alt="h5g_5dragonslot" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>5 Dragon</h5>
 												<p>GLXPLAY</p>
@@ -407,7 +407,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('fiveDragonKings','4',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings-7cc0e5ad07.webp" width="240" height="170" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Dragon Kings" alt="fiveDragonKings" style="width: 100%; height: auto; aspect-ratio: 1.4117647058824;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings-7cc0e5ad07.webp" width="240" height="170" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Dragon Kings" alt="fiveDragonKings" style="width: 100%; height: auto; aspect-ratio: 1.4117647058824;"></div>
 											<div class="item_game_content">
 												<h5>5 Dragon Kings</h5>
 												<p>AFB GAMING</p>
@@ -424,7 +424,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('anubis-wrath','7',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/anubis-wrath-7cc0e5ad07.webp" width="360" height="270" srcset="" class="load-when-upfold" alt="Anubis Wrath" alt="anubis-wrath" style="width: 100%; height: auto; aspect-ratio: 1.3333333333333;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/anubis-wrath-7cc0e5ad07.webp" width="360" height="270" srcset="" class="load-when-upfold" alt="Anubis Wrath" alt="anubis-wrath" style="width: 100%; height: auto; aspect-ratio: 1.3333333333333;"></div>
 											<div class="item_game_content">
 												<h5>Anubis Wrath</h5>
 												<p>PG SOFT</p>
@@ -441,7 +441,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('asgardian-rs','7',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/asgardian-rs-7cc0e5ad07.webp" width="360" height="259" srcset="" class="load-when-upfold" alt="Asgardian Rising" alt="asgardian-rs" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/asgardian-rs-7cc0e5ad07.webp" width="360" height="259" srcset="" class="load-when-upfold" alt="Asgardian Rising" alt="asgardian-rs" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Asgardian Rising</h5>
 												<p>PG SOFT</p>
@@ -458,7 +458,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('vs5aztecgems','5',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems-7cc0e5ad07.webp" width="283" height="204" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Aztec Gems" alt="vs5aztecgems" style="width: 100%; height: auto; aspect-ratio: 1.3872549019608;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems-7cc0e5ad07.webp" width="283" height="204" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Aztec Gems" alt="vs5aztecgems" style="width: 100%; height: auto; aspect-ratio: 1.3872549019608;"></div>
 											<div class="item_game_content">
 												<h5>Aztec Gems</h5>
 												<p>PRAGMATIC SLOT</p>
@@ -475,7 +475,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('vs9aztecgemsdx','5',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Aztec Gems Deluxe" alt="vs9aztecgemsdx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Aztec Gems Deluxe" alt="vs9aztecgemsdx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;"></div>
 											<div class="item_game_content">
 												<h5>Aztec Gems Deluxe</h5>
 												<p>PRAGMATIC SLOT</p>
@@ -492,7 +492,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('vswaysaztec','5',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysaztec-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Aztec Gems Megaways" alt="vswaysaztec" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysaztec-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Aztec Gems Megaways" alt="vswaysaztec" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;"></div>
 											<div class="item_game_content">
 												<h5>Aztec Gems Megaways</h5>
 												<p>PRAGMATIC SLOT</p>
@@ -509,7 +509,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('BQ','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Q Live" alt="h5g_bandarqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Q Live" alt="h5g_bandarqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Bandar Q Live</h5>
 												<p>GLXPLAY</p>
@@ -526,7 +526,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('BS','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Sakong" alt="h5g_bandarsakong" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Sakong" alt="h5g_bandarsakong" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Bandar Sakong</h5>
 												<p>GLXPLAY</p>
@@ -543,7 +543,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('MM','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bola Tangkas" alt="h5g_bolatangkas" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bola Tangkas" alt="h5g_bolatangkas" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Bola Tangkas</h5>
 												<p>GLXPLAY</p>
@@ -560,7 +560,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('vs20fatbook','5',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20fatbook-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Book of Monsters" alt="vs20fatbook" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20fatbook-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Book of Monsters" alt="vs20fatbook" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;"></div>
 											<div class="item_game_content">
 												<h5>Book of Monsters</h5>
 												<p>PRAGMATIC SLOT</p>
@@ -577,7 +577,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('cai-shen-wins','7',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/cai-shen-wins-7cc0e5ad07.webp" width="330" height="225" srcset="" class="load-when-upfold" alt="Cai Shen Wins" alt="cai-shen-wins" style="width: 100%; height: auto; aspect-ratio: 1.4666666666667;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/cai-shen-wins-7cc0e5ad07.webp" width="330" height="225" srcset="" class="load-when-upfold" alt="Cai Shen Wins" alt="cai-shen-wins" style="width: 100%; height: auto; aspect-ratio: 1.4666666666667;"></div>
 											<div class="item_game_content">
 												<h5>Cai Shen Wins</h5>
 												<p>PG SOFT</p>
@@ -594,7 +594,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('SB','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Cash Cove" alt="h5g_cashcoveslot" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Cash Cove" alt="h5g_cashcoveslot" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Cash Cove</h5>
 												<p>GLXPLAY</p>
@@ -611,7 +611,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('cocktail-nite','7',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/cocktail-nite-7cc0e5ad07.webp" width="360" height="270" srcset="" class="load-when-upfold" alt="Cocktail Nights" alt="cocktail-nite" style="width: 100%; height: auto; aspect-ratio: 1.3333333333333;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/cocktail-nite-7cc0e5ad07.webp" width="360" height="270" srcset="" class="load-when-upfold" alt="Cocktail Nights" alt="cocktail-nite" style="width: 100%; height: auto; aspect-ratio: 1.3333333333333;"></div>
 											<div class="item_game_content">
 												<h5>Cocktail Nights</h5>
 												<p>PG SOFT</p>
@@ -628,7 +628,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('QQ','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Domino 99" alt="h5g_domino99" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Domino 99" alt="h5g_domino99" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Domino 99</h5>
 												<p>GLXPLAY</p>
@@ -645,7 +645,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('dragon-hatch','7',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/dragon-hatch-7cc0e5ad07.webp" width="360" height="239" srcset="" class="load-when-upfold" alt="Dragon Hatch" alt="dragon-hatch" style="width: 100%; height: auto; aspect-ratio: 1.5062761506276;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/dragon-hatch-7cc0e5ad07.webp" width="360" height="239" srcset="" class="load-when-upfold" alt="Dragon Hatch" alt="dragon-hatch" style="width: 100%; height: auto; aspect-ratio: 1.5062761506276;"></div>
 											<div class="item_game_content">
 												<h5>Dragon Hatch</h5>
 												<p>PG SOFT</p>
@@ -660,7 +660,7 @@ $template=<<<'HTMLPAGE'
 							</div>
 														<div class="col-12">
 																<div class="see-all-games line-border-top line-border-full">
-									<a class="btn btn-main-dark btn-see-all d-table mb-3" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/all_games-92db7ff589.php">Lihat Semua HOT GAME</a>
+									<a class="btn btn-main-dark btn-see-all d-table mb-3" href="#">Lihat Semua HOT GAME</a>
 								</div>
 							</div>
 							
@@ -680,9 +680,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-032fd1f134.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-1_43" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/1_43-bc4a1838a9.webp" alt="PG SOFT">
+										<img class="img-fluid d-block prv-1_43" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/1_43-bc4a1838a9.webp" alt="PG SOFT">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -695,9 +695,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-725d9eb050.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-1_41" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/1_41-bc4a1838a9.webp" alt="PRAGMATIC PLAY POP">
+										<img class="img-fluid d-block prv-1_41" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/1_41-bc4a1838a9.webp" alt="PRAGMATIC PLAY POP">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -710,9 +710,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-7f87dc6deb.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_58" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_58-bc4a1838a9.webp" alt="JILI">
+										<img class="img-fluid d-block prv-2_58" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_58-bc4a1838a9.webp" alt="JILI">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -725,9 +725,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-1b78a239f0.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_47" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_47-bc4a1838a9.webp" alt="HABANERO">
+										<img class="img-fluid d-block prv-2_47" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_47-bc4a1838a9.webp" alt="HABANERO">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -740,9 +740,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-a47e20dfaa.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_104" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_104-bc4a1838a9.webp" alt="JokerGaming">
+										<img class="img-fluid d-block prv-4_104" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_104-bc4a1838a9.webp" alt="JokerGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -755,9 +755,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-7eca477db7.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_109" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_109-bc4a1838a9.webp" alt="MicroGaming">
+										<img class="img-fluid d-block prv-4_109" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_109-bc4a1838a9.webp" alt="MicroGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -770,9 +770,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-30b88a62a0.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_124" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_124-bc4a1838a9.webp" alt="Netent">
+										<img class="img-fluid d-block prv-4_124" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_124-bc4a1838a9.webp" alt="Netent">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -785,9 +785,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-2aa835c67e.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_71" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_71-bc4a1838a9.webp" alt="PLAYTECH">
+										<img class="img-fluid d-block prv-2_71" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_71-bc4a1838a9.webp" alt="PLAYTECH">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -800,9 +800,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-0459c55b14.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_57" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_57-bc4a1838a9.webp" alt="CQ9">
+										<img class="img-fluid d-block prv-2_57" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_57-bc4a1838a9.webp" alt="CQ9">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -815,9 +815,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-72a49baa26.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_128" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_128-bc4a1838a9.webp" alt="KAGaming">
+										<img class="img-fluid d-block prv-4_128" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_128-bc4a1838a9.webp" alt="KAGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -830,9 +830,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-4c029afd68.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_156" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_156-bc4a1838a9.webp" alt="HacksawGaming">
+										<img class="img-fluid d-block prv-4_156" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_156-bc4a1838a9.webp" alt="HacksawGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -845,9 +845,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-876653cfab.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_126" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_126-bc4a1838a9.webp" alt="NoLimitCity">
+										<img class="img-fluid d-block prv-4_126" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_126-bc4a1838a9.webp" alt="NoLimitCity">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -860,9 +860,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-35c6ec53fc.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_125" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_125-bc4a1838a9.webp" alt="BigTimeGaming">
+										<img class="img-fluid d-block prv-4_125" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_125-bc4a1838a9.webp" alt="BigTimeGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -875,9 +875,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-aee49453e7.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_66" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_66-bc4a1838a9.webp" alt="PNG">
+										<img class="img-fluid d-block prv-2_66" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_66-bc4a1838a9.webp" alt="PNG">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -890,9 +890,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-3edbcc5766.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_54" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_54-bc4a1838a9.webp" alt="RED TIGER">
+										<img class="img-fluid d-block prv-2_54" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_54-bc4a1838a9.webp" alt="RED TIGER">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -905,9 +905,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-bcefb0aba8.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_64" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_64-bc4a1838a9.webp" alt="SPADE GAMING">
+										<img class="img-fluid d-block prv-2_64" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_64-bc4a1838a9.webp" alt="SPADE GAMING">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -920,9 +920,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-564de77a66.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_140" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_140-bc4a1838a9.webp" alt="DragoonSoft">
+										<img class="img-fluid d-block prv-4_140" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_140-bc4a1838a9.webp" alt="DragoonSoft">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -935,9 +935,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-142d563cf9.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_56" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_56-bc4a1838a9.webp" alt="JDB">
+										<img class="img-fluid d-block prv-2_56" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_56-bc4a1838a9.webp" alt="JDB">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -948,7 +948,7 @@ $template=<<<'HTMLPAGE'
 
 										<div class="col-12">
 						<div class="see-all-games line-border-top line-border-full">
-														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-3ce34376c4.php">Lihat Semua SLOT</a>
+														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="#">Lihat Semua SLOT</a>
 						</div>
 					</div>
 									</div>
@@ -968,9 +968,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-5bc76f4852.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_94" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/4_94-bc4a1838a9.webp" alt="SBO Sports">
+										<img class="img-fluid d-block prv-4_94" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/4_94-bc4a1838a9.webp" alt="SBO Sports">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -983,9 +983,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-5ca7d8b49e.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_95" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/4_95-bc4a1838a9.webp" alt="Saba Sports">
+										<img class="img-fluid d-block prv-4_95" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/4_95-bc4a1838a9.webp" alt="Saba Sports">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -998,9 +998,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-5ff87fd0e8.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_97" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/4_97-bc4a1838a9.webp" alt="BTiSports">
+										<img class="img-fluid d-block prv-4_97" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/4_97-bc4a1838a9.webp" alt="BTiSports">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1013,9 +1013,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-a7bd32d5ff.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-1_40" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/1_40-bc4a1838a9.webp" alt="AFB SPORT">
+										<img class="img-fluid d-block prv-1_40" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/1_40-bc4a1838a9.webp" alt="AFB SPORT">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1028,9 +1028,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-ce71425443.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-1_42" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/1_42-bc4a1838a9.webp" alt="GGCS">
+										<img class="img-fluid d-block prv-1_42" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/1_42-bc4a1838a9.webp" alt="GGCS">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1043,9 +1043,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-d415ea0f42.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_100" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/4_100-bc4a1838a9.webp" alt="APGaming">
+										<img class="img-fluid d-block prv-4_100" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/4_100-bc4a1838a9.webp" alt="APGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1061,7 +1061,7 @@ $template=<<<'HTMLPAGE'
 
 							<!--
 							<li class="nav-item">
-								<a class="nav-link" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/all_games-52c93173b8.php">SPORTBOOK</a>
+								<a class="nav-link" href="#">SPORTBOOK</a>
 							</li>
 							-->
 							
@@ -1076,9 +1076,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-0546b3e6de.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_77" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_77-bc4a1838a9.webp" alt="EvolutionGaming">
+										<img class="img-fluid d-block prv-4_77" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_77-bc4a1838a9.webp" alt="EvolutionGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1091,9 +1091,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-162692d43b.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-1_41101" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/1_41101-bc4a1838a9.webp" alt="PRAGMATIC CASINO">
+										<img class="img-fluid d-block prv-1_41101" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/1_41101-bc4a1838a9.webp" alt="PRAGMATIC CASINO">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1106,9 +1106,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-dc94cc5135.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_74" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_74-bc4a1838a9.webp" alt="SexyGaming">
+										<img class="img-fluid d-block prv-4_74" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_74-bc4a1838a9.webp" alt="SexyGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1121,9 +1121,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-6b1ccbd6f5.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_85" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_85-bc4a1838a9.webp" alt="DreamGaming">
+										<img class="img-fluid d-block prv-4_85" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_85-bc4a1838a9.webp" alt="DreamGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1136,9 +1136,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-15f8538663.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_63" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/2_63-bc4a1838a9.webp" alt="ALLBET">
+										<img class="img-fluid d-block prv-2_63" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/2_63-bc4a1838a9.webp" alt="ALLBET">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1151,9 +1151,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-b6a42967ae.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_82" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_82-bc4a1838a9.webp" alt="OGLive">
+										<img class="img-fluid d-block prv-4_82" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_82-bc4a1838a9.webp" alt="OGLive">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1166,9 +1166,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-b980b1c956.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_92" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_92-bc4a1838a9.webp" alt="Ezugi">
+										<img class="img-fluid d-block prv-4_92" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_92-bc4a1838a9.webp" alt="Ezugi">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1181,9 +1181,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-2607786e81.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_75" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_75-bc4a1838a9.webp" alt="IONLC">
+										<img class="img-fluid d-block prv-4_75" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_75-bc4a1838a9.webp" alt="IONLC">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1196,9 +1196,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-3e40b5e180.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_73" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_73-bc4a1838a9.webp" alt="BigGaming">
+										<img class="img-fluid d-block prv-4_73" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_73-bc4a1838a9.webp" alt="BigGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1211,9 +1211,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-ef89112feb.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_72" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_72-bc4a1838a9.webp" alt="WanMei">
+										<img class="img-fluid d-block prv-4_72" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_72-bc4a1838a9.webp" alt="WanMei">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1226,9 +1226,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-82ad585bc4.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_81" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_81-bc4a1838a9.webp" alt="YeeBet">
+										<img class="img-fluid d-block prv-4_81" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_81-bc4a1838a9.webp" alt="YeeBet">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1241,9 +1241,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-af3cd57f46.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_86" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_86-bc4a1838a9.webp" alt="PlayAce">
+										<img class="img-fluid d-block prv-4_86" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_86-bc4a1838a9.webp" alt="PlayAce">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1256,9 +1256,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-b232fb84d8.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_89" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_89-bc4a1838a9.webp" alt="ViaCasino">
+										<img class="img-fluid d-block prv-4_89" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_89-bc4a1838a9.webp" alt="ViaCasino">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1271,9 +1271,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-b93567d200.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_84" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_84-bc4a1838a9.webp" alt="PlayTechLiveCasino">
+										<img class="img-fluid d-block prv-4_84" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_84-bc4a1838a9.webp" alt="PlayTechLiveCasino">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1286,9 +1286,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-befcf35155.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-1_33" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/1_33-bc4a1838a9.webp" alt="GLXPLAY">
+										<img class="img-fluid d-block prv-1_33" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/1_33-bc4a1838a9.webp" alt="GLXPLAY">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1301,9 +1301,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-cd670bfa38.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_60" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/2_60-bc4a1838a9.webp" alt="WINFINITY">
+										<img class="img-fluid d-block prv-2_60" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/2_60-bc4a1838a9.webp" alt="WINFINITY">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1316,9 +1316,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-de2e6d9a47.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_90" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_90-bc4a1838a9.webp" alt="KissGaming">
+										<img class="img-fluid d-block prv-4_90" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_90-bc4a1838a9.webp" alt="KissGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1331,9 +1331,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-6375c5b46d.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-2_46" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/2_46-bc4a1838a9.webp" alt="SA GAMING">
+										<img class="img-fluid d-block prv-2_46" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/2_46-bc4a1838a9.webp" alt="SA GAMING">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1344,7 +1344,7 @@ $template=<<<'HTMLPAGE'
 
 										<div class="col-12">
 						<div class="see-all-games line-border-top line-border-full">
-														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-4b0dbbcc6f.php">Lihat Semua LIVE CASINO</a>
+														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="#">Lihat Semua LIVE CASINO</a>
 						</div>
 					</div>
 									</div>
@@ -1363,7 +1363,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('MM','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bola Tangkas" alt="h5g_bolatangkas" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bola Tangkas" alt="h5g_bolatangkas" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Bola Tangkas</h5>
 												<p>GLXPLAY</p>
@@ -1380,7 +1380,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('HR','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Happy Royal" alt="h5g_happyroyal" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Happy Royal" alt="h5g_happyroyal" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Happy Royal</h5>
 												<p>GLXPLAY</p>
@@ -1409,7 +1409,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('AA','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Adu Q Live" alt="h5g_aduqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Adu Q Live" alt="h5g_aduqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Adu Q Live</h5>
 												<p>GLXPLAY</p>
@@ -1426,7 +1426,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('BD','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Dadu" alt="h5g_bandardadu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Dadu" alt="h5g_bandardadu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Bandar Dadu</h5>
 												<p>GLXPLAY</p>
@@ -1443,7 +1443,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('BQ','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Q Live" alt="h5g_bandarqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Q Live" alt="h5g_bandarqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Bandar Q Live</h5>
 												<p>GLXPLAY</p>
@@ -1460,7 +1460,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('BS','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Sakong" alt="h5g_bandarsakong" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Sakong" alt="h5g_bandarsakong" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Bandar Sakong</h5>
 												<p>GLXPLAY</p>
@@ -1477,7 +1477,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('CB','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Capsa Banting" alt="h5g_capsabanting" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Capsa Banting" alt="h5g_capsabanting" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Capsa Banting</h5>
 												<p>GLXPLAY</p>
@@ -1494,7 +1494,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('QQ','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Domino 99" alt="h5g_domino99" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Domino 99" alt="h5g_domino99" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Domino 99</h5>
 												<p>GLXPLAY</p>
@@ -1511,7 +1511,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('GP','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple-7cc0e5ad07.webp" width="360" height="255" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Gaple" alt="h5g_gaple" style="width: 100%; height: auto; aspect-ratio: 1.4117647058824;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple-7cc0e5ad07.webp" width="360" height="255" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Gaple" alt="h5g_gaple" style="width: 100%; height: auto; aspect-ratio: 1.4117647058824;"></div>
 											<div class="item_game_content">
 												<h5>Gaple</h5>
 												<p>GLXPLAY</p>
@@ -1528,7 +1528,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('PK','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Texas Poker" alt="h5g_texaspoker" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Texas Poker" alt="h5g_texaspoker" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>Texas Poker</h5>
 												<p>GLXPLAY</p>
@@ -1557,7 +1557,7 @@ $template=<<<'HTMLPAGE'
 							<div class="col-sm-6 col-md-4 col-lg-3 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 								<div class="item_game_menu_wrap with_details mb-3">
 																			<a href="" onclick="play_games('GL','3',true); return false;">
-											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="GLX Toto" alt="h5g_glxtoto" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
+											<div class="item_game_image"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="GLX Toto" alt="h5g_glxtoto" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;"></div>
 											<div class="item_game_content">
 												<h5>GLX Toto</h5>
 												<p>GLXPLAY</p>
@@ -1587,9 +1587,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-45482f3321.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_128" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/fishing/4_128-bc4a1838a9.webp" alt="KAGaming">
+										<img class="img-fluid d-block prv-4_128" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/fishing/4_128-bc4a1838a9.webp" alt="KAGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1602,9 +1602,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-56eaf8a235.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_118" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/fishing/4_118-bc4a1838a9.webp" alt="568winGames">
+										<img class="img-fluid d-block prv-4_118" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/fishing/4_118-bc4a1838a9.webp" alt="568winGames">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1619,7 +1619,7 @@ $template=<<<'HTMLPAGE'
 								<!--a href=""-->
 								<a href="#" onclick="play_games('crazyFishing','4',true); return false;">
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-1_1" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/fishing/1_1-bc4a1838a9.webp" alt="AFB GAMING">
+										<img class="img-fluid d-block prv-1_1" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/fishing/1_1-bc4a1838a9.webp" alt="AFB GAMING">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1632,9 +1632,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-f8a7d46fac.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_140" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/fishing/4_140-bc4a1838a9.webp" alt="DragoonSoft">
+										<img class="img-fluid d-block prv-4_140" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/fishing/4_140-bc4a1838a9.webp" alt="DragoonSoft">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1649,7 +1649,7 @@ $template=<<<'HTMLPAGE'
 								<!--a href=""-->
 								<a href="#" onclick="play_games('568_1_5','10',true); return false;">
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_73" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/fishing/4_73-bc4a1838a9.webp" alt="BigGaming">
+										<img class="img-fluid d-block prv-4_73" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/fishing/4_73-bc4a1838a9.webp" alt="BigGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1662,9 +1662,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-8fc6e16b64.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_150" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/fishing/4_150-bc4a1838a9.webp" alt="Fastspin">
+										<img class="img-fluid d-block prv-4_150" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/fishing/4_150-bc4a1838a9.webp" alt="Fastspin">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1677,9 +1677,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-0503306592.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_112" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/fishing/4_112-bc4a1838a9.webp" alt="YGR">
+										<img class="img-fluid d-block prv-4_112" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/fishing/4_112-bc4a1838a9.webp" alt="YGR">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1692,9 +1692,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-02d6e6153f.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_107" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/fishing/4_107-bc4a1838a9.webp" alt="FunkyGames">
+										<img class="img-fluid d-block prv-4_107" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/fishing/4_107-bc4a1838a9.webp" alt="FunkyGames">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1722,7 +1722,7 @@ $template=<<<'HTMLPAGE'
 								<!--a href=""-->
 								<a href="#" onclick="play_games('568_1_1070','10',true); return false;">
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_101" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/cockfight/4_101-bc4a1838a9.webp" alt="WS168Cockfighting">
+										<img class="img-fluid d-block prv-4_101" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/cockfight/4_101-bc4a1838a9.webp" alt="WS168Cockfighting">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1748,9 +1748,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-5f0acf913f.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_109" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_109-bc4a1838a9.webp" alt="MicroGaming">
+										<img class="img-fluid d-block prv-4_109" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_109-bc4a1838a9.webp" alt="MicroGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1763,9 +1763,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-3fdedccbc2.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_156" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_156-bc4a1838a9.webp" alt="HacksawGaming">
+										<img class="img-fluid d-block prv-4_156" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_156-bc4a1838a9.webp" alt="HacksawGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1778,9 +1778,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-986ca493b6.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_108" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_108-bc4a1838a9.webp" alt="Yggdrasil">
+										<img class="img-fluid d-block prv-4_108" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_108-bc4a1838a9.webp" alt="Yggdrasil">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1795,7 +1795,7 @@ $template=<<<'HTMLPAGE'
 								<!--a href=""-->
 								<a href="#" onclick="play_games('568_1_1077','10',true); return false;">
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_148" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_148-bc4a1838a9.webp" alt="Aviatrix">
+										<img class="img-fluid d-block prv-4_148" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_148-bc4a1838a9.webp" alt="Aviatrix">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1808,9 +1808,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-69fc7fdbb0.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_104" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_104-bc4a1838a9.webp" alt="JokerGaming">
+										<img class="img-fluid d-block prv-4_104" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_104-bc4a1838a9.webp" alt="JokerGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1823,9 +1823,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-571151f7fd.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_121" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_121-bc4a1838a9.webp" alt="KingMidas">
+										<img class="img-fluid d-block prv-4_121" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_121-bc4a1838a9.webp" alt="KingMidas">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1838,9 +1838,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-8c464de854.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_117" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_117-bc4a1838a9.webp" alt="Rich88">
+										<img class="img-fluid d-block prv-4_117" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_117-bc4a1838a9.webp" alt="Rich88">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1855,7 +1855,7 @@ $template=<<<'HTMLPAGE'
 								<!--a href=""-->
 								<a href="#" onclick="play_games('568_86_1089','10',true); return false;">
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_155" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_155-bc4a1838a9.webp" alt="RoyalSlotGaming">
+										<img class="img-fluid d-block prv-4_155" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_155-bc4a1838a9.webp" alt="RoyalSlotGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1868,9 +1868,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-c0a90f05b6.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_140" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_140-bc4a1838a9.webp" alt="DragoonSoft">
+										<img class="img-fluid d-block prv-4_140" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_140-bc4a1838a9.webp" alt="DragoonSoft">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1883,9 +1883,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-121ed9d82b.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_128" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_128-bc4a1838a9.webp" alt="KAGaming">
+										<img class="img-fluid d-block prv-4_128" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_128-bc4a1838a9.webp" alt="KAGaming">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1898,9 +1898,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-3f35396e79.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_107" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_107-bc4a1838a9.webp" alt="FunkyGames">
+										<img class="img-fluid d-block prv-4_107" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_107-bc4a1838a9.webp" alt="FunkyGames">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1913,9 +1913,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-7e1016fe62.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_135" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_135-bc4a1838a9.webp" alt="Phoenix7">
+										<img class="img-fluid d-block prv-4_135" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_135-bc4a1838a9.webp" alt="Phoenix7">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1928,9 +1928,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-7a15df7d4a.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_142" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_142-bc4a1838a9.webp" alt="Nextspin">
+										<img class="img-fluid d-block prv-4_142" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_142-bc4a1838a9.webp" alt="Nextspin">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1943,9 +1943,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-b3d710fec4.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_151" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_151-bc4a1838a9.webp" alt="Apollo">
+										<img class="img-fluid d-block prv-4_151" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_151-bc4a1838a9.webp" alt="Apollo">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1958,9 +1958,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-6589d8c14e.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_147" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_147-bc4a1838a9.webp" alt="PoggiPlay">
+										<img class="img-fluid d-block prv-4_147" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_147-bc4a1838a9.webp" alt="PoggiPlay">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1973,9 +1973,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-5fbc8ed93d.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_112" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_112-bc4a1838a9.webp" alt="YGR">
+										<img class="img-fluid d-block prv-4_112" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_112-bc4a1838a9.webp" alt="YGR">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -1988,9 +1988,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-74b1490dd8.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-4_136" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/4_136-bc4a1838a9.webp" alt="CC88">
+										<img class="img-fluid d-block prv-4_136" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/4_136-bc4a1838a9.webp" alt="CC88">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2003,9 +2003,9 @@ $template=<<<'HTMLPAGE'
 						<div class="col-sm-6 col-md-3 col-lg-2 mb-3 mb-lg-0 d-sm-nonex d-md-blockx">
 							<div class="item_game_menu_wrap with_details menu_providers  mb-3">
 								<!--a href=""-->
-								<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-59e9d9574e.php" >
+								<a href="#" >
 									<div class="item_game_image">
-										<img class="img-fluid d-block prv-1_1" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/other/1_1-bc4a1838a9.webp" alt="AFB GAMING">
+										<img class="img-fluid d-block prv-1_1" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/other/1_1-bc4a1838a9.webp" alt="AFB GAMING">
 									</div>
 																		<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2016,7 +2016,7 @@ $template=<<<'HTMLPAGE'
 
 										<div class="col-12">
 						<div class="see-all-games line-border-top line-border-full">
-														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-ca8276030b.php">Lihat Semua OTHER</a>
+														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="#">Lihat Semua OTHER</a>
 						</div>
 					</div>
 									</div>
@@ -2026,7 +2026,7 @@ $template=<<<'HTMLPAGE'
 
 																					
 							<li class="nav-item d-none d-sm-block">
-								<a class="nav-link" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/promotion.php">PROMO</a>
+								<a class="nav-link" href="#">PROMO</a>
 							</li>
 								<li class="nav-item dropdown has-megamenu open-onhover d-nonex d-md-blockx">
 		<a class="nav-link no-chevron dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -2037,8 +2037,8 @@ $template=<<<'HTMLPAGE'
 				
 					<div class="col-sm-6 col-md-4 col-lg-4 mb-3 mb-lg-0 d-nonex d-md-blockx">
 						<div class="item_game_menu_wrap mb-3">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/indo-pool-a.php">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Indonesia Siang" alt="indonesia_a" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
+							<a href="#">
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Indonesia Siang" alt="indonesia_a" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 								</div>
 							</a>
@@ -2047,8 +2047,8 @@ $template=<<<'HTMLPAGE'
 					
 					<div class="col-sm-6 col-md-4 col-lg-4 mb-3 mb-lg-0 d-nonex d-md-blockx">
 						<div class="item_game_menu_wrap mb-3">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/indo-pool-b.php">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Indonesia Sore" alt="indonesia_b" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
+							<a href="#">
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Indonesia Sore" alt="indonesia_b" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 								</div>
 							</a>
@@ -2057,8 +2057,8 @@ $template=<<<'HTMLPAGE'
 					
 					<div class="col-sm-6 col-md-4 col-lg-4 mb-3 mb-lg-0 d-nonex d-md-blockx">
 						<div class="item_game_menu_wrap mb-3">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/korea-pool.php">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Korea" alt="korea" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
+							<a href="#">
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/korea-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/korea--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/korea--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/korea--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/korea--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/korea--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Korea" alt="korea" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 								</div>
 							</a>
@@ -2067,8 +2067,8 @@ $template=<<<'HTMLPAGE'
 					
 					<div class="col-sm-6 col-md-4 col-lg-4 mb-3 mb-lg-0 d-nonex d-md-blockx">
 						<div class="item_game_menu_wrap mb-3">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/singapore-pool.php">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Singapore" alt="singapore" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
+							<a href="#">
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Singapore" alt="singapore" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 								</div>
 							</a>
@@ -2077,8 +2077,8 @@ $template=<<<'HTMLPAGE'
 					
 					<div class="col-sm-6 col-md-4 col-lg-4 mb-3 mb-lg-0 d-nonex d-md-blockx">
 						<div class="item_game_menu_wrap mb-3">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/china-pool.php">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="China" alt="china" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
+							<a href="#">
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/china-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/china--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/china--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/china--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/china--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/china--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="China" alt="china" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 								</div>
 							</a>
@@ -2087,8 +2087,8 @@ $template=<<<'HTMLPAGE'
 					
 					<div class="col-sm-6 col-md-4 col-lg-4 mb-3 mb-lg-0 d-nonex d-md-blockx">
 						<div class="item_game_menu_wrap mb-3">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/singapore49.php">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Singapore 49" alt="singapore-49" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
+							<a href="#">
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Singapore 49" alt="singapore-49" style="width: 100%; height: auto; aspect-ratio: 2.75;">								<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 								</div>
 							</a>
@@ -2100,12 +2100,12 @@ $template=<<<'HTMLPAGE'
 		</li>
 	</li>
 								<li class="nav-item d-none d-sm-block">
-								<a class="nav-link" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/referral.php">REFERRAL</a>
+								<a class="nav-link" href="#">REFERRAL</a>
 							</li>
 
 														<li class="nav-item">
 								<a class="nav-link nav-link-image px-3" href="https://rtp%%SITE%%.pages.dev/" target="_blank">
-									<img src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-rtp-7cc0e5ad07.webp">
+									<img src="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-rtp-7cc0e5ad07.webp">
 								</a>
 							</li>
 								
@@ -2167,35 +2167,14 @@ $template=<<<'HTMLPAGE'
 				<!-- Main Content -->
 		<main>
 		
-					<section class="main-slider line-border line-border-left line-border-w75 line-border-h3 line-border-zi2 extra-mb-mobile" style="width: 100%; height: auto; aspect-ratio: 2.9532710280374;">
-			<div id="main_slider" class="owl-carousel owl-pagination-true sa_owl_theme">
-							<div class="item">
-											<img src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-new50batik138--1789803680-7cc0e5ad07.webp" width="1580" height="535" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-new50batik138--1789803680--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-new50batik138--1789803680--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-new50batik138--1789803680--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-new50batik138--1789803680--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-new50batik138--1789803680--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block w-100" fetchpriority="high" alt="f5905c33-new50batik138--1789803680" style="width: 100%; height: auto; aspect-ratio: 2.9532710280374;">																
-					<style>.main-slider {width: 100%; height: auto; aspect-ratio: 2.9532710280374;}</style>				</div>
-								<div class="item">
-											<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-10depositharianbatik138--1789803696-7cc0e5ad07.webp" width="1580" height="535" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-10depositharianbatik138--1789803696--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-10depositharianbatik138--1789803696--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-10depositharianbatik138--1789803696--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-10depositharianbatik138--1789803696--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/f5905c33-10depositharianbatik138--1789803696--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block w-100 load-when-upfold" alt="f5905c33-10depositharianbatik138--1789803696" style="width: 100%; height: auto; aspect-ratio: 2.9532710280374;">																
-									</div>
-								<div class="item">
-											<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/18b6fab4-sportsbookbonus--1789803715-7cc0e5ad07.webp" width="1580" height="535" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/18b6fab4-sportsbookbonus--1789803715--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/18b6fab4-sportsbookbonus--1789803715--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/18b6fab4-sportsbookbonus--1789803715--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/18b6fab4-sportsbookbonus--1789803715--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/18b6fab4-sportsbookbonus--1789803715--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block w-100 load-when-upfold" alt="18b6fab4-sportsbookbonus--1789803715" style="width: 100%; height: auto; aspect-ratio: 2.9532710280374;">																
-									</div>
-								<div class="item">
-											<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/79cd5337-6ca1usdtbatik138--1789803738-7cc0e5ad07.webp" width="1580" height="535" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/79cd5337-6ca1usdtbatik138--1789803738--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/79cd5337-6ca1usdtbatik138--1789803738--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/79cd5337-6ca1usdtbatik138--1789803738--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/79cd5337-6ca1usdtbatik138--1789803738--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/79cd5337-6ca1usdtbatik138--1789803738--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block w-100 load-when-upfold" alt="79cd5337-6ca1usdtbatik138--1789803738" style="width: 100%; height: auto; aspect-ratio: 2.9532710280374;">																
-									</div>
-								<div class="item">
-											<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/dff3d9a7-wdcepatdibatik138--1789803752-7cc0e5ad07.webp" width="1580" height="535" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/dff3d9a7-wdcepatdibatik138--1789803752--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/dff3d9a7-wdcepatdibatik138--1789803752--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/dff3d9a7-wdcepatdibatik138--1789803752--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/dff3d9a7-wdcepatdibatik138--1789803752--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/dff3d9a7-wdcepatdibatik138--1789803752--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block w-100 load-when-upfold" alt="dff3d9a7-wdcepatdibatik138--1789803752" style="width: 100%; height: auto; aspect-ratio: 2.9532710280374;">																
-									</div>
-								<div class="item">
-											<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/84998101-freesaldobatik138--1789803768-7cc0e5ad07.webp" width="1580" height="535" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/84998101-freesaldobatik138--1789803768--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/84998101-freesaldobatik138--1789803768--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/84998101-freesaldobatik138--1789803768--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/84998101-freesaldobatik138--1789803768--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/mainbanner/84998101-freesaldobatik138--1789803768--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block w-100 load-when-upfold" alt="84998101-freesaldobatik138--1789803768" style="width: 100%; height: auto; aspect-ratio: 2.9532710280374;">																
-									</div>
-							</div>
-		</section>
+%%BANNER_BLOCK%%
 					
 			<div class="row d-sm-none mobile-register-button">
 				<div class="col-6 gx-0">
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/register.php" class="btn btn-main-dark w-100 btn-mrb mrb-signup"><i class="fa fa-address-card me-2" aria-hidden="true"></i>DAFTAR</a>
+					<a href="%%CTA_DAFTAR%%" class="btn btn-main-dark w-100 btn-mrb mrb-signup"><i class="fa fa-address-card me-2" aria-hidden="true"></i>DAFTAR</a>
 				</div>
 				<div class="col-6 gx-0">
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/login.php" class="btn btn-main w-100 btn-mrb mrb-signin"><i class="fa fa-sign-in me-2" aria-hidden="true"></i>MASUK</a>
+					<a href="%%CTA_LOGIN%%" class="btn btn-main w-100 btn-mrb mrb-signin"><i class="fa fa-sign-in me-2" aria-hidden="true"></i>MASUK</a>
 				</div>
 			</div>
 			
@@ -2209,56 +2188,56 @@ $template=<<<'HTMLPAGE'
 						<div class="wrapper-slider-menu">
 							<div class="item-slider-menu">
 								<a href="" class="toggle-slider-menu" data-target="hotgame">
-									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-hot-game-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-hot-game-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 									<div class="text">Hot Game</div>
 								</a>
 							</div>
 							
 							<div class="item-slider-menu">
 								<a href="" class="toggle-slider-menu" data-target="slot">
-									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-slot-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-slot-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 									<div class="text">Slot</div>
 								</a>
 							</div>
 							
 							<div class="item-slider-menu">
 								<a href="" class="toggle-slider-menu" data-target="sportsbook">
-									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-sportsbook-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-sportsbook-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 									<div class="text">Sports</div>
 								</a>
 							</div>
 							
 							<div class="item-slider-menu">
 								<a href="" class="toggle-slider-menu" data-target="livecasino">
-									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-live-casino-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-live-casino-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 									<div class="text">Live Casino</div>
 								</a>
 							</div>
 							
 							<div class="item-slider-menu">
 								<a href="" class="toggle-slider-menu" data-target="bolatangkas">
-									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-bolatangkas-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-bolatangkas-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 									<div class="text">Bolatangkas</div>
 								</a>
 							</div>
 
 							<div class="item-slider-menu">
 								<a href="" class="toggle-slider-menu" data-target="p2pgame">
-									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-p2pgame-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-p2pgame-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 									<div class="text">P2P Game</div>
 								</a>
 							</div>
 							
 							<div class="item-slider-menu">
 								<a href="" class="toggle-slider-menu" data-target="totogame">
-									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-toto-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-toto-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 									<div class="text">Toto</div>
 								</a>
 							</div>
 
 							<div class="item-slider-menu">
 								<a href="" class="toggle-slider-menu" data-target="totoresult">
-									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-totoresult-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+									<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-totoresult-7cc0e5ad07.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 									<div class="text">Toto Result</div>
 								</a>
 							</div>
@@ -2275,7 +2254,7 @@ $template=<<<'HTMLPAGE'
 								<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('SA','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_5dragonslot--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Dragon" alt="h5g_5dragonslot" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_5dragonslot--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Dragon" alt="h5g_5dragonslot" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2286,7 +2265,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('fiveDragonKings','4',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings-7cc0e5ad07.webp" width="240" height="170" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/afb/fiveDragonKings--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Dragon Kings" alt="fiveDragonKings" style="width: 100%; height: auto; aspect-ratio: 1.4117647058824;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings-7cc0e5ad07.webp" width="240" height="170" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/afb/fiveDragonKings--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Dragon Kings" alt="fiveDragonKings" style="width: 100%; height: auto; aspect-ratio: 1.4117647058824;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2297,7 +2276,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('anubis-wrath','7',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/anubis-wrath-7cc0e5ad07.webp" width="360" height="270" srcset="" class="load-when-upfold" alt="Anubis Wrath" alt="anubis-wrath" style="width: 100%; height: auto; aspect-ratio: 1.3333333333333;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/anubis-wrath-7cc0e5ad07.webp" width="360" height="270" srcset="" class="load-when-upfold" alt="Anubis Wrath" alt="anubis-wrath" style="width: 100%; height: auto; aspect-ratio: 1.3333333333333;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2308,7 +2287,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('asgardian-rs','7',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/asgardian-rs-7cc0e5ad07.webp" width="360" height="259" srcset="" class="load-when-upfold" alt="Asgardian Rising" alt="asgardian-rs" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/asgardian-rs-7cc0e5ad07.webp" width="360" height="259" srcset="" class="load-when-upfold" alt="Asgardian Rising" alt="asgardian-rs" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2319,7 +2298,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('vs5aztecgems','5',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems-7cc0e5ad07.webp" width="283" height="204" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs5aztecgems--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Aztec Gems" alt="vs5aztecgems" style="width: 100%; height: auto; aspect-ratio: 1.3872549019608;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems-7cc0e5ad07.webp" width="283" height="204" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs5aztecgems--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Aztec Gems" alt="vs5aztecgems" style="width: 100%; height: auto; aspect-ratio: 1.3872549019608;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2330,7 +2309,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('vs9aztecgemsdx','5',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs9aztecgemsdx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Aztec Gems Deluxe" alt="vs9aztecgemsdx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs9aztecgemsdx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Aztec Gems Deluxe" alt="vs9aztecgemsdx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2341,7 +2320,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('vswaysaztec','5',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysaztec-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Aztec Gems Megaways" alt="vswaysaztec" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysaztec-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Aztec Gems Megaways" alt="vswaysaztec" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2352,7 +2331,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('BQ','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Q Live" alt="h5g_bandarqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Q Live" alt="h5g_bandarqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2363,7 +2342,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('BS','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Sakong" alt="h5g_bandarsakong" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Sakong" alt="h5g_bandarsakong" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2374,7 +2353,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('MM','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bola Tangkas" alt="h5g_bolatangkas" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bola Tangkas" alt="h5g_bolatangkas" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2385,7 +2364,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('vs20fatbook','5',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20fatbook-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Book of Monsters" alt="vs20fatbook" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20fatbook-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Book of Monsters" alt="vs20fatbook" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2396,7 +2375,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('cai-shen-wins','7',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/cai-shen-wins-7cc0e5ad07.webp" width="330" height="225" srcset="" class="load-when-upfold" alt="Cai Shen Wins" alt="cai-shen-wins" style="width: 100%; height: auto; aspect-ratio: 1.4666666666667;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/cai-shen-wins-7cc0e5ad07.webp" width="330" height="225" srcset="" class="load-when-upfold" alt="Cai Shen Wins" alt="cai-shen-wins" style="width: 100%; height: auto; aspect-ratio: 1.4666666666667;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2407,7 +2386,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('SB','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_cashcoveslot--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Cash Cove" alt="h5g_cashcoveslot" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_cashcoveslot--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Cash Cove" alt="h5g_cashcoveslot" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2418,7 +2397,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('cocktail-nite','7',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/cocktail-nite-7cc0e5ad07.webp" width="360" height="270" srcset="" class="load-when-upfold" alt="Cocktail Nights" alt="cocktail-nite" style="width: 100%; height: auto; aspect-ratio: 1.3333333333333;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/cocktail-nite-7cc0e5ad07.webp" width="360" height="270" srcset="" class="load-when-upfold" alt="Cocktail Nights" alt="cocktail-nite" style="width: 100%; height: auto; aspect-ratio: 1.3333333333333;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2429,7 +2408,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('QQ','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Domino 99" alt="h5g_domino99" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Domino 99" alt="h5g_domino99" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2440,7 +2419,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('dragon-hatch','7',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pgsoft/dragon-hatch-7cc0e5ad07.webp" width="360" height="239" srcset="" class="load-when-upfold" alt="Dragon Hatch" alt="dragon-hatch" style="width: 100%; height: auto; aspect-ratio: 1.5062761506276;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pgsoft/dragon-hatch-7cc0e5ad07.webp" width="360" height="239" srcset="" class="load-when-upfold" alt="Dragon Hatch" alt="dragon-hatch" style="width: 100%; height: auto; aspect-ratio: 1.5062761506276;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -2449,7 +2428,7 @@ $template=<<<'HTMLPAGE'
 						</div>
 					</div>
 										<div class="col-12 relative mt-3 pt-3 line-border-top line-border-full">
-												<a class="btn btn-main-dark btn-see-all d-table mb-3" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/all_games-92db7ff589.php">Lihat Semua </a>
+												<a class="btn btn-main-dark btn-see-all d-table mb-3" href="#">Lihat Semua </a>
 					</div>
 					
 		</div>
@@ -2462,9 +2441,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-032fd1f134.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-1_43" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/1_43-cc5fd325af.webp" alt="PG SOFT">
+									<img class="img-fluid d-block prv-1_43" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/1_43-cc5fd325af.webp" alt="PG SOFT">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2476,9 +2455,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-725d9eb050.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-1_41" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/1_41-cc5fd325af.webp" alt="PRAGMATIC PLAY POP">
+									<img class="img-fluid d-block prv-1_41" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/1_41-cc5fd325af.webp" alt="PRAGMATIC PLAY POP">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2490,9 +2469,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-7f87dc6deb.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_58" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_58-cc5fd325af.webp" alt="JILI">
+									<img class="img-fluid d-block prv-2_58" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_58-cc5fd325af.webp" alt="JILI">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2504,9 +2483,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-1b78a239f0.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_47" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_47-cc5fd325af.webp" alt="HABANERO">
+									<img class="img-fluid d-block prv-2_47" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_47-cc5fd325af.webp" alt="HABANERO">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2518,9 +2497,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-a47e20dfaa.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_104" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_104-cc5fd325af.webp" alt="JokerGaming">
+									<img class="img-fluid d-block prv-4_104" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_104-cc5fd325af.webp" alt="JokerGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2532,9 +2511,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-7eca477db7.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_109" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_109-cc5fd325af.webp" alt="MicroGaming">
+									<img class="img-fluid d-block prv-4_109" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_109-cc5fd325af.webp" alt="MicroGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2546,9 +2525,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-30b88a62a0.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_124" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_124-cc5fd325af.webp" alt="Netent">
+									<img class="img-fluid d-block prv-4_124" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_124-cc5fd325af.webp" alt="Netent">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2560,9 +2539,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-2aa835c67e.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_71" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_71-cc5fd325af.webp" alt="PLAYTECH">
+									<img class="img-fluid d-block prv-2_71" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_71-cc5fd325af.webp" alt="PLAYTECH">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2574,9 +2553,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-0459c55b14.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_57" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_57-cc5fd325af.webp" alt="CQ9">
+									<img class="img-fluid d-block prv-2_57" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_57-cc5fd325af.webp" alt="CQ9">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2588,9 +2567,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-72a49baa26.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_128" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_128-cc5fd325af.webp" alt="KAGaming">
+									<img class="img-fluid d-block prv-4_128" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_128-cc5fd325af.webp" alt="KAGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2602,9 +2581,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-4c029afd68.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_156" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_156-cc5fd325af.webp" alt="HacksawGaming">
+									<img class="img-fluid d-block prv-4_156" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_156-cc5fd325af.webp" alt="HacksawGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2616,9 +2595,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-876653cfab.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_126" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_126-cc5fd325af.webp" alt="NoLimitCity">
+									<img class="img-fluid d-block prv-4_126" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_126-cc5fd325af.webp" alt="NoLimitCity">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2630,9 +2609,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-35c6ec53fc.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_125" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_125-cc5fd325af.webp" alt="BigTimeGaming">
+									<img class="img-fluid d-block prv-4_125" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_125-cc5fd325af.webp" alt="BigTimeGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2644,9 +2623,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-aee49453e7.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_66" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_66-cc5fd325af.webp" alt="PNG">
+									<img class="img-fluid d-block prv-2_66" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_66-cc5fd325af.webp" alt="PNG">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2658,9 +2637,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-3edbcc5766.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_54" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_54-cc5fd325af.webp" alt="RED TIGER">
+									<img class="img-fluid d-block prv-2_54" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_54-cc5fd325af.webp" alt="RED TIGER">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2672,9 +2651,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-bcefb0aba8.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_64" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_64-cc5fd325af.webp" alt="SPADE GAMING">
+									<img class="img-fluid d-block prv-2_64" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_64-cc5fd325af.webp" alt="SPADE GAMING">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2686,9 +2665,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-564de77a66.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_140" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/4_140-cc5fd325af.webp" alt="DragoonSoft">
+									<img class="img-fluid d-block prv-4_140" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/4_140-cc5fd325af.webp" alt="DragoonSoft">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2700,9 +2679,9 @@ $template=<<<'HTMLPAGE'
 
 					<div class="col-4 col-menu-item-game mobile_slide_menu_providers">
 						<div class="item_game_menu_wrap ">
-							<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-142d563cf9.php" >
+							<a href="#" >
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_56" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/slot/2_56-cc5fd325af.webp" alt="JDB">
+									<img class="img-fluid d-block prv-2_56" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/slot/2_56-cc5fd325af.webp" alt="JDB">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2714,7 +2693,7 @@ $template=<<<'HTMLPAGE'
 
 										<div class="col-12">
 						<div class="relative mt-3 pt-3 line-border-top line-border-full">
-														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-3ce34376c4.php">Lihat Semua </a>
+														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="#">Lihat Semua </a>
 						</div>
 					</div>
 					
@@ -2731,7 +2710,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_-1','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_94" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/4_94-cc5fd325af.webp" alt="SBO Sports">
+									<img class="img-fluid d-block prv-4_94" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/4_94-cc5fd325af.webp" alt="SBO Sports">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2745,7 +2724,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_44','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_95" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/4_95-cc5fd325af.webp" alt="Saba Sports">
+									<img class="img-fluid d-block prv-4_95" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/4_95-cc5fd325af.webp" alt="Saba Sports">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2759,7 +2738,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_1022','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_97" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/4_97-cc5fd325af.webp" alt="BTiSports">
+									<img class="img-fluid d-block prv-4_97" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/4_97-cc5fd325af.webp" alt="BTiSports">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2773,7 +2752,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('afb88','2',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-1_40" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/1_40-cc5fd325af.webp" alt="AFB SPORT">
+									<img class="img-fluid d-block prv-1_40" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/1_40-cc5fd325af.webp" alt="AFB SPORT">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2787,7 +2766,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('ggcs','6',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-1_42" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/1_42-cc5fd325af.webp" alt="GGCS">
+									<img class="img-fluid d-block prv-1_42" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/1_42-cc5fd325af.webp" alt="GGCS">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2801,7 +2780,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_1086','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_100" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/sport/4_100-cc5fd325af.webp" alt="APGaming">
+									<img class="img-fluid d-block prv-4_100" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/sport/4_100-cc5fd325af.webp" alt="APGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2825,7 +2804,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_20','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_77" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_77-cc5fd325af.webp" alt="EvolutionGaming">
+									<img class="img-fluid d-block prv-4_77" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_77-cc5fd325af.webp" alt="EvolutionGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2839,7 +2818,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('101','5',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-1_41101" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/1_41101-cc5fd325af.webp" alt="PRAGMATIC CASINO">
+									<img class="img-fluid d-block prv-1_41101" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/1_41101-cc5fd325af.webp" alt="PRAGMATIC CASINO">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2853,7 +2832,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_7','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_74" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_74-cc5fd325af.webp" alt="SexyGaming">
+									<img class="img-fluid d-block prv-4_74" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_74-cc5fd325af.webp" alt="SexyGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2867,7 +2846,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_1030','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_85" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_85-cc5fd325af.webp" alt="DreamGaming">
+									<img class="img-fluid d-block prv-4_85" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_85-cc5fd325af.webp" alt="DreamGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2881,7 +2860,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('GSC_63_1223_LOBBY','8',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_63" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/2_63-cc5fd325af.webp" alt="ALLBET">
+									<img class="img-fluid d-block prv-2_63" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/2_63-cc5fd325af.webp" alt="ALLBET">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2895,7 +2874,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_1021','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_82" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_82-cc5fd325af.webp" alt="OGLive">
+									<img class="img-fluid d-block prv-4_82" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_82-cc5fd325af.webp" alt="OGLive">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2909,7 +2888,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_1088','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_92" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_92-cc5fd325af.webp" alt="Ezugi">
+									<img class="img-fluid d-block prv-4_92" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_92-cc5fd325af.webp" alt="Ezugi">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2923,7 +2902,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_12','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_75" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_75-cc5fd325af.webp" alt="IONLC">
+									<img class="img-fluid d-block prv-4_75" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_75-cc5fd325af.webp" alt="IONLC">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2937,7 +2916,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_5','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_73" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_73-cc5fd325af.webp" alt="BigGaming">
+									<img class="img-fluid d-block prv-4_73" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_73-cc5fd325af.webp" alt="BigGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2951,7 +2930,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_0','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_72" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_72-cc5fd325af.webp" alt="WanMei">
+									<img class="img-fluid d-block prv-4_72" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_72-cc5fd325af.webp" alt="WanMei">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2965,7 +2944,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_1019','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_81" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_81-cc5fd325af.webp" alt="YeeBet">
+									<img class="img-fluid d-block prv-4_81" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_81-cc5fd325af.webp" alt="YeeBet">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2979,7 +2958,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_1_1035','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_86" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_86-cc5fd325af.webp" alt="PlayAce">
+									<img class="img-fluid d-block prv-4_86" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_86-cc5fd325af.webp" alt="PlayAce">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -2993,7 +2972,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_1_1064','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_89" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_89-cc5fd325af.webp" alt="ViaCasino">
+									<img class="img-fluid d-block prv-4_89" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_89-cc5fd325af.webp" alt="ViaCasino">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -3007,7 +2986,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_0_1025','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_84" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_84-cc5fd325af.webp" alt="PlayTechLiveCasino">
+									<img class="img-fluid d-block prv-4_84" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_84-cc5fd325af.webp" alt="PlayTechLiveCasino">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -3021,7 +3000,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('RO','3',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-1_33" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/1_33-cc5fd325af.webp" alt="GLXPLAY">
+									<img class="img-fluid d-block prv-1_33" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/1_33-cc5fd325af.webp" alt="GLXPLAY">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -3035,7 +3014,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('GSC_60_lobby','8',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_60" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/2_60-cc5fd325af.webp" alt="WINFINITY">
+									<img class="img-fluid d-block prv-2_60" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/2_60-cc5fd325af.webp" alt="WINFINITY">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -3049,7 +3028,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('568_1_1069','10',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-4_90" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/4_90-cc5fd325af.webp" alt="KissGaming">
+									<img class="img-fluid d-block prv-4_90" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/4_90-cc5fd325af.webp" alt="KissGaming">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -3063,7 +3042,7 @@ $template=<<<'HTMLPAGE'
 						<div class="item_game_menu_wrap ">
 							<a href="#" onclick="play_games('GSC_46_1185_LOBBY','8',true); return false;">
 								<div class="item_game_image">
-									<img class="img-fluid d-block prv-2_46" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/oncharacter/casino/2_46-cc5fd325af.webp" alt="SA GAMING">
+									<img class="img-fluid d-block prv-2_46" src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/oncharacter/casino/2_46-cc5fd325af.webp" alt="SA GAMING">
 								</div>
 																<div class="btn_wrapper">
 									<button type="button" class="btn btn-info btn-sm">Kunjungi</button>
@@ -3075,7 +3054,7 @@ $template=<<<'HTMLPAGE'
 
 										<div class="col-12">
 						<div class="relative mt-3 pt-3 line-border-top line-border-full">
-														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/games-4b0dbbcc6f.php">Lihat Semua </a>
+														<a class="btn btn-main-dark btn-see-all d-table mb-3" href="#">Lihat Semua </a>
 						</div>
 					</div>
 					
@@ -3089,7 +3068,7 @@ $template=<<<'HTMLPAGE'
 								<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('MM','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bolatangkas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bola Tangkas" alt="h5g_bolatangkas" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bolatangkas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bola Tangkas" alt="h5g_bolatangkas" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3100,7 +3079,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('HR','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_happyroyal--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Happy Royal" alt="h5g_happyroyal" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_happyroyal--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Happy Royal" alt="h5g_happyroyal" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3118,7 +3097,7 @@ $template=<<<'HTMLPAGE'
 								<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('AA','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_aduqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Adu Q Live" alt="h5g_aduqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_aduqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Adu Q Live" alt="h5g_aduqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3129,7 +3108,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('BD','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandardadu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Dadu" alt="h5g_bandardadu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandardadu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Dadu" alt="h5g_bandardadu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3140,7 +3119,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('BQ','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Q Live" alt="h5g_bandarqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarqiu--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Q Live" alt="h5g_bandarqiu" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3151,7 +3130,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('BS','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_bandarsakong--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Sakong" alt="h5g_bandarsakong" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_bandarsakong--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Bandar Sakong" alt="h5g_bandarsakong" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3162,7 +3141,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('CB','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_capsabanting--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Capsa Banting" alt="h5g_capsabanting" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_capsabanting--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Capsa Banting" alt="h5g_capsabanting" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3173,7 +3152,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('QQ','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_domino99--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Domino 99" alt="h5g_domino99" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_domino99--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Domino 99" alt="h5g_domino99" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3184,7 +3163,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('GP','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple-7cc0e5ad07.webp" width="360" height="255" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_gaple--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Gaple" alt="h5g_gaple" style="width: 100%; height: auto; aspect-ratio: 1.4117647058824;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple-7cc0e5ad07.webp" width="360" height="255" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_gaple--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Gaple" alt="h5g_gaple" style="width: 100%; height: auto; aspect-ratio: 1.4117647058824;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3195,7 +3174,7 @@ $template=<<<'HTMLPAGE'
 										<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('PK','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_texaspoker--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Texas Poker" alt="h5g_texaspoker" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_texaspoker--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Texas Poker" alt="h5g_texaspoker" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3213,7 +3192,7 @@ $template=<<<'HTMLPAGE'
 								<div class="col-4 mb-3 col-menu-item-game">
 						<div class="item_game_menu_wrap mb-3">
 															<a href="" onclick="play_games('GL','3',true); return false;">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/h5g/h5g_glxtoto--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="GLX Toto" alt="h5g_glxtoto" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto-7cc0e5ad07.webp" width="360" height="259" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/h5g/h5g_glxtoto--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="GLX Toto" alt="h5g_glxtoto" style="width: 100%; height: auto; aspect-ratio: 1.3899613899614;">									<div class="btn_wrapper">
 										<button type="button" class="btn btn-info btn-sm">Mainkan</button>
 									</div>
 								</a>
@@ -3231,8 +3210,8 @@ $template=<<<'HTMLPAGE'
 		
 			<div class="col-6 mb-3 col-menu-item-totoresult">
 				<div class="item_game_menu_wrap mb-3">
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/indo-pool-a.php">
-						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_a--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Indonesia Siang" alt="indonesia_a" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
+					<a href="#">
+						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_a--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Indonesia Siang" alt="indonesia_a" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
 							<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 						</div>
 					</a>
@@ -3241,8 +3220,8 @@ $template=<<<'HTMLPAGE'
 			
 			<div class="col-6 mb-3 col-menu-item-totoresult">
 				<div class="item_game_menu_wrap mb-3">
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/indo-pool-b.php">
-						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/indonesia_b--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Indonesia Sore" alt="indonesia_b" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
+					<a href="#">
+						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/indonesia_b--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Indonesia Sore" alt="indonesia_b" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
 							<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 						</div>
 					</a>
@@ -3251,8 +3230,8 @@ $template=<<<'HTMLPAGE'
 			
 			<div class="col-6 mb-3 col-menu-item-totoresult">
 				<div class="item_game_menu_wrap mb-3">
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/korea-pool.php">
-						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/korea--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Korea" alt="korea" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
+					<a href="#">
+						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/korea-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/korea--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/korea--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/korea--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/korea--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/korea--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Korea" alt="korea" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
 							<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 						</div>
 					</a>
@@ -3261,8 +3240,8 @@ $template=<<<'HTMLPAGE'
 			
 			<div class="col-6 mb-3 col-menu-item-totoresult">
 				<div class="item_game_menu_wrap mb-3">
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/singapore-pool.php">
-						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Singapore" alt="singapore" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
+					<a href="#">
+						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Singapore" alt="singapore" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
 							<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 						</div>
 					</a>
@@ -3271,8 +3250,8 @@ $template=<<<'HTMLPAGE'
 			
 			<div class="col-6 mb-3 col-menu-item-totoresult">
 				<div class="item_game_menu_wrap mb-3">
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/china-pool.php">
-						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/china--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="China" alt="china" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
+					<a href="#">
+						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/china-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/china--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/china--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/china--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/china--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/china--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="China" alt="china" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
 							<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 						</div>
 					</a>
@@ -3281,8 +3260,8 @@ $template=<<<'HTMLPAGE'
 			
 			<div class="col-6 mb-3 col-menu-item-totoresult">
 				<div class="item_game_menu_wrap mb-3">
-					<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/singapore49.php">
-						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/togel/singapore-49--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Singapore 49" alt="singapore-49" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
+					<a href="#">
+						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49-7cc0e5ad07.webp" width="660" height="240" srcset="https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/togel/singapore-49--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Singapore 49" alt="singapore-49" style="width: 100%; height: auto; aspect-ratio: 2.75;">						<div class="btn_wrapper">
 							<button type="button" class="btn btn-info btn-sm">Lihat Hasil</button>
 						</div>
 					</a>
@@ -3299,7 +3278,7 @@ $template=<<<'HTMLPAGE'
 			<section class="jackpot-play line-border line-border-right line-border-w75 line-border-h3">
 				<div class="container">
 					<div class="icon">
-												<img class="img-fluid d-block" src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/content/jackpot-batik.webp">
+												<img class="img-fluid d-block" src="https://batik138-aset.pages.dev/assets/assets/images/content/jackpot-batik.webp">
 					</div>
 					
 					<div class="content">
@@ -3349,7 +3328,7 @@ $template=<<<'HTMLPAGE'
 			<section id="playFunGames" class="fun-demo-games">
 				<div class="container">
 					<div class="title-fun-demo-games line-border line-border-full">
-						<img class="load-when-upfold" src="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 325 234\'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/slot-machine.webp"><h1>Demo Slots</h1>
+						<img class="load-when-upfold" src="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 325 234\'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/slot-machine.webp"><h1>Demo Slots</h1>
 					</div>
 					
 					<div class="search-fun-demo-games">
@@ -3363,8 +3342,8 @@ $template=<<<'HTMLPAGE'
 					
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympmmd-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympmmd-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Gates of Olympus 2500" alt="vs20olympmmd" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympmmd-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympmmd-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Gates of Olympus 2500" alt="vs20olympmmd" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3392,8 +3371,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmgrmgw-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmgrmgw-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Forever Split Megaways" alt="vswaysmgrmgw" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmgrmgw-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmgrmgw-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Forever Split Megaways" alt="vswaysmgrmgw" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3421,8 +3400,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrushx-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrushx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrushx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrushx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrushx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrushx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrushx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Sugar Rush 1000" alt="vs20sugarrushx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrushx-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrushx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrushx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrushx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrushx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrushx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrushx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Sugar Rush 1000" alt="vs20sugarrushx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3450,8 +3429,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympgold-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympgold-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Gates of Olympus Super Scatter" alt="vs20olympgold" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympgold-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympgold-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Gates of Olympus Super Scatter" alt="vs20olympgold" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3479,8 +3458,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayslions-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayslions-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayslions--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayslions--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayslions--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayslions--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayslions--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Lions Megaways" alt="vswayslions" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayslions-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayslions-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayslions--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayslions--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayslions--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayslions--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayslions--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Lions Megaways" alt="vswayslions" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3508,8 +3487,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugrushss-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugrushss-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Sugar Rush Super Scatter" alt="vs20sugrushss" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugrushss-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugrushss-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Sugar Rush Super Scatter" alt="vs20sugrushss" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3537,8 +3516,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayspompmr2-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayspompmr2-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Zombie School Megaways" alt="vswayspompmr2" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayspompmr2-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayspompmr2-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Zombie School Megaways" alt="vswayspompmr2" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3566,8 +3545,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympx-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Gates of Olympus 1000" alt="vs20olympx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympx-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Gates of Olympus 1000" alt="vs20olympx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3595,8 +3574,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysrabbits-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysrabbits-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysrabbits--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysrabbits--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysrabbits--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysrabbits--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysrabbits--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Rabbits Megaways" alt="vswaysrabbits" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysrabbits-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysrabbits-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysrabbits--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysrabbits--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysrabbits--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysrabbits--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysrabbits--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="5 Rabbits Megaways" alt="vswaysrabbits" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3624,8 +3603,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20swbon2500-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20swbon2500-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Sweet Bonanza 2500" alt="vs20swbon2500" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20swbon2500-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20swbon2500-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Sweet Bonanza 2500" alt="vs20swbon2500" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3653,8 +3632,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysdh1000-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysdh1000-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="The Dog House Megaways 1000" alt="vswaysdh1000" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysdh1000-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysdh1000-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="The Dog House Megaways 1000" alt="vswaysdh1000" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3682,8 +3661,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs25pandagold-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs25pandagold-7cc0e5ad07.webp" width="283" height="204" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs25pandagold--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs25pandagold--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs25pandagold--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs25pandagold--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs25pandagold--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Pandas Fortune" alt="vs25pandagold" style="width: 100%; height: auto; aspect-ratio: 1.3872549019608;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs25pandagold-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs25pandagold-7cc0e5ad07.webp" width="283" height="204" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs25pandagold--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs25pandagold--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs25pandagold--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs25pandagold--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs25pandagold--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Pandas Fortune" alt="vs25pandagold" style="width: 100%; height: auto; aspect-ratio: 1.3872549019608;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3711,8 +3690,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrush-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrush-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrush--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrush--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrush--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrush--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20sugarrush--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Sugar Rush" alt="vs20sugarrush" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrush-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrush-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrush--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrush--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrush--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrush--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20sugarrush--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Sugar Rush" alt="vs20sugarrush" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3740,8 +3719,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayspowzeus-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayspowzeus-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayspowzeus--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayspowzeus--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayspowzeus--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayspowzeus--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswayspowzeus--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Power of Merlin Megaways" alt="vswayspowzeus" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayspowzeus-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayspowzeus-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayspowzeus--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayspowzeus--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayspowzeus--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayspowzeus--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswayspowzeus--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Power of Merlin Megaways" alt="vswayspowzeus" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3769,8 +3748,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vsways5lions2-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vsways5lions2-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="5 Lions Megaways 2" alt="vsways5lions2" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vsways5lions2-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vsways5lions2-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="5 Lions Megaways 2" alt="vsways5lions2" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3798,8 +3777,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20rockvegas-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20rockvegas-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20rockvegas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20rockvegas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20rockvegas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20rockvegas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20rockvegas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Rock Vegas" alt="vs20rockvegas" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20rockvegas-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20rockvegas-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20rockvegas--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20rockvegas--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20rockvegas--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20rockvegas--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20rockvegas--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Rock Vegas" alt="vs20rockvegas" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3827,8 +3806,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysdogs-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysdogs-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysdogs--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysdogs--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysdogs--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysdogs--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysdogs--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="The Dog House Megaways" alt="vswaysdogs" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysdogs-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysdogs-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysdogs--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysdogs--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysdogs--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysdogs--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysdogs--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="The Dog House Megaways" alt="vswaysdogs" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3856,8 +3835,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs15eastfury-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs15eastfury-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Eastern Fury" alt="vs15eastfury" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs15eastfury-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs15eastfury-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Eastern Fury" alt="vs15eastfury" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3885,8 +3864,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympuspot-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympuspot-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Helios - Triple Sun" alt="vs20olympuspot" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympuspot-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympuspot-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Helios - Triple Sun" alt="vs20olympuspot" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3914,8 +3893,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs10freya-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs10freya-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Freya 1000" alt="vs10freya" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs10freya-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs10freya-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Freya 1000" alt="vs10freya" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3943,8 +3922,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs10swtbnz-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs10swtbnz-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Sweet Bonanza POP" alt="vs10swtbnz" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs10swtbnz-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs10swtbnz-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Sweet Bonanza POP" alt="vs10swtbnz" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -3972,8 +3951,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20coven-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20coven-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Coven Rising" alt="vs20coven" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20coven-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20coven-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Coven Rising" alt="vs20coven" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -4001,8 +3980,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs10bbveg1000-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs10bbveg1000-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Big Bass Vegas 1000" alt="vs10bbveg1000" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs10bbveg1000-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs10bbveg1000-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Big Bass Vegas 1000" alt="vs10bbveg1000" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -4030,8 +4009,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmahwblck-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmahwblck-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Mahjong Wins 3 - Black Scatter" alt="vswaysmahwblck" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmahwblck-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmahwblck-7cc0e5ad07.webp" width="325" height="234" srcset="" class="load-when-upfold" alt="Mahjong Wins 3 - Black Scatter" alt="vswaysmahwblck" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -4059,8 +4038,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20starlightx-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20starlightx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20starlightx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20starlightx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20starlightx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20starlightx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20starlightx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Starlight Princess 1000" alt="vs20starlightx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20starlightx-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20starlightx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20starlightx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20starlightx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20starlightx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20starlightx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20starlightx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Starlight Princess 1000" alt="vs20starlightx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -4088,8 +4067,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympgate-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympgate-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympgate--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympgate--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympgate--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympgate--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20olympgate--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Gates of Olympus" alt="vs20olympgate" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympgate-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympgate-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympgate--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympgate--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympgate--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympgate--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20olympgate--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Gates of Olympus" alt="vs20olympgate" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -4117,8 +4096,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20fruitswx-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20fruitswx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20fruitswx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20fruitswx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20fruitswx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20fruitswx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vs20fruitswx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Sweet Bonanza 1000" alt="vs20fruitswx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20fruitswx-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20fruitswx-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20fruitswx--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20fruitswx--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20fruitswx--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20fruitswx--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vs20fruitswx--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Sweet Bonanza 1000" alt="vs20fruitswx" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -4146,8 +4125,8 @@ $template=<<<'HTMLPAGE'
 
 		<div class="item-fun-demo-game">
 			<div class="inner-fun-demo-game">
-				<div class="content" data-bg="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmahwin2-7cc0e5ad07.webp">
-					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmahwin2-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmahwin2--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmahwin2--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmahwin2--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmahwin2--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/imports/img/game/pragm/vswaysmahwin2--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Mahjong Wins 2" alt="vswaysmahwin2" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
+				<div class="content" data-bg="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmahwin2-7cc0e5ad07.webp">
+					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmahwin2-7cc0e5ad07.webp" width="325" height="234" srcset="https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmahwin2--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmahwin2--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmahwin2--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmahwin2--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/imports/img/game/pragm/vswaysmahwin2--xxlsize-7cc0e5ad07.webp 1320w" class="load-when-upfold" alt="Mahjong Wins 2" alt="vswaysmahwin2" style="width: 100%; height: auto; aspect-ratio: 1.3888888888889;">				</div>
 
 									
 						<div class="rtp-game">
@@ -4207,7 +4186,7 @@ $template=<<<'HTMLPAGE'
 						<div class="sub-page-aside">
 							<div class="sub-page-aside-title">
 								<div class="spat-icon">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-call-center-7cc0e5ad07.webp" width="80" height="80" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-call-center--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-call-center--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-call-center--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-call-center--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-call-center--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-call-center" style="width: 100%; height: auto; aspect-ratio: 1;">								</div>
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-call-center-7cc0e5ad07.webp" width="80" height="80" srcset="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-call-center--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-call-center--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-call-center--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-call-center--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-call-center--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-call-center" style="width: 100%; height: auto; aspect-ratio: 1;">								</div>
 								<div class="spat-main">Pelayanan</div>
 								<div class="spat-desc">Keunggulan Pelayanan</div>
 							</div>
@@ -4299,7 +4278,7 @@ $template=<<<'HTMLPAGE'
 						<div class="sub-page-aside">
 							<div class="sub-page-aside-title">
 								<div class="spat-icon">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-poker-chip-7cc0e5ad07.webp" width="80" height="80" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-poker-chip--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-poker-chip--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-poker-chip--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-poker-chip--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-poker-chip--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-poker-chip" style="width: 100%; height: auto; aspect-ratio: 1;">								</div>
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-poker-chip-7cc0e5ad07.webp" width="80" height="80" srcset="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-poker-chip--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-poker-chip--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-poker-chip--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-poker-chip--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-poker-chip--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-poker-chip" style="width: 100%; height: auto; aspect-ratio: 1;">								</div>
 								<div class="spat-main">Fitur Permainan</div>
 								<div class="spat-desc">Keunggulan Bermain Disini</div>
 							</div>
@@ -4330,7 +4309,7 @@ $template=<<<'HTMLPAGE'
 						<div class="sub-page-aside">
 							<div class="sub-page-aside-title">
 								<div class="spat-icon">
-									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-information-7cc0e5ad07.webp" width="80" height="80" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-information--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-information--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-information--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-information--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-information--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-information" style="width: 100%; height: auto; aspect-ratio: 1;">								</div>
+									<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-information-7cc0e5ad07.webp" width="80" height="80" srcset="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-information--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-information--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-information--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-information--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-information--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-information" style="width: 100%; height: auto; aspect-ratio: 1;">								</div>
 								<div class="spat-main">Bantuan & Dukungan</div>
 								<div class="spat-desc">Dukungan Online 24/7</div>
 							</div>
@@ -4386,14 +4365,14 @@ $template=<<<'HTMLPAGE'
 					<div class="simple-card-title-image">
 						<div class="scti-item scti-contentcenter play-responsibly">
 							<div class="scti-title my-2">Tanggung Jawab Bermain</div>
-							<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-responsible-game-7cc0e5ad07.webp" width="291" height="32" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-responsible-game--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-responsible-game--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-responsible-game--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-responsible-game--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-responsible-game--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-responsible-game" style="width: 100%; height: auto; aspect-ratio: 9.09375;">						</div>
+							<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-responsible-game-7cc0e5ad07.webp" width="291" height="32" srcset="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-responsible-game--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-responsible-game--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-responsible-game--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-responsible-game--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-responsible-game--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-responsible-game" style="width: 100%; height: auto; aspect-ratio: 9.09375;">						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-12">
 					<div class="simple-card-title-image">
 						<div class="scti-item scti-contentend play-browser">
 							<div class="scti-title my-2">Browser Yang Didukung</div>
-							<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-browsers-7cc0e5ad07.webp" width="200" height="62" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-browsers--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-browsers--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-browsers--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-browsers--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/icon-browsers--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-browsers" style="width: 100%; height: auto; aspect-ratio: 3.2258064516129;">						</div>
+							<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-browsers-7cc0e5ad07.webp" width="200" height="62" srcset="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-browsers--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-browsers--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-browsers--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-browsers--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/icon/icon-browsers--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="icon-browsers" style="width: 100%; height: auto; aspect-ratio: 3.2258064516129;">						</div>
 					</div>
 				</div>
 			</div>
@@ -4408,63 +4387,63 @@ $template=<<<'HTMLPAGE'
 						<!--<div class="logo-group-title">Platform Penyedia Layanan</div>-->
 						<div class="logo-group-content">
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/allbet-7cc0e5ad07.webp" width="69" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/allbet--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/allbet--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/allbet--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/allbet--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/allbet--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="allbet" style="width: 100%; height: auto; aspect-ratio: 1.3269230769231;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/allbet-7cc0e5ad07.webp" width="69" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/allbet--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/allbet--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/allbet--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/allbet--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/allbet--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="allbet" style="width: 100%; height: auto; aspect-ratio: 1.3269230769231;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cmd368-7cc0e5ad07.webp" width="74" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cmd368--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cmd368--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cmd368--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cmd368--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cmd368--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="cmd368" style="width: 100%; height: auto; aspect-ratio: 1.4230769230769;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cmd368-7cc0e5ad07.webp" width="74" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cmd368--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cmd368--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cmd368--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cmd368--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cmd368--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="cmd368" style="width: 100%; height: auto; aspect-ratio: 1.4230769230769;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet_casing-7cc0e5ad07.webp" width="71" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet_casing--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet_casing--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet_casing--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet_casing--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet_casing--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sbobet_casing" style="width: 100%; height: auto; aspect-ratio: 1.3653846153846;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet_casing-7cc0e5ad07.webp" width="71" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet_casing--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet_casing--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet_casing--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet_casing--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet_casing--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sbobet_casing" style="width: 100%; height: auto; aspect-ratio: 1.3653846153846;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cq9-7cc0e5ad07.webp" width="75" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cq9--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cq9--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cq9--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cq9--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/cq9--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="cq9" style="width: 100%; height: auto; aspect-ratio: 1.4423076923077;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cq9-7cc0e5ad07.webp" width="75" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cq9--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cq9--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cq9--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cq9--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/cq9--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="cq9" style="width: 100%; height: auto; aspect-ratio: 1.4423076923077;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/evolution-7cc0e5ad07.webp" width="102" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/evolution--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/evolution--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/evolution--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/evolution--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/evolution--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="evolution" style="width: 100%; height: auto; aspect-ratio: 1.9615384615385;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/evolution-7cc0e5ad07.webp" width="102" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/evolution--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/evolution--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/evolution--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/evolution--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/evolution--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="evolution" style="width: 100%; height: auto; aspect-ratio: 1.9615384615385;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/fastspin-7cc0e5ad07.webp" width="109" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/fastspin--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/fastspin--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/fastspin--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/fastspin--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/fastspin--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="fastspin" style="width: 100%; height: auto; aspect-ratio: 2.0961538461538;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/fastspin-7cc0e5ad07.webp" width="109" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/fastspin--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/fastspin--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/fastspin--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/fastspin--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/fastspin--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="fastspin" style="width: 100%; height: auto; aspect-ratio: 2.0961538461538;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/gemini-7cc0e5ad07.webp" width="109" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/gemini--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/gemini--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/gemini--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/gemini--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/gemini--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="gemini" style="width: 100%; height: auto; aspect-ratio: 2.0961538461538;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/gemini-7cc0e5ad07.webp" width="109" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/gemini--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/gemini--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/gemini--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/gemini--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/gemini--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="gemini" style="width: 100%; height: auto; aspect-ratio: 2.0961538461538;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/habanero-7cc0e5ad07.webp" width="120" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/habanero--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/habanero--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/habanero--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/habanero--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/habanero--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="habanero" style="width: 100%; height: auto; aspect-ratio: 2.3076923076923;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/habanero-7cc0e5ad07.webp" width="120" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/habanero--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/habanero--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/habanero--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/habanero--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/habanero--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="habanero" style="width: 100%; height: auto; aspect-ratio: 2.3076923076923;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ioncasino-7cc0e5ad07.webp" width="117" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ioncasino--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ioncasino--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ioncasino--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ioncasino--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ioncasino--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="ioncasino" style="width: 100%; height: auto; aspect-ratio: 2.25;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ioncasino-7cc0e5ad07.webp" width="117" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ioncasino--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ioncasino--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ioncasino--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ioncasino--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ioncasino--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="ioncasino" style="width: 100%; height: auto; aspect-ratio: 2.25;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jili-7cc0e5ad07.webp" width="74" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jili--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jili--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jili--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jili--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jili--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="jili" style="width: 100%; height: auto; aspect-ratio: 1.4230769230769;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jili-7cc0e5ad07.webp" width="74" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jili--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jili--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jili--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jili--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jili--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="jili" style="width: 100%; height: auto; aspect-ratio: 1.4230769230769;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sboslot-7cc0e5ad07.webp" width="114" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sboslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sboslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sboslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sboslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sboslot--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sboslot" style="width: 100%; height: auto; aspect-ratio: 2.1923076923077;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sboslot-7cc0e5ad07.webp" width="114" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sboslot--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sboslot--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sboslot--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sboslot--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sboslot--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sboslot" style="width: 100%; height: auto; aspect-ratio: 2.1923076923077;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jokergaming-7cc0e5ad07.webp" width="85" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jokergaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jokergaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jokergaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jokergaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/jokergaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="jokergaming" style="width: 100%; height: auto; aspect-ratio: 1.6346153846154;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jokergaming-7cc0e5ad07.webp" width="85" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jokergaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jokergaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jokergaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jokergaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/jokergaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="jokergaming" style="width: 100%; height: auto; aspect-ratio: 1.6346153846154;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/live22-7cc0e5ad07.webp" width="79" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/live22--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/live22--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/live22--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/live22--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/live22--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="live22" style="width: 100%; height: auto; aspect-ratio: 1.5192307692308;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/live22-7cc0e5ad07.webp" width="79" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/live22--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/live22--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/live22--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/live22--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/live22--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="live22" style="width: 100%; height: auto; aspect-ratio: 1.5192307692308;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming-7cc0e5ad07.webp" width="126" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="microgaming" style="width: 100%; height: auto; aspect-ratio: 2.4230769230769;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming-7cc0e5ad07.webp" width="126" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="microgaming" style="width: 100%; height: auto; aspect-ratio: 2.4230769230769;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/netent-7cc0e5ad07.webp" width="93" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/netent--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/netent--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/netent--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/netent--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/netent--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="netent" style="width: 100%; height: auto; aspect-ratio: 1.7884615384615;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/netent-7cc0e5ad07.webp" width="93" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/netent--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/netent--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/netent--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/netent--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/netent--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="netent" style="width: 100%; height: auto; aspect-ratio: 1.7884615384615;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/nolimit-7cc0e5ad07.webp" width="94" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/nolimit--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/nolimit--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/nolimit--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/nolimit--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/nolimit--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="nolimit" style="width: 100%; height: auto; aspect-ratio: 1.8076923076923;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/nolimit-7cc0e5ad07.webp" width="94" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/nolimit--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/nolimit--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/nolimit--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/nolimit--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/nolimit--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="nolimit" style="width: 100%; height: auto; aspect-ratio: 1.8076923076923;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/opusplus-7cc0e5ad07.webp" width="82" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/opusplus--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/opusplus--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/opusplus--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/opusplus--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/opusplus--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="opusplus" style="width: 100%; height: auto; aspect-ratio: 1.5769230769231;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/opusplus-7cc0e5ad07.webp" width="82" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/opusplus--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/opusplus--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/opusplus--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/opusplus--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/opusplus--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="opusplus" style="width: 100%; height: auto; aspect-ratio: 1.5769230769231;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pg-7cc0e5ad07.webp" width="66" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pg--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pg--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pg--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pg--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pg--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="pg" style="width: 100%; height: auto; aspect-ratio: 1.2692307692308;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pg-7cc0e5ad07.webp" width="66" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pg--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pg--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pg--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pg--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pg--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="pg" style="width: 100%; height: auto; aspect-ratio: 1.2692307692308;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/playstar-7cc0e5ad07.webp" width="102" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/playstar--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/playstar--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/playstar--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/playstar--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/playstar--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="playstar" style="width: 100%; height: auto; aspect-ratio: 1.9615384615385;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/playstar-7cc0e5ad07.webp" width="102" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/playstar--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/playstar--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/playstar--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/playstar--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/playstar--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="playstar" style="width: 100%; height: auto; aspect-ratio: 1.9615384615385;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmatic-7cc0e5ad07.webp" width="104" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmatic--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmatic--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmatic--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmatic--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmatic--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="pragmatic" style="width: 100%; height: auto; aspect-ratio: 2;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmatic-7cc0e5ad07.webp" width="104" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmatic--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmatic--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmatic--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmatic--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmatic--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="pragmatic" style="width: 100%; height: auto; aspect-ratio: 2;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sabasports-7cc0e5ad07.webp" width="75" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sabasports--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sabasports--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sabasports--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sabasports--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sabasports--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sabasports" style="width: 100%; height: auto; aspect-ratio: 1.4423076923077;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sabasports-7cc0e5ad07.webp" width="75" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sabasports--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sabasports--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sabasports--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sabasports--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sabasports--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sabasports" style="width: 100%; height: auto; aspect-ratio: 1.4423076923077;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sagaming-7cc0e5ad07.webp" width="89" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sagaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sagaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sagaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sagaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sagaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sagaming" style="width: 100%; height: auto; aspect-ratio: 1.7115384615385;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sagaming-7cc0e5ad07.webp" width="89" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sagaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sagaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sagaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sagaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sagaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sagaming" style="width: 100%; height: auto; aspect-ratio: 1.7115384615385;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet-7cc0e5ad07.webp" width="91" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/sbobet--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sbobet" style="width: 100%; height: auto; aspect-ratio: 1.75;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet-7cc0e5ad07.webp" width="91" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/sbobet--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="sbobet" style="width: 100%; height: auto; aspect-ratio: 1.75;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/softgaming-7cc0e5ad07.webp" width="79" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/softgaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/softgaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/softgaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/softgaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/softgaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="softgaming" style="width: 100%; height: auto; aspect-ratio: 1.5192307692308;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/softgaming-7cc0e5ad07.webp" width="79" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/softgaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/softgaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/softgaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/softgaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/softgaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="softgaming" style="width: 100%; height: auto; aspect-ratio: 1.5192307692308;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/spadegaming-7cc0e5ad07.webp" width="120" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/spadegaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/spadegaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/spadegaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/spadegaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/spadegaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="spadegaming" style="width: 100%; height: auto; aspect-ratio: 2.3076923076923;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/spadegaming-7cc0e5ad07.webp" width="120" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/spadegaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/spadegaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/spadegaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/spadegaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/spadegaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="spadegaming" style="width: 100%; height: auto; aspect-ratio: 2.3076923076923;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/tfgaming-7cc0e5ad07.webp" width="100" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/tfgaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/tfgaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/tfgaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/tfgaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/tfgaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="tfgaming" style="width: 100%; height: auto; aspect-ratio: 1.9230769230769;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/tfgaming-7cc0e5ad07.webp" width="100" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/tfgaming--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/tfgaming--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/tfgaming--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/tfgaming--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/tfgaming--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="tfgaming" style="width: 100%; height: auto; aspect-ratio: 1.9230769230769;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming_livecasino-7cc0e5ad07.webp" width="102" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming_livecasino--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming_livecasino--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming_livecasino--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming_livecasino--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/microgaming_livecasino--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="microgaming_livecasino" style="width: 100%; height: auto; aspect-ratio: 1.9615384615385;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming_livecasino-7cc0e5ad07.webp" width="102" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming_livecasino--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming_livecasino--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming_livecasino--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming_livecasino--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/microgaming_livecasino--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="microgaming_livecasino" style="width: 100%; height: auto; aspect-ratio: 1.9615384615385;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmaticplay_livecasino-7cc0e5ad07.webp" width="111" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmaticplay_livecasino--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmaticplay_livecasino--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmaticplay_livecasino--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmaticplay_livecasino--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/pragmaticplay_livecasino--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="pragmaticplay_livecasino" style="width: 100%; height: auto; aspect-ratio: 2.1346153846154;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmaticplay_livecasino-7cc0e5ad07.webp" width="111" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmaticplay_livecasino--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmaticplay_livecasino--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmaticplay_livecasino--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmaticplay_livecasino--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/pragmaticplay_livecasino--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="pragmaticplay_livecasino" style="width: 100%; height: auto; aspect-ratio: 2.1346153846154;">							</div>
 							<div class="lggr-item">
-								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ws168-7cc0e5ad07.webp" width="71" height="52" srcset="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ws168--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ws168--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ws168--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ws168--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/gameproviders/ws168--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="ws168" style="width: 100%; height: auto; aspect-ratio: 1.3653846153846;">							</div>
+								<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E" data-src="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ws168-7cc0e5ad07.webp" width="71" height="52" srcset="https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ws168--smsize-7cc0e5ad07.webp 480w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ws168--mdsize-7cc0e5ad07.webp 767w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ws168--lgsize-7cc0e5ad07.webp 991w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ws168--xlsize-7cc0e5ad07.webp 1199w, https://batik138-aset.pages.dev/assets/assets/images/gameproviders/ws168--xxlsize-7cc0e5ad07.webp 1320w" class="img-fluid d-block load-when-upfold" alt="ws168" style="width: 100%; height: auto; aspect-ratio: 1.3653846153846;">							</div>
 						</div>
 					</div>
 					
@@ -4477,7 +4456,7 @@ $template=<<<'HTMLPAGE'
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-						<div class="copyright-footer-wrap py-3">&copy;2024-2026 batik138 | <a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/privacy-policy.php">Kebijakan Privasi</a></div>
+						<div class="copyright-footer-wrap py-3">&copy;2024-2026 batik138 | <a href="#">Kebijakan Privasi</a></div>
 					</div>
 			</div>
 		</div>
@@ -4489,37 +4468,37 @@ $template=<<<'HTMLPAGE'
 	<div class="main-bottom-menu">
 		<ul class="nav-bottom-menu">
 			<li class="nav-item-bottom">
-				<a href="https://batik138masuk.com/" class="active">
-					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-home.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+				<a href="%%ORIGIN_SLASH%%" class="active">
+					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-home.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 					<div class="text">Home</div>
 				</a>
 			</li>
 			
 			<li class="nav-item-bottom">
-				<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/register.php" class="">
-					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-register.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+				<a href="%%CTA_DAFTAR%%" class="">
+					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-register.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 					<div class="text">Daftar</div>
 				</a>
 			</li>
 			
 			<li class="nav-item-bottom center-item">
-				<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/login.php" class="">
-					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-login.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+				<a href="%%CTA_LOGIN%%" class="">
+					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-login.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 					<div class="text">Masuk</div>
 				</a>
 			</li>
 			
 			<li class="nav-item-bottom">
 
-				<a href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/promotion.php" class="">
-					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-promotions.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+				<a href="#" class="">
+					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-promotions.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 					<div class="text">Promotion</div>
 				</a>
 			</li>
 			
 			<li class="nav-item-bottom">
 				<a href="javascript:void(0)" onclick="showChatBox()">
-					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/images/icon/menu-contact-us.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
+					<div class="ico"><img class="load-when-upfold" data-src="https://batik138-aset.pages.dev/assets/assets/images/icon/menu-contact-us.webp" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 325 234'%3E%3C/svg%3E"></div>
 					<div class="text">Contact Us</div>
 				</a>
 				<!--
@@ -4629,19 +4608,19 @@ src="https://www.facebook.com/tr?id=1033238218706727&ev=PageView&noscript=1"
 		<!-- load js -->
 		<!-- GLOBAL: loads on every pages -->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/jquery/jquery.min.js" as="script">
-<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/jquery/jquery.min.js"></script>
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/jquery/jquery.min.js" as="script">
+<script src="https://batik138-aset.pages.dev/assets/libs/jquery/jquery.min.js"></script>
 
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/bootstrap/js/bootstrap.bundle.min.js" as="script">
-<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/bootstrap/js/bootstrap.bundle.min.js" as="script">
+<script src="https://batik138-aset.pages.dev/assets/libs/bootstrap/js/bootstrap.bundle.min.js" defer></script>
 
-	<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/jquery-toast/js/jquery.toast.js" as="script">
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/jquery-toast/js/jquery.toast.js" defer></script>
-		<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/daterangepicker/js/moment.min.js" as="script">
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/daterangepicker/js/moment.min.js" defer></script>
+	<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/jquery-toast/js/jquery.toast.js" as="script">
+	<script src="https://batik138-aset.pages.dev/assets/libs/jquery-toast/js/jquery.toast.js" defer></script>
+		<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/daterangepicker/js/moment.min.js" as="script">
+	<script src="https://batik138-aset.pages.dev/assets/libs/daterangepicker/js/moment.min.js" defer></script>
 	
-	<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/daterangepicker/js/daterangepicker.js" as="script">
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/daterangepicker/js/daterangepicker.js" defer></script>
+	<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/daterangepicker/js/daterangepicker.js" as="script">
+	<script src="https://batik138-aset.pages.dev/assets/libs/daterangepicker/js/daterangepicker.js" defer></script>
 		<!--<link rel="preload" href="https://www.google.com/recaptcha/api.js?render=" as="script">
 	<script src="https://www.google.com/recaptcha/api.js?render="></script>-->
 	
@@ -4650,7 +4629,7 @@ var callpost;
 $ = jQuery.noConflict();
 (function($) {
 //load vars here
-HOMEPAGE_URL = "https://batik138masuk.com/";
+HOMEPAGE_URL = "%%ORIGIN_SLASH%%";
 DOCUMENT_ROOT = "/home/%%SITE%%/%%SITE%%/";
 FILE_NAME = "index.php";
 GRECAP_SITEKEY = "6Ld6iM4qAAAAAIBEfs7CIlctLsyOfXOvnvzOwWqQ";
@@ -4684,7 +4663,7 @@ $('button[type="submit"][disabled=""]').each(function() {
 
 $(document).ready(function() {
 	//alert("hello i am here");
-	//document.body.innerHTML.replace('%%this_domain%%', 'https://batik138masuk.com/');
+	//document.body.innerHTML.replace('%%this_domain%%', '%%ORIGIN_SLASH%%');
 	
 	});
 })( jQuery );
@@ -4797,16 +4776,16 @@ function randBalanced(min, max) {
 })( jQuery );
 </script>
 <!-- Scrollbar core JS -->
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/scroll-bar/jquery.mCustomScrollbar.concat.min.js" as="script">
-<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/scroll-bar/jquery.mCustomScrollbar.concat.min.js" defer></script>
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/scroll-bar/jquery.mCustomScrollbar.concat.min.js" as="script">
+<script src="https://batik138-aset.pages.dev/assets/libs/scroll-bar/jquery.mCustomScrollbar.concat.min.js" defer></script>
 <!-- HOME: loads on index.php -->
 <!-- OWL Carousel 2 core JS -->
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/owl-carousel/owl.carousel.min.js" as="script">
-<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/owl-carousel/owl.carousel.min.js"></script>
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/owl-carousel/owl.carousel.min.js" as="script">
+<script src="https://batik138-aset.pages.dev/assets/libs/owl-carousel/owl.carousel.min.js"></script>
 
 <!-- Odometer core JS -->
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/odometer/odometer.min.js" as="script">
-<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/odometer/odometer.min.js"></script>
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/odometer/odometer.min.js" as="script">
+<script src="https://batik138-aset.pages.dev/assets/libs/odometer/odometer.min.js"></script>
 <script>
 $ = jQuery.noConflict();
 (function($) {
@@ -4814,28 +4793,28 @@ $ = jQuery.noConflict();
 	//example
 	//BODY_CLASS_PAGE = 'page-index';
 	GRECAP_SITEKEY = '6Ld6iM4qAAAAAIBEfs7CIlctLsyOfXOvnvzOwWqQ';
-	HOMEPAGE_URL = 'https://batik138masuk.com/';
+	HOMEPAGE_URL = '%%ORIGIN_SLASH%%';
 })(jQuery);
 </script>
-<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-d7c57f2c4f.js" as="script">
-<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-d7c57f2c4f.js" defer></script>
-	<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme_pid_home-055e63fa3b.js" as="script">
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme_pid_home-055e63fa3b.js" defer></script>
-			<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-FORMINBODY-c58056a0e3.js" as="script">
-		<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-FORMINBODY-c58056a0e3.js" defer></script>
-				<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-DATERANGEPICKER-c58056a0e3.js" as="script">
-		<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-DATERANGEPICKER-c58056a0e3.js" defer></script>
-				<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-TOGEL-c58056a0e3.js" as="script">
-		<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-TOGEL-c58056a0e3.js" defer></script>
-			<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-FORMVALIDATION-c58056a0e3.js" as="script">
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/theme-FORMVALIDATION-c58056a0e3.js" defer></script>
-		<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/sweetalert/sweetalert.min.js" as="script">
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/sweetalert/sweetalert.min.js" defer></script>
-		<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/3d-slider/modernizr.custom.53451.js" as="script">
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/3d-slider/modernizr.custom.53451.js"></script>
+<link rel="preload" href="https://batik138-aset.pages.dev/assets/assets/js/theme-d7c57f2c4f.js" as="script">
+<script src="https://batik138-aset.pages.dev/assets/assets/js/theme-d7c57f2c4f.js" defer></script>
+	<link rel="preload" href="https://batik138-aset.pages.dev/assets/assets/js/theme_pid_home-055e63fa3b.js" as="script">
+	<script src="https://batik138-aset.pages.dev/assets/assets/js/theme_pid_home-055e63fa3b.js" defer></script>
+			<link rel="preload" href="https://batik138-aset.pages.dev/assets/assets/js/theme-FORMINBODY-c58056a0e3.js" as="script">
+		<script src="https://batik138-aset.pages.dev/assets/assets/js/theme-FORMINBODY-c58056a0e3.js" defer></script>
+				<link rel="preload" href="https://batik138-aset.pages.dev/assets/assets/js/theme-DATERANGEPICKER-c58056a0e3.js" as="script">
+		<script src="https://batik138-aset.pages.dev/assets/assets/js/theme-DATERANGEPICKER-c58056a0e3.js" defer></script>
+				<link rel="preload" href="https://batik138-aset.pages.dev/assets/assets/js/theme-TOGEL-c58056a0e3.js" as="script">
+		<script src="https://batik138-aset.pages.dev/assets/assets/js/theme-TOGEL-c58056a0e3.js" defer></script>
+			<link rel="preload" href="https://batik138-aset.pages.dev/assets/assets/js/theme-FORMVALIDATION-c58056a0e3.js" as="script">
+	<script src="https://batik138-aset.pages.dev/assets/assets/js/theme-FORMVALIDATION-c58056a0e3.js" defer></script>
+		<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/sweetalert/sweetalert.min.js" as="script">
+	<script src="https://batik138-aset.pages.dev/assets/libs/sweetalert/sweetalert.min.js" defer></script>
+		<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/3d-slider/modernizr.custom.53451.js" as="script">
+	<script src="https://batik138-aset.pages.dev/assets/libs/3d-slider/modernizr.custom.53451.js"></script>
 	
-	<link rel="preload" href="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/3d-slider/jquery.gallery.js" as="script">
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/libs/3d-slider/jquery.gallery.js" defer></script>
+	<link rel="preload" href="https://batik138-aset.pages.dev/assets/libs/3d-slider/jquery.gallery.js" as="script">
+	<script src="https://batik138-aset.pages.dev/assets/libs/3d-slider/jquery.gallery.js" defer></script>
 			
 		
 				
@@ -4926,14 +4905,14 @@ $ = jQuery.noConflict();
 			</div>
 		</noscript>
 		
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/tombro-bankverify-7cc0e5ad07.js"></script>		<!-- TOMBRO_KD_WIDGET_INJECT_V1: GLX AI Assistant chat widget (gated by DB settings.ai_chat_enabled) -->
-	<script>window.KAKDOBLEH_PROXY = "https://batik138-aset.pages.dev/mirror/batik138masuk.com/chat_proxy";</script>
-	<script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/chat_widget-ea827bbec4.js" defer></script>
-		<!-- TOMBRO_PRESENCE_V1 --><script src="https://batik138-aset.pages.dev/mirror/batik138masuk.com/bunker/assets/js/tombro_game_presence-7deacd8a88.js" defer></script>
+	<script src="https://batik138-aset.pages.dev/assets/assets/js/tombro-bankverify-7cc0e5ad07.js"></script>		<!-- TOMBRO_KD_WIDGET_INJECT_V1: GLX AI Assistant chat widget (gated by DB settings.ai_chat_enabled) -->
+	<script>window.KAKDOBLEH_PROXY = "#";</script>
+	<script src="#" defer></script>
+		<!-- TOMBRO_PRESENCE_V1 --><script src="https://batik138-aset.pages.dev/assets/assets/js/tombro_game_presence-7deacd8a88.js" defer></script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"8db4155f540b4466b5d1e2c09d560bea","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
 HTMLPAGE;
 $alt=static fn($lang='')=>$amp===''?'':'<link rel="alternate"'.($lang!==''?' hreflang="'.$lang.'"':'').' href="'.$h($amp).'">';
-$tokens=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h($origin.'/'),'%%CANONICAL%%'=>$h($canonical),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($image),'%%CTA_DAFTAR%%'=>$h($daftar),'%%CTA_LOGIN%%'=>$h($login),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default')];echo strtr($template,$tokens);
+$tokens=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h($origin.'/'),'%%CANONICAL%%'=>$h($canonical),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($image),'%%BANNER_BLOCK%%'=>$image!==''?'<section class="main-slider line-border line-border-left line-border-w75 line-border-h3 line-border-zi2 extra-mb-mobile" style="width:100%;height:auto"><div id="main_slider" class="owl-carousel owl-pagination-true sa_owl_theme"><div class="item"><img src="'.$h($image).'" class="img-fluid d-block w-100" fetchpriority="high" alt="'.$h($site).'" style="width:100%;height:auto"></div></div></section>':'','%%CTA_DAFTAR%%'=>$h($daftar),'%%CTA_LOGIN%%'=>$h($login),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default')];echo strtr($template,$tokens);
 ?>
