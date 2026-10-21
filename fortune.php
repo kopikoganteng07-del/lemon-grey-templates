@@ -3277,7 +3277,7 @@ $template=<<<'HTMLPAGE'
 			<section class="jackpot-play line-border line-border-right line-border-w75 line-border-h3">
 				<div class="container">
 					<div class="icon">
-												<img class="img-fluid d-block" src="https://batik138-aset.pages.dev/assets/assets/images/content/jackpot-batik.webp">
+						<img class="img-fluid d-block" src="%%LOGO%%" alt="%%SITE%%">
 					</div>
 					
 					<div class="content">
