@@ -84,7 +84,6 @@ $template=<<<'HTMLPAGE'
 
 
 
-<link href="https://batik138-aset.pages.dev/assets/assets/css/theme-adaptedbrand-85f6114aa3.css" rel="stylesheet">
 
 
 
