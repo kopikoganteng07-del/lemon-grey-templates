@@ -3614,6 +3614,6 @@ $tokens=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$co
 '%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'',
 '%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID%%'=>$alt('id'),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default')];
 $out=strtr($template,$tokens);
-$out=preg_replace_callback('~href="'.preg_quote($h($cta),'~').'"([^>]*)>(\\s*)(DAFTAR(?: AKUN| DISINI)?|LOGIN(?: DISINI)?)~i',static function($m)use($h,$daftar,$login){$u=str_starts_with(strtoupper(trim($m[3])),'LOGIN')?$login:$daftar;return 'href="'.$h($u).'"'.$m[1].'>'.$m[2].$m[3];},$out);
+$out=preg_replace_callback('~href="'.preg_quote($h($cta),'~').'"([^>]*)>(\\s*)(DAFTAR(?: AKUN| DISINI)?|LOGIN(?: DISINI)?)~i',static function($m)use($h,$daftar,$login){$u=strpos(strtoupper(trim($m[3])),'LOGIN')===0?$login:$daftar;return 'href="'.$h($u).'"'.$m[1].'>'.$m[2].$m[3];},$out);
 echo $out;
 ?>
