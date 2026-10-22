@@ -4,7 +4,7 @@ if(!is_file($file)){http_response_code(500);exit('data.json tidak ditemukan.');}
 if(!is_array($data)){http_response_code(500);exit('data.json tidak valid.');}$page=$data[$id]??null;
 if(!is_array($page)){http_response_code(404);exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><title>404</title></head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');}
 $homepage=(isset($data['homepage'])&&is_array($data['homepage']))?$data['homepage']:[];$host=preg_replace('/:\\d+$/','',$_SERVER['HTTP_HOST']??'localhost');$origin='https://'.$host;
-$h=static fn($v)=>htmlspecialchars((string)($v??''),ENT_QUOTES,'UTF-8');$abs=static function($u)use($origin){$u=(string)$u;if($u==='')return '';return preg_match('~^https?://~i',$u)?$u:$origin.'/'.ltrim($u,'/');};
+$h=static function($v){return htmlspecialchars((string)($v??''),ENT_QUOTES,'UTF-8');};$abs=static function($u)use($origin){$u=(string)$u;if($u==='')return '';return preg_match('~^https?://~i',$u)?$u:$origin.'/'.ltrim($u,'/');};
 $title=$page['title']??'';$desc=$page['meta_description']??'';$content=$page['content_html']??$desc;$site=$homepage['keyword']??preg_replace('/\\..*$/','',$host);
 $canonical=$page['canonical_url']??($origin.($id==='homepage'?'/':'/'.rawurlencode($id)));$logo=$homepage['logo_src']??'/img/logo.png';$favicon=$homepage['favicon_src']??'/img/favicon.png';$image=$page['image_src']??($homepage['banner_src']??($homepage['image_src']??''));
 $daftar=$homepage['cta_daftar_url']??'#';$login=$homepage['cta_login_url']??'#';$cta=$daftar!=='#'?$daftar:$login;$amp=(!empty($page['amp_url'])&&$page['amp_url']!=='#')?$page['amp_url']:'';$robots=!empty($page['noindex'])?'noindex,nofollow':'index,follow';$gsc=$homepage['gsc_token']??'';
@@ -6108,7 +6108,7 @@ body{
 </body>
 </html>
 HTMLPAGE;
-$alt=static fn($lang='')=>$amp===''?'':'<link rel="alternate"'.($lang!==''?' hreflang="'.$lang.'"':'').' href="'.$h($amp).'">';
+$alt=static function($lang='')use($amp,$h){return $amp===''?'':'<link rel="alternate"'.($lang!==''?' hreflang="'.$lang.'"':'').' href="'.$h($amp).'">';};
 $tokens=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h($origin.'/'),'%%CANONICAL%%'=>$h($canonical),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($abs($image)),'%%CTA%%'=>$h($cta),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default'),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_EN_US%%'=>$alt('en-US'),'%%ALT_EN_SG%%'=>$alt('en-SG')];
 $out=strtr($template,$tokens);$out=preg_replace_callback('~href="'.preg_quote($h($cta),'~').'"([^>]*)>(\\s*)(DAFTAR|MASUK|LOGIN)~i',static function($m)use($h,$daftar,$login){$u=in_array(strtoupper($m[3]),['MASUK','LOGIN'],true)?$login:$daftar;return 'href="'.$h($u).'"'.$m[1].'>'.$m[2].$m[3];},$out);echo $out;
 ?>

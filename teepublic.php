@@ -9,7 +9,7 @@ if(!is_array($page)){http_response_code(404);exit('<!DOCTYPE html><html lang="id
 $homepage=(isset($data['homepage'])&&is_array($data['homepage']))?$data['homepage']:[];
 $host=preg_replace('/:\\d+$/','',$_SERVER['HTTP_HOST']??'localhost');
 $origin='https://'.$host;
-$h=static fn($v)=>htmlspecialchars((string)($v??''),ENT_QUOTES,'UTF-8');
+$h=static function($v){return htmlspecialchars((string)($v??''),ENT_QUOTES,'UTF-8');};
 $abs=static function($u)use($origin){$u=(string)$u;if($u==='')return '';if(preg_match('~^https?://~i',$u))return $u;return $origin.'/'.ltrim($u,'/');};
 $title=$page['title']??'';$desc=$page['meta_description']??'';$content=$page['content_html']??$desc;
 $site=$homepage['keyword']??preg_replace('/\\..*$/','',$host);
@@ -3608,7 +3608,7 @@ height="0" width="0" style="display:none;visibility:hidden" rel="dns-prefetch"><
 </body>
 </html>
 HTMLPAGE;
-$alt=static fn($lang='')=>$amp===''?'':'<link rel="alternate" href="'.$h($amp).'"'.($lang!==''?' hreflang="'.$lang.'"':'').'>';
+$alt=static function($lang='')use($amp,$h){return $amp===''?'':'<link rel="alternate" href="'.$h($amp).'"'.($lang!==''?' hreflang="'.$lang.'"':'').'>';};
 $tokens=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),
 '%%ORIGIN_SLASH%%'=>$h($origin.'/'),'%%CANONICAL%%'=>$h($canonical),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($abs($image)),'%%CTA%%'=>$h($cta),'%%ROBOTS%%'=>$robots,
 '%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'',
