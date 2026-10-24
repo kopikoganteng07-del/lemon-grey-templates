@@ -1,5 +1,9 @@
 <?php
-$id=(isset($_GET['id'])&&$_GET['id']!=='')?trim((string)$_GET['id'],'/'):'homepage';if($id==='')$id='homepage';$file=__DIR__.'/data/data.json';if(!is_file($file)){http_response_code(500);exit('data.json tidak ditemukan.');}$data=json_decode((string)file_get_contents($file),true);if(!is_array($data)){http_response_code(500);exit('data.json tidak valid.');}$page=$data[$id]??null;if(!is_array($page)){http_response_code(404);exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><title>404</title></head><body><h1>404</h1></body></html>');}$home=(isset($data['homepage'])&&is_array($data['homepage']))?$data['homepage']:[];$host=preg_replace('/:\\d+$/','',$_SERVER['HTTP_HOST']??'localhost');$origin='https://'.$host;$h=static fn($v)=>htmlspecialchars((string)($v??''),ENT_QUOTES,'UTF-8');$abs=static function($u)use($origin){$u=(string)$u;return $u===''?'':(preg_match('~^https?://~i',$u)?$u:$origin.'/'.ltrim($u,'/'));};$title=$page['title']??'';$desc=$page['meta_description']??'';$h1=$page['h1']??$title;$content=$page['content_html']??'';$site=$home['keyword']??explode('.',$host)[0];$canonical=$page['canonical_url']??($origin.'/');$amp=(!empty($page['amp_url'])&&$page['amp_url']!=='#')?$page['amp_url']:'';$robots=!empty($page['noindex'])?'noindex, nofollow':'index, follow';$logo=$abs($home['logo_src']??'');$favicon=$abs($home['favicon_src']??'');$image=$abs($page['image_src']??($page['banner_src']??($home['banner_src']??'')));$gsc=$home['gsc_token']??'';$login=$home['cta_login_url']??'#';$daftar=$home['cta_daftar_url']??'#';$template=<<<'HTMLPAGE'
+$id=(isset($_GET['id'])&&$_GET['id']!=='')?trim((string)$_GET['id'],'/'):'homepage';if($id==='')$id='homepage';$file=__DIR__.'/data/data.json';if(!is_file($file)){http_response_code(500);exit('data.json tidak ditemukan.');}$data=json_decode((string)file_get_contents($file),true);if(!is_array($data)){http_response_code(500);exit('data.json tidak valid.');}$page=$data[$id]??null;if(!is_array($page)){http_response_code(404);exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><title>404</title></head><body><h1>404</h1></body></html>');}$home=(isset($data['homepage'])&&is_array($data['homepage']))?$data['homepage']:[];$host=preg_replace('/:\\d+$/','',$_SERVER['HTTP_HOST']??'localhost');$origin='https://'.$host;$h=static fn($v)=>htmlspecialchars((string)($v??''),ENT_QUOTES,'UTF-8');$abs=static function($u)use($origin){$u=(string)$u;return $u===''?'':(preg_match('~^https?://~i',$u)?$u:$origin.'/'.ltrim($u,'/'));};$title=$page['title']??'';$desc=$page['meta_description']??'';$h1=$page['h1']??$title;$content=$page['content_html']??'';$isHomepage=($id==='homepage');$pageSlug=$isHomepage?'':trim((string)$id,'/');
+if(!$isHomepage){$anchorKeyword=trim((string)($page['keyword']??$site));if($anchorKeyword==='')$anchorKeyword=$site!==''?$site:'Beranda';$hasContextualHome=(strpos((string)$content,'href="'.$origin.'/"')!==false||strpos((string)$content,"href='".$origin."/'")!==false||strpos((string)$content,'href="/"')!==false||strpos((string)$content,"href='/'")!==false);if(!$hasContextualHome){$content.='<p class="internal-home-link">Kembali ke <a href="'.$h($origin.'/').'">'.$h($anchorKeyword).'</a> untuk informasi utama.</p>';}}$site=$home['keyword']??explode('.',$host)[0];$canonical=$page['canonical_url']??($origin.'/');$amp=(!empty($page['amp_url'])&&$page['amp_url']!=='#')?$page['amp_url']:'';$robots=!empty($page['noindex'])?'noindex, nofollow':'index, follow';$logo=$abs($home['logo_src']??'');$favicon=$abs($home['favicon_src']??'');$image=$abs($page['image_src']??($page['banner_src']??($home['banner_src']??'')));$gsc=$home['gsc_token']??'';$login=$home['cta_login_url']??'#';$daftar=$home['cta_daftar_url']??'#';$menuItems=[['slug'=>'','label'=>'Beranda']];$seenMenuLabels=['beranda'=>true];$fixedSlugs=['homepage'=>true,'disclaimer'=>true,'contact-us'=>true,'about-us'=>true];
+foreach($data as $menuSlug=>$menuPage){if(isset($fixedSlugs[$menuSlug])||!is_array($menuPage))continue;$menuCategory=(string)($menuPage['category']??'post');if($menuCategory!=='post')continue;$menuLabel=trim((string)($menuPage['h1']??''));if($menuLabel===''||mb_strtolower($menuLabel)===mb_strtolower($site))$menuLabel=trim((string)($menuPage['title']??''));$menuKey=mb_strtolower($menuLabel);if($menuLabel===''||isset($seenMenuLabels[$menuKey]))$menuLabel=ucwords(str_replace(['-','_'],' ',$menuSlug));$seenMenuLabels[mb_strtolower($menuLabel)]=true;$menuItems[]=['slug'=>$menuSlug,'label'=>$menuLabel];}
+$desktopMenuHtml='';$mobileMenuHtml='';foreach($menuItems as $menuItem){$menuHref=$menuItem['slug']===''?$origin.'/':$origin.'/'.$menuItem['slug'];$menuActive=(($isHomepage&&$menuItem['slug']==='')||(!$isHomepage&&$menuItem['slug']===$pageSlug))?' active':'';$desktopMenuHtml.='<li class="dynamic-post-menu'.$menuActive.'"><a class="header__menu-item list-menu__item link focus-inset" href="'.$h($menuHref).'"><span>'.$h($menuItem['label']).'</span></a></li>';$mobileMenuHtml.='<li class="dynamic-post-menu'.$menuActive.'"><a class="menu-drawer__menu-item list-menu__item link link--text focus-inset" href="'.$h($menuHref).'">'.$h($menuItem['label']).'</a></li>';}
+$template=<<<'HTMLPAGE'
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -1273,7 +1277,9 @@ await import("//www.istudiosg.com/cdn/shopifycloud/shop-js/modules/v2/chunk.moda
           class="gradient menu-drawer motion-reduce color-background-1"
           tabindex="-1"
           style="background-color:#ffffff"
-        ></div>
+        >
+<nav class="menu-drawer__navigation"><ul class="menu-drawer__menu list-menu" role="list">%%MOBILE_DYNAMIC_MENU%%</ul></nav>
+</div>
       </details>
     </header-drawer>
   </lazyload-section><script>
@@ -1561,169 +1567,9 @@ await import("//www.istudiosg.com/cdn/shopifycloud/shop-js/modules/v2/chunk.moda
   <div class="header_nav">
 
 
-<lazyload-section data-selectors='[".js-header-dropdown-menu-list"]'><nav class="header__inline-menu">
-  <ul class="list-menu list-menu--inline">
-    <li><header-menu>
-            <details
-              id="Details-HeaderMenu-1"
-              
-                class="mainMenuUpdate2"
-              
-            >
-              <summary
-                id="headerCss %%SITE%%-mac"
-                class="header__menu-item list-menu__item link focus-inset"
-              ><p><a href="%%ORIGIN_SLASH%%">
-                    %%SITE%%</a>
-                  </p>
-                <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
-</svg>
-
-              </summary>
-              <ul
-                  id="HeaderMenu-MenuList-1"
-                  class="js-header-dropdown-menu-list header__submenu list-menu list-menu--disclosure color-background-1 gradient caption-large motion-reduce global-settings-popup"
-                  tabindex="-1"
-                ></ul></details>
-          </header-menu></li>
-          <li><header-menu>
-            <details
-              id="Details-HeaderMenu-5"
-              
-                class="mainMenuUpdate2"
-              
-            >
-              <summary
-                id="headerCss HeaderMenu-Togel-Online"
-                class="header__menu-item list-menu__item link focus-inset"
-              >
-<p><a href="%%ORIGIN_SLASH%%">
-                    SLOT RESMI</a>
-                  </p>
-                <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
-</svg>
-
-              </summary><ul
-                  id="HeaderMenu-MenuList-5"
-                  class="js-header-dropdown-menu-list header__submenu list-menu list-menu--disclosure color-background-1 gradient caption-large motion-reduce global-settings-popup"
-                  tabindex="-1"
-                ></ul></details>
-          </header-menu></li>
-          <li><header-menu>
-            <details
-              id="Details-HeaderMenu-6"
-              
-                class="mainMenuUpdate2"
-              
-            >
-              <summary
-                id="headerCss HeaderMenu-Bandar-Togel"
-                class="header__menu-item list-menu__item link focus-inset"
-              >
-<p><a href="%%ORIGIN_SLASH%%">
-                    SLOT</a>
-                  </p>
-                <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
-</svg>
-
-              </summary><ul
-                  id="HeaderMenu-MenuList-6"
-                  class="js-header-dropdown-menu-list header__submenu list-menu list-menu--disclosure color-background-1 gradient caption-large motion-reduce global-settings-popup"
-                  tabindex="-1"
-                ></ul></details>
-          </header-menu></li>
-          <li><header-menu>
-            <details
-              id="Details-HeaderMenu-7"
-              
-                class="mainMenuUpdate2"
-              
-            >
-              <summary
-                id="headerCss HeaderMenu-Toto-Togel"
-                class="header__menu-item list-menu__item link focus-inset"
-              >
-<p><a href="%%ORIGIN_SLASH%%">
-                    SLOT GACOR</a>
-                  </p>
-                <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
-</svg>
-
-              </summary><ul
-                  id="HeaderMenu-MenuList-7"
-                  class="js-header-dropdown-menu-list header__submenu list-menu list-menu--disclosure color-background-1 gradient caption-large motion-reduce global-settings-popup"
-                  tabindex="-1"
-                ></ul></details>
-          </header-menu></li>
-          <li><header-menu>
-            <details
-              id="Details-HeaderMenu-8"
-              
-                class="mainMenuUpdate2"
-              
-            >
-              <summary
-                id="headerCss HeaderMenu-Bandar-Togel-Online"
-                class="header__menu-item list-menu__item link focus-inset"
-              >
-<p><a href="%%ORIGIN_SLASH%%">
-                    SLOT GACOR RESMI</a>
-                  </p>
-                <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
-</svg>
-
-              </summary><ul
-                  id="HeaderMenu-MenuList-8"
-                  class="js-header-dropdown-menu-list header__submenu list-menu list-menu--disclosure color-background-1 gradient caption-large motion-reduce global-settings-popup"
-                  tabindex="-1"
-                ></ul></details>
-          </header-menu></li><li><header-menu>
-            <details
-              id="Details-HeaderMenu-9"
-              
-                class="mainMenuUpdate2"
-              
-            >
-              <summary
-                id="headerCss HeaderMenu-Togel-Online-Resmi"
-                class="header__menu-item list-menu__item link focus-inset"
-              >
-<p><a href="%%ORIGIN_SLASH%%">
-                    SLOT GACOR MALAM INI</a>
-                  </p>
-                <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
-</svg>
-
-              </summary><ul
-                  id="HeaderMenu-MenuList-9"
-                  class="js-header-dropdown-menu-list header__submenu list-menu list-menu--disclosure color-background-1 gradient caption-large motion-reduce global-settings-popup"
-                  tabindex="-1"
-                ></ul></details>
-          </header-menu></li>
-    
-<li><a
-              href="%%ORIGIN_SLASH%%"
-              class="rightMenuUpdate headerCss header__menu-item header__menu-item list-menu__item link link--text focus-inset"
-              
-            >
-              <span
-              >SLOTRESMI</span>
-            </a></li><li><a
-              href="%%ORIGIN_SLASH%%"
-              class="rightMenuUpdate headerCss header__menu-item header__menu-item list-menu__item link link--text focus-inset"
-              
-            >
-              <span
-              >SLOT GACOR HARI INI</span>
-            </a></li>
-  </ul>
-</nav></lazyload-section></div>
+<lazyload-section data-selectors='[".js-header-dropdown-menu-list"]'><nav class="header__inline-menu"><ul class="list-menu list-menu--inline">
+%%DESKTOP_DYNAMIC_MENU%%
+</ul></nav></lazyload-section></div>
 </sticky-header>
 
 <link href="//www.istudiosg.com/cdn/shop/t/14/assets/custom-style.css?v=128650136086380557481742784888" rel="stylesheet" type="text/css" media="all" />
@@ -9804,4 +9650,4 @@ Typically ships in 1-3 days.<br>Pre-orders will be processed on launch day
 </html>
 
 HTMLPAGE;
-$alt=static fn($lang='')=>$amp===''?'':'<link rel="alternate"'.($lang!==''?' hreflang="'.$lang.'"':'').' href="'.$h($amp).'">';$r=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%H1%%'=>$h($h1),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h(rtrim($origin,'/').'/'),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($image),'%%CTA_LOGIN%%'=>$h($login),'%%CTA_DAFTAR%%'=>$h($daftar),'%%CANONICAL%%'=>$h($canonical),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%DISABLED_TOKEN%%'=>'','%%DISABLED_ANALYTICS%%'=>'','%%DISABLED_ENDPOINT%%'=>'','%%DISABLED_SHOP_DOMAIN%%'=>'example.invalid'];echo strtr($template,$r);
+$alt=static fn($lang='')=>$amp===''?'':'<link rel="alternate"'.($lang!==''?' hreflang="'.$lang.'"':'').' href="'.$h($amp).'">';$r=['%%DESKTOP_DYNAMIC_MENU%%'=>$desktopMenuHtml,'%%MOBILE_DYNAMIC_MENU%%'=>$mobileMenuHtml,'%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%H1%%'=>$h($h1),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h(rtrim($origin,'/').'/'),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($image),'%%CTA_LOGIN%%'=>$h($login),'%%CTA_DAFTAR%%'=>$h($daftar),'%%CANONICAL%%'=>$h($canonical),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%DISABLED_TOKEN%%'=>'','%%DISABLED_ANALYTICS%%'=>'','%%DISABLED_ENDPOINT%%'=>'','%%DISABLED_SHOP_DOMAIN%%'=>'example.invalid'];echo strtr($template,$r);
