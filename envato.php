@@ -1,5 +1,6 @@
 <?php
-$id=(isset($_GET['id'])&&$_GET['id']!=='')?$_GET['id']:'homepage';$file=__DIR__.'/data/data.json';if(!is_file($file)){http_response_code(500);exit('data.json tidak ditemukan.');}$data=json_decode(file_get_contents($file),true);if(!is_array($data)){http_response_code(500);exit('data.json tidak valid.');}$page=$data[$id]??null;if(!is_array($page)){http_response_code(404);exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><title>404</title></head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');}
+$id=(isset($_GET['id'])&&$_GET['id']!=='')?$_GET['id']:'homepage';$file=__DIR__.'/data/data.json';if(!is_file($file)){http_response_code(500);exit('data.json tidak ditemukan.');}$data=json_decode(file_get_contents($file),true);if(!is_array($data)){http_response_code(500);exit('data.json tidak valid.');}$page=$data[$id]??null;if(!is_array($page)){http_response_code(404);exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><title>404</title><style>@media(max-width:1024px){.lg-native-mobile-drawer>.global-header-menu__list-item{display:block}.lg-native-mobile-drawer>.global-header-menu__list-item>.global-header-menu__link{display:block;padding:12px 16px;color:#333;border-bottom:1px solid #ddd}.lg-native-mobile-drawer>.global-header-menu__list-item>.global-header-menu__link[aria-current="page"]{font-weight:700;background:#eee}}</style>
+</head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');}
 $homepage=(isset($data['homepage'])&&is_array($data['homepage']))?$data['homepage']:[];$host=preg_replace('/:\\d+$/','',$_SERVER['HTTP_HOST']??'localhost');$origin='https://'.$host;$h=static function($v){return htmlspecialchars((string)($v??''),ENT_QUOTES,'UTF-8');};$abs=static function($u)use($origin){$u=(string)$u;if($u==='')return '';return preg_match('~^https?://~i',$u)?$u:$origin.'/'.ltrim($u,'/');};
 $title=$page['title']??'';$desc=$page['meta_description']??'';$content=$page['content_html']??$desc;$site=$homepage['keyword']??preg_replace('/\\..*$/','',$host);$canonical=$page['canonical_url']??($origin.($id==='homepage'?'/':'/'.rawurlencode($id)));$logo=$homepage['logo_src']??'/img/logo.png';$favicon=$homepage['favicon_src']??'/img/favicon.png';$image=$page['image_src']??($homepage['banner_src']??($homepage['image_src']??''));$daftar=$homepage['cta_daftar_url']??'#';$login=$homepage['cta_login_url']??'#';$cta=$daftar!=='#'?$daftar:$login;$footLc=trim((string)($homepage['foot_lc']??''));if($footLc==='')$footLc='#';$amp=(!empty($page['amp_url'])&&$page['amp_url']!=='#')?$page['amp_url']:'';$robots=!empty($page['noindex'])?'noindex,nofollow':'index,follow';$gsc=$homepage['gsc_token']??'';
 /* LG_NATIVE_POST_MENU_V2: item artikel memakai markup navbar bawaan template. */
@@ -1046,8 +1047,8 @@ $template=<<<'HTMLPAGE'
                     </form>
                 </div>
 
-                <ul>
-
+                <ul class="lg-native-mobile-drawer">
+                    %%LG_NATIVE_MENU%%
                     <li>
                         <a class="off-canvas-category-link" data-view="dropdown" data-dropdown-target="#off-canvas-all-items" href="%%ORIGIN_SLASH%%">
                             All Items

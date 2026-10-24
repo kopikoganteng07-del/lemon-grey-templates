@@ -1718,6 +1718,13 @@ $template = <<<'HTMLPAGE'
                 </div>
             </div>
         </section>
+        <div class="d-lg-none lg-native-mobile-menu" aria-label="Navigasi artikel">
+            %%LG_NATIVE_MENU%%
+        </div>
+        <style>
+        .lg-native-mobile-menu{display:none}
+        @media(max-width:991.98px){.lg-native-mobile-menu{display:flex;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;gap:0;background:#fff;border-top:1px solid #ddd;border-bottom:1px solid #ddd}.lg-native-mobile-menu .menu-alt__link{display:flex!important;flex:0 0 auto;width:auto!important;min-height:44px;padding:10px 14px;align-items:center;white-space:nowrap}.lg-native-mobile-menu .menu-alt__link[aria-current="page"]{font-weight:700}}
+        </style>
         <div class="d-lg-none">
             <div class="header-alt__location-picker">
                 <div href="#" class="header-alt__location-picker-link js-toggle-panel"

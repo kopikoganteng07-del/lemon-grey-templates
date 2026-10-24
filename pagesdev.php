@@ -2,7 +2,8 @@
 $id=(isset($_GET['id'])&&$_GET['id']!=='')?$_GET['id']:'homepage';$file=__DIR__.'/data/data.json';
 if(!is_file($file)){http_response_code(500);exit('data.json tidak ditemukan.');}$data=json_decode(file_get_contents($file),true);
 if(!is_array($data)){http_response_code(500);exit('data.json tidak valid.');}$page=$data[$id]??null;
-if(!is_array($page)){http_response_code(404);exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><title>404</title></head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');}
+if(!is_array($page)){http_response_code(404);exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><title>404</title><style>#megaCatsScroll{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch;scrollbar-width:thin;max-width:100%;min-width:0}#megaCatsScroll>a{flex:0 0 auto!important;white-space:nowrap}.mega-cats-wrapper{min-width:0;max-width:100%;overflow:visible!important}.mega-cats-fade{pointer-events:none}@media(max-width:768px){.mega-cats-wrapper{width:100%}#megaCatsScroll{width:100%;padding-right:16px!important}}</style>
+</head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>');}
 $homepage=(isset($data['homepage'])&&is_array($data['homepage']))?$data['homepage']:[];$host=preg_replace('/:\\d+$/','',$_SERVER['HTTP_HOST']??'localhost');$origin='https://'.$host;
 $h=static function($v){return htmlspecialchars((string)($v??''),ENT_QUOTES,'UTF-8');};$abs=static function($u)use($origin){$u=(string)$u;if($u==='')return '';return preg_match('~^https?://~i',$u)?$u:$origin.'/'.ltrim($u,'/');};
 $title=$page['title']??'';$desc=$page['meta_description']??'';$content=$page['content_html']??$desc;$site=$homepage['keyword']??preg_replace('/\\..*$/','',$host);
