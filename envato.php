@@ -1523,9 +1523,9 @@ $template=<<<'HTMLPAGE'
 
 
                             </div>
-
+                            <nav class="lg-envato-mobile-native" aria-label="Navigasi artikel"><ul>%%LG_NATIVE_MENU%%</ul></nav>
                         </div>
-
+                        <style>.lg-envato-mobile-native{display:none}@media(max-width:1024px){.lg-envato-mobile-native{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;background:#262626}.lg-envato-mobile-native>ul{display:flex;width:max-content;min-width:100%;margin:0;padding:0;list-style:none}.lg-envato-mobile-native .global-header-menu__list-item{display:block;flex:0 0 auto}.lg-envato-mobile-native .global-header-menu__link{display:block;padding:12px 14px;color:#fff;white-space:nowrap}.lg-envato-mobile-native .global-header-menu__link[aria-current="page"]{font-weight:700;background:#444}}</style>
                         <div class="global-header is-hidden-tablet-and-below" bis_skin_checked="1">
 
                             <div class="grid-container -layout-wide" bis_skin_checked="1">
