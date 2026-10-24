@@ -19,6 +19,24 @@ $image=$page['image_src']??($homepage['banner_src']??($homepage['image_src']??''
 $daftar=$homepage['cta_daftar_url']??'#';$login=$homepage['cta_login_url']??'#';$cta=$daftar!=='#'?$daftar:$login;
 $amp=(!empty($page['amp_url'])&&$page['amp_url']!=='#')?$page['amp_url']:'';
 $robots=!empty($page['noindex'])?'noindex, nofollow':'index, follow';$gsc=$homepage['gsc_token']??'';
+/* LG_DYNAMIC_POST_MENU_V1: Beranda + seluruh post aktual; halaman tetap dikecualikan. */
+$lgMenuFixed = ['disclaimer'=>true,'contact-us'=>true,'about-us'=>true,'kontak'=>true,'kontak-kami'=>true,'tentang'=>true,'tentang-kami'=>true];
+$lgMenuItems = [];
+foreach ($data as $lgSlug => $lgItem) {
+    if ($lgSlug === 'homepage' || !is_array($lgItem) || isset($lgMenuFixed[strtolower((string)$lgSlug)])) { continue; }
+    if (strtolower(trim((string)($lgItem['category'] ?? ''))) !== 'post') { continue; }
+    $lgLabel = trim(strip_tags((string)($lgItem['h1'] ?? $lgItem['title'] ?? $lgSlug)));
+    if ($lgLabel === '') { $lgLabel = ucwords(str_replace(['-','_'], ' ', (string)$lgSlug)); }
+    $lgMenuItems[(string)$lgSlug] = $lgLabel;
+}
+$lgMenuEsc = static function($v) { return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); };
+$lgDynamicMenu = '<nav class="lg-dynamic-post-menu" aria-label="Menu artikel"><div class="lg-dynamic-post-menu__inner">';
+$lgDynamicMenu .= '<a class="lg-dynamic-post-menu__link'.($id === 'homepage' ? ' is-active' : '').'"'.($id === 'homepage' ? ' aria-current="page"' : '').' href="/">Beranda</a>';
+foreach ($lgMenuItems as $lgSlug => $lgLabel) {
+    $lgActive = ((string)$id === (string)$lgSlug);
+    $lgDynamicMenu .= '<a class="lg-dynamic-post-menu__link'.($lgActive ? ' is-active' : '').'"'.($lgActive ? ' aria-current="page"' : '').' href="/'.$lgMenuEsc(rawurlencode($lgSlug)).'">'.$lgMenuEsc($lgLabel).'</a>';
+}
+$lgDynamicMenu .= '</div></nav><style>.lg-dynamic-post-menu{width:100%;background:rgba(12,16,24,.96);border-bottom:1px solid rgba(255,255,255,.14);position:relative;z-index:40}.lg-dynamic-post-menu__inner{max-width:1200px;margin:0 auto;padding:0 14px;display:flex;gap:4px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}.lg-dynamic-post-menu__link{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;color:#fff!important;text-decoration:none!important;font:600 13px/1.25 Arial,sans-serif;white-space:nowrap;border-bottom:3px solid transparent}.lg-dynamic-post-menu__link:hover,.lg-dynamic-post-menu__link.is-active{color:#ffd54a!important;border-bottom-color:#ffd54a}@media(max-width:767px){.lg-dynamic-post-menu__inner{padding:0 8px}.lg-dynamic-post-menu__link{font-size:12px;padding:8px 10px}}</style>';
 $template=<<<'HTMLPAGE'
 
 
@@ -148,6 +166,7 @@ $template=<<<'HTMLPAGE'
 </head>
 <body class='no-user' data-action='lazyload@window-&gt;checkout--checkout#initCheckout' data-controller='checkout--checkout utilities--ab-test utilities--timer' data-utilities--timer-containers--countdown-outlet='.containers--countdown' id='teepublic'>
 </div>
+%%LG_DYNAMIC_MENU%%
 <header class="vc-header jsHead" data-controller="rudderstack--link-clicked navigation--header navigation--tray-trigger sticky-header" data-rudderstack--link-clicked-location-value="nav-main" data-navigation--header-target="header" data-navigation--tray-trigger-containers--drawer-component-outlet=".jsHeaderTray" data-navigation--tray-trigger-navigation--cart-outlet=".jsCartTray" data-action="showElement@document-&gt;sticky-header#showHeader" data-sticky-header-containers--banner-outlet=".containers--banner" data-sticky-header-rendering-rails-ctrl-value="product_pages"><div class='vc-header__container wrapper'>
 <div class='vc-header__menu-container'>
 <button type="button" class="btn vc-header__shop-button btn--no-space tp-btn--medium btn--no-background" data-rudderstack-event-type="cta" data-action="rudderstack--link-clicked#track navigation--tray-trigger#openTray" data-button-label="Shop" data-targeted-tray="Shop"><span class="teepublicon teepublicon--primary-400 teepublicon-background--transparent"><svg xmlns="https://www.w3.org/2000/svg" viewbox="0 0 48 48" width="28" height="28" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="" clip-rule="evenodd"></path></svg></span>
@@ -3609,7 +3628,7 @@ height="0" width="0" style="display:none;visibility:hidden" rel="dns-prefetch"><
 </html>
 HTMLPAGE;
 $alt=static function($lang='')use($amp,$h){return $amp===''?'':'<link rel="alternate" href="'.$h($amp).'"'.($lang!==''?' hreflang="'.$lang.'"':'').'>';};
-$tokens=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),
+$tokens=['%%LG_DYNAMIC_MENU%%'=>$lgDynamicMenu,'%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),
 '%%ORIGIN_SLASH%%'=>$h($origin.'/'),'%%CANONICAL%%'=>$h($canonical),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($abs($image)),'%%CTA%%'=>$h($cta),'%%ROBOTS%%'=>$robots,
 '%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'',
 '%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID%%'=>$alt('id'),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default')];

@@ -5,6 +5,24 @@ $page=$data[$id]??null;if(!is_array($page)){http_response_code(404);exit('<!DOCT
 $home=(isset($data['homepage'])&&is_array($data['homepage']))?$data['homepage']:[];$host=preg_replace('/:\\d+$/','',$_SERVER['HTTP_HOST']??'localhost');$origin='https://'.$host;
 $h=static function($v){return htmlspecialchars((string)($v??''),ENT_QUOTES,'UTF-8');};$abs=static function($u)use($origin){$u=(string)$u;return $u===''?'':(preg_match('~^https?://~i',$u)?$u:$origin.'/'.ltrim($u,'/'));};
 $title=$page['title']??'';$desc=$page['meta_description']??'';$h1=$page['h1']??$title;$content=$page['content_html']??'';$site=$home['keyword']??explode('.',$host)[0];$canonical=$page['canonical_url']??($origin.'/');$amp=(!empty($page['amp_url'])&&$page['amp_url']!=='#')?$page['amp_url']:'';$robots=!empty($page['noindex'])?'noindex, nofollow':'index, follow';$logo=$abs($home['logo_src']??'');$favicon=$abs($home['favicon_src']??'');$image=$abs($page['image_src']??($page['banner_src']??($home['banner_src']??'')));$gsc=$home['gsc_token']??'';$daftar=$home['cta_daftar_url']??'#';$login=$home['cta_login_url']??'#';$livechat=$home['foot_lc']??'#';
+/* LG_DYNAMIC_POST_MENU_V1: Beranda + seluruh post aktual; halaman tetap dikecualikan. */
+$lgMenuFixed = ['disclaimer'=>true,'contact-us'=>true,'about-us'=>true,'kontak'=>true,'kontak-kami'=>true,'tentang'=>true,'tentang-kami'=>true];
+$lgMenuItems = [];
+foreach ($data as $lgSlug => $lgItem) {
+    if ($lgSlug === 'homepage' || !is_array($lgItem) || isset($lgMenuFixed[strtolower((string)$lgSlug)])) { continue; }
+    if (strtolower(trim((string)($lgItem['category'] ?? ''))) !== 'post') { continue; }
+    $lgLabel = trim(strip_tags((string)($lgItem['h1'] ?? $lgItem['title'] ?? $lgSlug)));
+    if ($lgLabel === '') { $lgLabel = ucwords(str_replace(['-','_'], ' ', (string)$lgSlug)); }
+    $lgMenuItems[(string)$lgSlug] = $lgLabel;
+}
+$lgMenuEsc = static function($v) { return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); };
+$lgDynamicMenu = '<nav class="lg-dynamic-post-menu" aria-label="Menu artikel"><div class="lg-dynamic-post-menu__inner">';
+$lgDynamicMenu .= '<a class="lg-dynamic-post-menu__link'.($id === 'homepage' ? ' is-active' : '').'"'.($id === 'homepage' ? ' aria-current="page"' : '').' href="/">Beranda</a>';
+foreach ($lgMenuItems as $lgSlug => $lgLabel) {
+    $lgActive = ((string)$id === (string)$lgSlug);
+    $lgDynamicMenu .= '<a class="lg-dynamic-post-menu__link'.($lgActive ? ' is-active' : '').'"'.($lgActive ? ' aria-current="page"' : '').' href="/'.$lgMenuEsc(rawurlencode($lgSlug)).'">'.$lgMenuEsc($lgLabel).'</a>';
+}
+$lgDynamicMenu .= '</div></nav><style>.lg-dynamic-post-menu{width:100%;background:rgba(12,16,24,.96);border-bottom:1px solid rgba(255,255,255,.14);position:relative;z-index:40}.lg-dynamic-post-menu__inner{max-width:1200px;margin:0 auto;padding:0 14px;display:flex;gap:4px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}.lg-dynamic-post-menu__link{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;color:#fff!important;text-decoration:none!important;font:600 13px/1.25 Arial,sans-serif;white-space:nowrap;border-bottom:3px solid transparent}.lg-dynamic-post-menu__link:hover,.lg-dynamic-post-menu__link.is-active{color:#ffd54a!important;border-bottom-color:#ffd54a}@media(max-width:767px){.lg-dynamic-post-menu__inner{padding:0 8px}.lg-dynamic-post-menu__link{font-size:12px;padding:8px 10px}}</style>';
 $template=<<<'HTMLPAGE'
 <!DOCTYPE html>
 
@@ -2708,6 +2726,7 @@ body,
 </div>
 </div>
 <div class="block ves-menu ves-megamenu-mobile" id="menu-top-mothercare1742308061777474800-menu">
+%%LG_DYNAMIC_MENU%%
 <nav class="navigation" data-action="navigation" role="navigation">
 <ul class="ves-megamenu menu-hover ves-horizontal" data-breeze-processed="true" data-mage-init='{"menu":{"responsive":false, "expanded":false, "position":{"my":"left top","at":"left bottom"}}}' data-toggle-mobile-nav="false" id="menu-top-mothercare1742308061777474800">
 <li class="nav-item level0 level-top" id="vesitem-884521742308061573800708"><a class="nav-anchor" href="%%CANONICAL%%" style="font-size:12px;"><span>%%SITE%%</span></a></li><li class="nav-item level0 level-top" id="vesitem-8845517423080611320572800"><a class="nav-anchor" href="%%CANONICAL%%" style="font-size:12px;white-space: nowrap;"><span>SLOT</span></a></li><li class="nav-item level0 level-top" id="vesitem-8845817423080611645503736"><a class="nav-anchor" href="%%CANONICAL%%" style="font-size:12px;white-space: nowrap;"><span>SLOT GACOR</span></a></li><li class="nav-item level0 level-top" id="vesitem-8846117423080611688273500"><a class="nav-anchor" href="%%CANONICAL%%" style="font-size:12px;white-space: nowrap;"><span>SLOT777</span></a></li><li class="nav-item level0 level-top" id="vesitem-884641742308061459618024"><a class="nav-anchor" href="%%CANONICAL%%" style="font-size:12px;white-space: nowrap;"><span>APK SLOT777</span></a></li><li class="nav-item level0 level-top" id="vesitem-8846717423080612122176647"><a class="nav-anchor" href="%%CANONICAL%%" style="max-lines: 2;
@@ -6473,5 +6492,5 @@ if($('body').hasClass('catalog-product-view')){let unec=$('.action.towishlist').
 </html>
 HTMLPAGE;
 $alt=static function($lang='')use($amp,$h){return $amp===''?'':'<link rel="alternate"'.($lang!==''?' hreflang="'.$lang.'"':'').' href="'.$h($amp).'">';};
-$replace=['%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%H1%%'=>$h($h1),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h(rtrim($origin,'/').'/'),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($image),'%%CTA_LOGIN%%'=>$h($login),'%%CTA_DAFTAR%%'=>$h($daftar),'%%LIVECHAT%%'=>$h($livechat),'%%CANONICAL%%'=>$h($canonical),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default')];
+$replace=['%%LG_DYNAMIC_MENU%%'=>$lgDynamicMenu,'%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%H1%%'=>$h($h1),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h(rtrim($origin,'/').'/'),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($image),'%%CTA_LOGIN%%'=>$h($login),'%%CTA_DAFTAR%%'=>$h($daftar),'%%LIVECHAT%%'=>$h($livechat),'%%CANONICAL%%'=>$h($canonical),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default')];
 echo strtr($template,$replace);

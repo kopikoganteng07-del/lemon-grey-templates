@@ -115,11 +115,15 @@ $bacaanLain = array_diff_key($allPosts, $menuHalaman);
 // plus halaman navigasi berguna (Link Alternatif, Cara Daftar, Cara Masuk).
 // Halaman informasi (Tentang Kami, Kontak, Disclaimer) cukup tampil di footer.
 $labelHanyaFooter = ['Tentang Kami', 'Kontak', 'Disclaimer'];
+/* LG_DYNAMIC_POST_MENU_V1: Beranda + seluruh post aktual; halaman tetap dikecualikan. */
+$menuTetap = ['disclaimer'=>true,'contact-us'=>true,'about-us'=>true,'kontak'=>true,'kontak-kami'=>true,'tentang'=>true,'tentang-kami'=>true];
 $menuHeader = [];
-foreach ($menuHalaman as $slugMenu => $labelMenu) {
-    if (!in_array($labelMenu, $labelHanyaFooter, true)) {
-        $menuHeader[$slugMenu] = $labelMenu;
-    }
+foreach ($allPosts as $slugMenu => $itemMenu) {
+    if (isset($menuTetap[strtolower((string)$slugMenu)])) { continue; }
+    if (strtolower(trim((string)($itemMenu['category'] ?? ''))) !== 'post') { continue; }
+    $labelMenu = trim(strip_tags((string)($itemMenu['h1'] ?? $itemMenu['title'] ?? $slugMenu)));
+    if ($labelMenu === '') { $labelMenu = ucwords(str_replace(['-','_'], ' ', (string)$slugMenu)); }
+    $menuHeader[$slugMenu] = $labelMenu;
 }
 
 // Tautan internal di awal artikel: kemunculan PERTAMA nama situs di dalam
@@ -278,11 +282,11 @@ tailwind.config = {
 </header>
 
 <?php if (count($menuHeader) > 0): ?>
-<nav class="bg-bg-surface/60 border-b border-border" aria-label="Navigasi utama">
+<nav class="lg-dynamic-post-menu bg-bg-surface/60 border-b border-border" aria-label="Navigasi utama">
   <div class="max-w-[1200px] mx-auto px-4 flex items-center gap-1 overflow-x-auto scrollbar-hide">
-    <a href="/" class="min-h-[44px] flex items-center px-3 text-[12px] md:text-sm font-semibold whitespace-nowrap rounded-md text-text-onDark/70 hover:text-brand-accent hover:bg-white/5 transition-all">Beranda</a>
+    <a href="/" class="min-h-[44px] flex items-center px-3 text-[12px] md:text-sm font-semibold whitespace-nowrap rounded-md text-text-onDark/70 hover:text-brand-accent hover:bg-white/5 transition-all<?= $id === 'homepage' ? ' is-active' : '' ?>"<?= $id === 'homepage' ? ' aria-current="page"' : '' ?>>Beranda</a>
     <?php foreach ($menuHeader as $slug => $label): ?>
-    <a href="/<?= h($slug) ?>" class="min-h-[44px] flex items-center px-3 text-[12px] md:text-sm font-semibold whitespace-nowrap rounded-md text-text-onDark/70 hover:text-brand-accent hover:bg-white/5 transition-all"><?= h($label) ?></a>
+    <a href="/<?= h(rawurlencode($slug)) ?>" class="min-h-[44px] flex items-center px-3 text-[12px] md:text-sm font-semibold whitespace-nowrap rounded-md text-text-onDark/70 hover:text-brand-accent hover:bg-white/5 transition-all<?= $id === $slug ? ' is-active' : '' ?>"<?= $id === $slug ? ' aria-current="page"' : '' ?>><?= h($label) ?></a>
     <?php endforeach; ?>
   </div>
 </nav>
