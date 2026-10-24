@@ -115,7 +115,7 @@ $bacaanLain = array_diff_key($allPosts, $menuHalaman);
 // plus halaman navigasi berguna (Link Alternatif, Cara Daftar, Cara Masuk).
 // Halaman informasi (Tentang Kami, Kontak, Disclaimer) cukup tampil di footer.
 $labelHanyaFooter = ['Tentang Kami', 'Kontak', 'Disclaimer'];
-/* LG_DYNAMIC_POST_MENU_V1: Beranda + seluruh post aktual; halaman tetap dikecualikan. */
+/* LG_NATIVE_POST_MENU_V2: menu artikel menyatu dengan header asli. */
 $menuTetap = ['disclaimer'=>true,'contact-us'=>true,'about-us'=>true,'kontak'=>true,'kontak-kami'=>true,'tentang'=>true,'tentang-kami'=>true];
 $menuHeader = [];
 foreach ($allPosts as $slugMenu => $itemMenu) {
@@ -279,10 +279,8 @@ tailwind.config = {
       </div>
     </div>
   </div>
-</header>
-
 <?php if (count($menuHeader) > 0): ?>
-<nav class="lg-dynamic-post-menu bg-bg-surface/60 border-b border-border" aria-label="Navigasi utama">
+<nav class="bg-bg-surface/60 border-t border-border" aria-label="Navigasi utama">
   <div class="max-w-[1200px] mx-auto px-4 flex items-center gap-1 overflow-x-auto scrollbar-hide">
     <a href="/" class="min-h-[44px] flex items-center px-3 text-[12px] md:text-sm font-semibold whitespace-nowrap rounded-md text-text-onDark/70 hover:text-brand-accent hover:bg-white/5 transition-all<?= $id === 'homepage' ? ' is-active' : '' ?>"<?= $id === 'homepage' ? ' aria-current="page"' : '' ?>>Beranda</a>
     <?php foreach ($menuHeader as $slug => $label): ?>
@@ -291,6 +289,7 @@ tailwind.config = {
   </div>
 </nav>
 <?php endif; ?>
+</header>
 
 <main class="max-w-[1200px] mx-auto px-4 py-8">
 

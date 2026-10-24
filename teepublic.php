@@ -19,9 +19,9 @@ $image=$page['image_src']??($homepage['banner_src']??($homepage['image_src']??''
 $daftar=$homepage['cta_daftar_url']??'#';$login=$homepage['cta_login_url']??'#';$cta=$daftar!=='#'?$daftar:$login;
 $amp=(!empty($page['amp_url'])&&$page['amp_url']!=='#')?$page['amp_url']:'';
 $robots=!empty($page['noindex'])?'noindex, nofollow':'index, follow';$gsc=$homepage['gsc_token']??'';
-/* LG_DYNAMIC_POST_MENU_V1: Beranda + seluruh post aktual; halaman tetap dikecualikan. */
+/* LG_NATIVE_POST_MENU_V2: item artikel memakai markup navbar bawaan template. */
 $lgMenuFixed = ['disclaimer'=>true,'contact-us'=>true,'about-us'=>true,'kontak'=>true,'kontak-kami'=>true,'tentang'=>true,'tentang-kami'=>true];
-$lgMenuItems = [];
+$lgMenuItems = ['homepage'=>'Beranda'];
 foreach ($data as $lgSlug => $lgItem) {
     if ($lgSlug === 'homepage' || !is_array($lgItem) || isset($lgMenuFixed[strtolower((string)$lgSlug)])) { continue; }
     if (strtolower(trim((string)($lgItem['category'] ?? ''))) !== 'post') { continue; }
@@ -29,14 +29,25 @@ foreach ($data as $lgSlug => $lgItem) {
     if ($lgLabel === '') { $lgLabel = ucwords(str_replace(['-','_'], ' ', (string)$lgSlug)); }
     $lgMenuItems[(string)$lgSlug] = $lgLabel;
 }
-$lgMenuEsc = static function($v) { return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); };
-$lgDynamicMenu = '<nav class="lg-dynamic-post-menu" aria-label="Menu artikel"><div class="lg-dynamic-post-menu__inner">';
-$lgDynamicMenu .= '<a class="lg-dynamic-post-menu__link'.($id === 'homepage' ? ' is-active' : '').'"'.($id === 'homepage' ? ' aria-current="page"' : '').' href="/">Beranda</a>';
+$lgNativeMenu = '';
 foreach ($lgMenuItems as $lgSlug => $lgLabel) {
-    $lgActive = ((string)$id === (string)$lgSlug);
-    $lgDynamicMenu .= '<a class="lg-dynamic-post-menu__link'.($lgActive ? ' is-active' : '').'"'.($lgActive ? ' aria-current="page"' : '').' href="/'.$lgMenuEsc(rawurlencode($lgSlug)).'">'.$lgMenuEsc($lgLabel).'</a>';
+    $lgActive = ($lgSlug === 'homepage' ? $id === 'homepage' : (string)$id === (string)$lgSlug);
+    $lgUrl = $lgSlug === 'homepage' ? '/' : '/'.rawurlencode($lgSlug);
+    $lgItemHtml = '<a data-rudderstack-event-type="link" data-link-label="%LABEL%" href="%URL%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"%CURRENT%><span class="link__content">%LABEL%</span></a>';
+    $lgItemHtml = strtr($lgItemHtml, [
+        '%URL%'=>$h($lgUrl), '%LABEL%'=>$h($lgLabel),
+        '%CURRENT%'=>$lgActive ? ' aria-current="page"' : '',
+        '%ACTIVE%'=>$lgActive ? ' is-active active' : ''
+    ]);
+    $lgNativeMenu .= $lgItemHtml;
 }
-$lgDynamicMenu .= '</div></nav><style>.lg-dynamic-post-menu{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;overflow:hidden!important;background:rgba(12,16,24,.96);border-bottom:1px solid rgba(255,255,255,.14);position:relative!important;left:auto!important;right:auto!important;visibility:visible!important;z-index:40}.lg-dynamic-post-menu>.lg-dynamic-post-menu__inner{width:100%!important;max-width:1200px!important;min-width:0!important;box-sizing:border-box!important;margin:0 auto!important;padding:0 14px!important;display:flex!important;flex-wrap:nowrap!important;gap:4px!important;overflow-x:auto!important;overflow-y:hidden!important;overscroll-behavior-x:contain;scrollbar-width:thin}.lg-dynamic-post-menu .lg-dynamic-post-menu__link{display:inline-flex!important;flex:0 0 auto!important;align-items:center;min-height:44px;padding:8px 12px;color:#fff!important;text-decoration:none!important;font:600 13px/1.25 Arial,sans-serif;white-space:nowrap!important;border-bottom:3px solid transparent}.lg-dynamic-post-menu__link:hover,.lg-dynamic-post-menu__link.is-active{color:#ffd54a!important;border-bottom-color:#ffd54a}@media(max-width:767px){.lg-dynamic-post-menu__inner{padding:0 8px}.lg-dynamic-post-menu__link{font-size:12px;padding:8px 10px}}</style>';
+/* Anchor kontekstual hanya pada isi artikel subpage. */
+if ($id !== 'homepage' && strtolower(trim((string)($page['category'] ?? ''))) === 'post') {
+    $lgKeyword = trim((string)($page['keyword'] ?? $homepage['keyword'] ?? $site));
+    if ($lgKeyword !== '' && !preg_match('~href=["\']'.preg_quote($origin.'/','~').'["\']~i', (string)$content)) {
+        $content .= '<p class="lg-contextual-home-link">Baca informasi utama <a href="'.$h($origin.'/').'">'.$h($lgKeyword).'</a>.</p>';
+    }
+}
 $template=<<<'HTMLPAGE'
 
 
@@ -166,7 +177,7 @@ $template=<<<'HTMLPAGE'
 </head>
 <body class='no-user' data-action='lazyload@window-&gt;checkout--checkout#initCheckout' data-controller='checkout--checkout utilities--ab-test utilities--timer' data-utilities--timer-containers--countdown-outlet='.containers--countdown' id='teepublic'>
 </div>
-%%LG_DYNAMIC_MENU%%
+
 <header class="vc-header jsHead" data-controller="rudderstack--link-clicked navigation--header navigation--tray-trigger sticky-header" data-rudderstack--link-clicked-location-value="nav-main" data-navigation--header-target="header" data-navigation--tray-trigger-containers--drawer-component-outlet=".jsHeaderTray" data-navigation--tray-trigger-navigation--cart-outlet=".jsCartTray" data-action="showElement@document-&gt;sticky-header#showHeader" data-sticky-header-containers--banner-outlet=".containers--banner" data-sticky-header-rendering-rails-ctrl-value="product_pages"><div class='vc-header__container wrapper'>
 <div class='vc-header__menu-container'>
 <button type="button" class="btn vc-header__shop-button btn--no-space tp-btn--medium btn--no-background" data-rudderstack-event-type="cta" data-action="rudderstack--link-clicked#track navigation--tray-trigger#openTray" data-button-label="Shop" data-targeted-tray="Shop"><span class="teepublicon teepublicon--primary-400 teepublicon-background--transparent"><svg xmlns="https://www.w3.org/2000/svg" viewbox="0 0 48 48" width="28" height="28" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="" clip-rule="evenodd"></path></svg></span>
@@ -272,55 +283,7 @@ Shop All Designs
 
 </a>
 <!-- NAV_LINKS_START -->
-<a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="%%SITE%%" data-href="%%ORIGIN_SLASH%%" title="%%SITE%%" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
-<span class='link__content'>
-%%SITE%%
-
-</span>
-
-</a><a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="Situs Slot" data-href="%%ORIGIN_SLASH%%" title="Situs Slot" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
-<span class='link__content'>
-SITUS SLOT
-
-</span>
-
-</a><a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="Game Slot" data-href="%%ORIGIN_SLASH%%" title="Game Slot" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
-<span class='link__content'>
-GAME SLOT
-
-</span>
-
-</a><a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="Slot Maxwin" data-href="%%ORIGIN_SLASH%%" title="Slot Maxwin" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
-<span class='link__content'>
-SLOT MAXWIN
-
-</span>
-
-</a><a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="%%SITE%%" data-href="%%ORIGIN_SLASH%%" title="%%SITE%%" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
-<span class='link__content'>
-%%SITE%%
-
-</span>
-
-</a><a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="Slot88" data-href="%%ORIGIN_SLASH%%" title="Slot88" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
-<span class='link__content'>
-SLOT88
-
-</span>
-
-</a><a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="%%SITE%%" data-href="%%ORIGIN_SLASH%%" title="%%SITE%%" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
-<span class='link__content'>
-%%SITE%%
-
-</span>
-
-</a><a data-rudderstack-event-type="link" data-action="click-&gt;rudderstack--link-clicked#track" data-link-label="%%SITE%%" data-href="%%ORIGIN_SLASH%%" title="%%SITE%%" href="%%ORIGIN_SLASH%%" class="link m-explore-nav__link link--1 link--default tp-btn--icon"><span class="teepublicon teepublicon--blue-default teepublicon-background--transparent"><img src="%%FAVICON%%" loading="auto" height="40" width="40" aria_hidden="true" focusable="false"></span>
-<span class='link__content'>
-%%SITE%%
-
-</span>
-
-</a>
+%%LG_NATIVE_MENU%%
 <!-- NAV_LINKS_END --></div>
 </div>
 </a></div>
@@ -792,6 +755,7 @@ IDR 10.000
 </div>
 
 </div>
+<div class='m-design-details__description lg-native-article'>%%CONTENT%%</div>
 <div class='m-design__preview'>
 <div class='m-product-preview' data-controller='rudderstack--filter-clicked' data-rudderstack--filter-clicked-location-value='product_preview'>
 <div class='m-design__admin-tools'>
@@ -3628,7 +3592,7 @@ height="0" width="0" style="display:none;visibility:hidden" rel="dns-prefetch"><
 </html>
 HTMLPAGE;
 $alt=static function($lang='')use($amp,$h){return $amp===''?'':'<link rel="alternate" href="'.$h($amp).'"'.($lang!==''?' hreflang="'.$lang.'"':'').'>';};
-$tokens=['%%LG_DYNAMIC_MENU%%'=>$lgDynamicMenu,'%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),
+$tokens=['%%LG_NATIVE_MENU%%'=>$lgNativeMenu,'%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),
 '%%ORIGIN_SLASH%%'=>$h($origin.'/'),'%%CANONICAL%%'=>$h($canonical),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($abs($image)),'%%CTA%%'=>$h($cta),'%%ROBOTS%%'=>$robots,
 '%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'',
 '%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID%%'=>$alt('id'),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default')];

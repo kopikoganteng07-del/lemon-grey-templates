@@ -31,9 +31,9 @@ $cta = $ctaDaftar !== '#' ? $ctaDaftar : $ctaLogin;
 $amp = (!empty($page['amp_url']) && $page['amp_url'] !== '#') ? $page['amp_url'] : '';
 $robots = !empty($page['noindex']) ? 'noindex,nofollow' : 'index,follow';
 $gsc = $homepage['gsc_token'] ?? '';
-/* LG_DYNAMIC_POST_MENU_V1: Beranda + seluruh post aktual; halaman tetap dikecualikan. */
+/* LG_NATIVE_POST_MENU_V2: item artikel memakai markup navbar bawaan template. */
 $lgMenuFixed = ['disclaimer'=>true,'contact-us'=>true,'about-us'=>true,'kontak'=>true,'kontak-kami'=>true,'tentang'=>true,'tentang-kami'=>true];
-$lgMenuItems = [];
+$lgMenuItems = ['homepage'=>'Beranda'];
 foreach ($data as $lgSlug => $lgItem) {
     if ($lgSlug === 'homepage' || !is_array($lgItem) || isset($lgMenuFixed[strtolower((string)$lgSlug)])) { continue; }
     if (strtolower(trim((string)($lgItem['category'] ?? ''))) !== 'post') { continue; }
@@ -41,14 +41,25 @@ foreach ($data as $lgSlug => $lgItem) {
     if ($lgLabel === '') { $lgLabel = ucwords(str_replace(['-','_'], ' ', (string)$lgSlug)); }
     $lgMenuItems[(string)$lgSlug] = $lgLabel;
 }
-$lgMenuEsc = static function($v) { return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8'); };
-$lgDynamicMenu = '<nav class="lg-dynamic-post-menu" aria-label="Menu artikel"><div class="lg-dynamic-post-menu__inner">';
-$lgDynamicMenu .= '<a class="lg-dynamic-post-menu__link'.($id === 'homepage' ? ' is-active' : '').'"'.($id === 'homepage' ? ' aria-current="page"' : '').' href="/">Beranda</a>';
+$lgNativeMenu = '';
 foreach ($lgMenuItems as $lgSlug => $lgLabel) {
-    $lgActive = ((string)$id === (string)$lgSlug);
-    $lgDynamicMenu .= '<a class="lg-dynamic-post-menu__link'.($lgActive ? ' is-active' : '').'"'.($lgActive ? ' aria-current="page"' : '').' href="/'.$lgMenuEsc(rawurlencode($lgSlug)).'">'.$lgMenuEsc($lgLabel).'</a>';
+    $lgActive = ($lgSlug === 'homepage' ? $id === 'homepage' : (string)$id === (string)$lgSlug);
+    $lgUrl = $lgSlug === 'homepage' ? '/' : '/'.rawurlencode($lgSlug);
+    $lgItemHtml = '<a class="menu-alt__link menu-alt__link--main"%CURRENT% href="%URL%" title="%LABEL%">%LABEL%</a>';
+    $lgItemHtml = strtr($lgItemHtml, [
+        '%URL%'=>$esc($lgUrl), '%LABEL%'=>$esc($lgLabel),
+        '%CURRENT%'=>$lgActive ? ' aria-current="page"' : '',
+        '%ACTIVE%'=>$lgActive ? ' is-active active' : ''
+    ]);
+    $lgNativeMenu .= $lgItemHtml;
 }
-$lgDynamicMenu .= '</div></nav><style>.lg-dynamic-post-menu{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;overflow:hidden!important;background:rgba(12,16,24,.96);border-bottom:1px solid rgba(255,255,255,.14);position:relative!important;left:auto!important;right:auto!important;visibility:visible!important;z-index:40}.lg-dynamic-post-menu>.lg-dynamic-post-menu__inner{width:100%!important;max-width:1200px!important;min-width:0!important;box-sizing:border-box!important;margin:0 auto!important;padding:0 14px!important;display:flex!important;flex-wrap:nowrap!important;gap:4px!important;overflow-x:auto!important;overflow-y:hidden!important;overscroll-behavior-x:contain;scrollbar-width:thin}.lg-dynamic-post-menu .lg-dynamic-post-menu__link{display:inline-flex!important;flex:0 0 auto!important;align-items:center;min-height:44px;padding:8px 12px;color:#fff!important;text-decoration:none!important;font:600 13px/1.25 Arial,sans-serif;white-space:nowrap!important;border-bottom:3px solid transparent}.lg-dynamic-post-menu__link:hover,.lg-dynamic-post-menu__link.is-active{color:#ffd54a!important;border-bottom-color:#ffd54a}@media(max-width:767px){.lg-dynamic-post-menu__inner{padding:0 8px}.lg-dynamic-post-menu__link{font-size:12px;padding:8px 10px}}</style>';
+/* Anchor kontekstual hanya pada isi artikel subpage. */
+if ($id !== 'homepage' && strtolower(trim((string)($page['category'] ?? ''))) === 'post') {
+    $lgKeyword = trim((string)($page['keyword'] ?? $homepage['keyword'] ?? $site));
+    if ($lgKeyword !== '' && !preg_match('~href=["\']'.preg_quote($origin.'/','~').'["\']~i', (string)$content)) {
+        $content .= '<p class="lg-contextual-home-link">Baca informasi utama <a href="'.$esc($origin.'/').'">'.$esc($lgKeyword).'</a>.</p>';
+    }
+}
 $template = <<<'HTMLPAGE'
 <!DOCTYPE html>
 <html lang="en">
@@ -1722,9 +1733,10 @@ $template = <<<'HTMLPAGE'
                 </div>
             </div>
         </div>
-        %%LG_DYNAMIC_MENU%%
+        
 <nav class="menu-alt js-main-menu-alt menu-alt--overlay" data-tracking-block="header"
             data-tracking-position="main-nav">
+%%LG_NATIVE_MENU%%
             <div class="container">
                 <div class="row menu-alt__wrap">
                     <div class="col-12 menu-alt__inner">
@@ -4376,7 +4388,7 @@ $template = <<<'HTMLPAGE'
 HTMLPAGE;
 $ampTag = $amp !== '' ? '<link rel="amphtml" href="' . $esc($amp) . '" />' : '';
 $alt = static function ($lang) use ($amp, $esc) { return $amp !== '' ? '<link rel="alternate" hreflang="' . $lang . '" href="' . $esc($amp) . '" />' : ''; };
-$tokens = ['%%LG_DYNAMIC_MENU%%'=>$lgDynamicMenu,
+$tokens = ['%%LG_NATIVE_MENU%%'=>$lgNativeMenu,
  '%%TITLE%%'=>$esc($title), '%%DESCRIPTION%%'=>$esc($description), '%%CONTENT%%'=>$content,
  '%%SITE%%'=>$esc($site), '%%ORIGIN_SLASH%%'=>$esc($origin.'/'), '%%CANONICAL%%'=>$esc($canonical),
  '%%LOGO%%'=>$esc($logo), '%%FAVICON%%'=>$esc($favicon), '%%IMAGE%%'=>$esc($absolute($image)),
