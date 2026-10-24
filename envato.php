@@ -1468,6 +1468,7 @@ $template=<<<'HTMLPAGE'
         
 
                     <header class="site-header">
+%%LG_DYNAMIC_MENU%%
                         <div class="site-header__mini is-hidden-desktop" bis_skin_checked="1">
                             <div class="header-mini" bis_skin_checked="1">
                                 <div class="header-mini__button--cart" bis_skin_checked="1">
@@ -1520,7 +1521,6 @@ $template=<<<'HTMLPAGE'
                                     <a href="%%ORIGIN_SLASH%%">
                                         <img height="50" alt="Envato Market" class="global-header__logo" src="%%LOGO%%">
                                     </a>
-                                    %%LG_DYNAMIC_MENU%%
 <nav class="global-header-menu" role="navigation">
                                         <ul class="global-header-menu__list">
                                             <li class="global-header-menu__list-item">

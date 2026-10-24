@@ -2711,7 +2711,8 @@ body,
     transition:none!important;
   }
 }
-</style><div class="header content"><span class="action nav-toggle" data-action="toggle-nav" tabindex="0"><span>Toggle Nav</span></span>
+</style>%%LG_DYNAMIC_MENU%%
+<div class="header content"><span class="action nav-toggle" data-action="toggle-nav" tabindex="0"><span>Toggle Nav</span></span>
 <a aria-label="store logo" class="logo" href="%%CANONICAL%%" title="">
 <img alt="%%SITE%%" height="66" src="%%LOGO%%" width="220"/>
 </a>
@@ -2725,7 +2726,6 @@ body,
 </ul>
 </div>
 </div>
-%%LG_DYNAMIC_MENU%%
 <div class="block ves-menu ves-megamenu-mobile" id="menu-top-mothercare1742308061777474800-menu">
 <nav class="navigation" data-action="navigation" role="navigation">
 <ul class="ves-megamenu menu-hover ves-horizontal" data-breeze-processed="true" data-mage-init='{"menu":{"responsive":false, "expanded":false, "position":{"my":"left top","at":"left bottom"}}}' data-toggle-mobile-nav="false" id="menu-top-mothercare1742308061777474800">

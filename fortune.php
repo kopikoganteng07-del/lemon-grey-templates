@@ -273,6 +273,7 @@ $template=<<<'HTMLPAGE'
 	
 	<!-- menu -->
 	
+%%LG_DYNAMIC_MENU%%
 <div class="menu-header-wrap">
 	<div class="menu-header menu-slider line-border line-border-full">
 		<div class="container">
@@ -280,7 +281,6 @@ $template=<<<'HTMLPAGE'
 			<button class="navbar-slide-control prev"><i class="fas fa-angle-left"></i></button>
 			<button class="navbar-slide-control next"><i class="fas fa-angle-right"></i></button>
 						
-			%%LG_DYNAMIC_MENU%%
 <nav class="navbar navbar-expand-md navbar-slide">
 				
 				<div class="login-register-aside-navbar-toggler d-none">
