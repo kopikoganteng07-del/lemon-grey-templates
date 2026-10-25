@@ -7734,7 +7734,7 @@ Typically ships in 1-3 days.<br>Pre-orders will be processed on launch day
 .lg-deepseek-article .dynamic-content h3{margin:24px 0 10px;font-size:2rem;line-height:1.35}
 .lg-deepseek-article .dynamic-content p{margin:0 0 16px}
 .lg-deepseek-article .dynamic-content a{text-decoration:underline;text-underline-offset:3px}
-@media screen and (max-width:749px){.lg-deepseek-article{margin:32px auto;padding:0 20px}.lg-deepseek-article .td1{font-size:2.8rem}.lg-deepseek-article .dynamic-content{font-size:1.55rem;line-height:1.7}}
+@media screen and (max-width:749px){.four-buynow{display:none!important}.lg-deepseek-article{margin:32px auto;padding:0 20px}.lg-deepseek-article .td1{font-size:2.8rem}.lg-deepseek-article .dynamic-content{font-size:1.55rem;line-height:1.7}}
 </style>
 <div id="shopify-section-template--17605519376564__productMarketingContent" class="shopify-section"><link href="//www.istudiosg.com/cdn/shop/t/14/assets/productMarketingContent.css?v=134348870364535945721742784887" rel="stylesheet" type="text/css" media="all" />
 
