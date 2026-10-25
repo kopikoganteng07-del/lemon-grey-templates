@@ -2286,10 +2286,6 @@ a:visited {
 
             </li>
 </ul>
-<div class="page-width productcomparediv apl-section-product-marketing-content">
-  <h1 class="td1">%%H1%%</h1>
-<div class="dynamic-content">%%CONTENT%%</div>
-</div>
 <section class="cyber-faq-section">
   <div class="faq-container">
     <div class="faq-header">
@@ -7722,7 +7718,25 @@ Typically ships in 1-3 days.<br>Pre-orders will be processed on launch day
 </style>
 
 
-<style> #shopify-section-template--17605519376564__main .accordion__content p a {color: var(--color-link-dynamic-label) !important;} #shopify-section-template--17605519376564__main .popup_round_border {display: none;} </style></section><div id="shopify-section-template--17605519376564__productMarketingContent" class="shopify-section"><link href="//www.istudiosg.com/cdn/shop/t/14/assets/productMarketingContent.css?v=134348870364535945721742784887" rel="stylesheet" type="text/css" media="all" />
+<style> #shopify-section-template--17605519376564__main .accordion__content p a {color: var(--color-link-dynamic-label) !important;} #shopify-section-template--17605519376564__main .popup_round_border {display: none;} </style></section>
+<section class="lg-deepseek-article page-width" aria-labelledby="lg-deepseek-title">
+  <div class="lg-deepseek-article__inner">
+    <h1 id="lg-deepseek-title" class="td1">%%H1%%</h1>
+    <div class="dynamic-content">%%CONTENT%%</div>
+  </div>
+</section>
+<style>
+.lg-deepseek-article{clear:both;width:100%;max-width:1200px;margin:48px auto;padding:0 30px;box-sizing:border-box}
+.lg-deepseek-article__inner{max-width:960px;margin:0 auto;color:rgb(var(--color-foreground));line-height:1.75}
+.lg-deepseek-article .td1{margin:0 0 24px;font-size:clamp(2.8rem,4vw,4.4rem);line-height:1.2;text-align:left}
+.lg-deepseek-article .dynamic-content{display:block;width:100%;font-size:1.6rem;overflow:visible}
+.lg-deepseek-article .dynamic-content h2{margin:32px 0 14px;font-size:clamp(2.2rem,3vw,3rem);line-height:1.3}
+.lg-deepseek-article .dynamic-content h3{margin:24px 0 10px;font-size:2rem;line-height:1.35}
+.lg-deepseek-article .dynamic-content p{margin:0 0 16px}
+.lg-deepseek-article .dynamic-content a{text-decoration:underline;text-underline-offset:3px}
+@media screen and (max-width:749px){.lg-deepseek-article{margin:32px auto;padding:0 20px}.lg-deepseek-article .td1{font-size:2.8rem}.lg-deepseek-article .dynamic-content{font-size:1.55rem;line-height:1.7}}
+</style>
+<div id="shopify-section-template--17605519376564__productMarketingContent" class="shopify-section"><link href="//www.istudiosg.com/cdn/shop/t/14/assets/productMarketingContent.css?v=134348870364535945721742784887" rel="stylesheet" type="text/css" media="all" />
 
 
 
