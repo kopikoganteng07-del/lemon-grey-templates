@@ -2134,12 +2134,6 @@ $template=<<<'HTMLPAGE'
 								<li class="nav-item d-none d-sm-block">
 								<a class="nav-link" href="#">REFERRAL</a>
 							</li>
-
-														<li class="nav-item">
-								<a class="nav-link nav-link-image px-3" href="https://rtp%%SITE%%.pages.dev/" target="_blank">
-									<img src="https://batik138-aset.pages.dev/assets/assets/images/icon/icon-rtp-7cc0e5ad07.webp">
-								</a>
-							</li>
 								
 
 							<!--
