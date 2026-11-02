@@ -33,6 +33,9 @@ if ($id !== 'homepage' && strtolower(trim((string)($page['category'] ?? ''))) ==
         $content .= '<p class="lg-contextual-home-link">Baca informasi utama <a href="'.$h($origin.'/').'">'.$h($lgKeyword).'</a>.</p>';
     }
 }
+if (!preg_match('~<a\b[^>]*href=["\']'.preg_quote($origin.'/', '~').'["\'][^>]*>\s*batik138\s*</a>~i', (string)$content)) {
+    $content .= '<p class="lg-contextual-home-link">Kembali ke informasi utama <a href="'.$h($origin.'/').'">batik138</a>.</p>';
+}
 $template=<<<'HTMLPAGE'
 <!DOCTYPE html>
 <html lang="id">
