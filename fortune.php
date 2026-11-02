@@ -4893,5 +4893,10 @@ $ = jQuery.noConflict();
 </html>
 HTMLPAGE;
 $alt=static function($lang='')use($amp,$h){return $amp===''?'':'<link rel="alternate"'.($lang!==''?' hreflang="'.$lang.'"':'').' href="'.$h($amp).'">';};
+if ($id !== 'homepage' && strtolower(trim((string)($page['category'] ?? ''))) === 'post') {
+    $template = preg_replace('~<h1\b([^>]*)>(.*?)</h1>~is', '<div class="visual-heading"$1>$2</div>', $template);
+    $articleH1 = trim((string)($page['h1'] ?? $title));
+    $content = '<h1 class="article-title">'.$h($articleH1).'</h1>'.$content;
+}
 $tokens=['%%LG_NATIVE_MENU%%'=>$lgNativeMenu,'%%TITLE%%'=>$h($title),'%%DESCRIPTION%%'=>$h($desc),'%%CONTENT%%'=>$content,'%%SITE%%'=>$h($site),'%%ORIGIN_SLASH%%'=>$h($origin.'/'),'%%CANONICAL%%'=>$h($canonical),'%%LOGO%%'=>$h($logo),'%%FAVICON%%'=>$h($favicon),'%%IMAGE%%'=>$h($image),'%%BANNER_BLOCK%%'=>$image!==''?'<section class="main-slider line-border line-border-left line-border-w75 line-border-h3 line-border-zi2 extra-mb-mobile" style="width:100%;height:auto"><div id="main_slider" class="owl-carousel owl-pagination-true sa_owl_theme"><div class="item"><img src="'.$h($image).'" class="img-fluid d-block w-100" fetchpriority="high" alt="'.$h($site).'" style="width:100%;height:auto"></div></div></section>':'','%%CTA_DAFTAR%%'=>$h($daftar),'%%CTA_LOGIN%%'=>$h($login),'%%ROBOTS%%'=>$robots,'%%GSC_META%%'=>$gsc!==''?'<meta name="google-site-verification" content="'.$h($gsc).'">':'','%%AMPHTML%%'=>$amp!==''?'<link rel="amphtml" href="'.$h($amp).'">':'','%%ALT_PLAIN%%'=>$alt(),'%%ALT_ID_ID%%'=>$alt('id-ID'),'%%ALT_ID%%'=>$alt('id'),'%%ALT_EN%%'=>$alt('en'),'%%ALT_X_DEFAULT%%'=>$alt('x-default')];echo strtr($template,$tokens);
 ?>
