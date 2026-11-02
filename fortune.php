@@ -4566,45 +4566,6 @@ FDDPWDSET = {"feedwd":{"min":"500000","max":"15000000","step":"10000"},"feeddp":
 		}, 2000);
 	});		
 </script>
-
-	<div class="floating-socmed" id="floatingSocmed">
-		<div class="close-flsocmed" onclick="removeElement('#floatingSocmed')">x</div>
-					<div class="contact-wrap">
-				<ul class="contact-outer display-vertical">
-										<li>
-							<a target="_blank" href="" onclick="openwa('https://wa.me//?text='); return false;" class="cstyle whatsapp">
-								<!--i class="fa fa-"></i-->
-								<i class="fa fa-brands fa-whatsapp"></i>
-							</a>
-						</li>
-												<li>
-							<a href="#" target="_blank" class="cstyle facebook">
-								<!--i class="fa fa-"></i-->
-								<i class="fa fa-brands fa-facebook-f"></i>
-							</a>
-						</li>
-												<li>
-							<a href="#" target="_blank" class="cstyle twitter">
-								<!--i class="fa fa-"></i-->
-								<i class="fa fa-brands fa-x-twitter"></i>
-							</a>
-						</li>
-												<li>
-							<a href="#" target="_blank" class="cstyle instagram">
-								<!--i class="fa fa-"></i-->
-								<i class="fa fa-brands fa-instagram"></i>
-							</a>
-						</li>
-												<li>
-							<a href="#" target="_blank" class="cstyle telegram">
-								<!--i class="fa fa-"></i-->
-								<i class="fa fa-brands fa-telegram"></i>
-							</a>
-						</li>
-										</ul>
-			</div>
-				</div>
-	
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
