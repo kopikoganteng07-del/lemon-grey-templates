@@ -318,7 +318,6 @@ $template=<<<'HTMLPAGE'
 					
 					<div class="offcanvas-body p-0">
 						<ul class="navbar-nav navbar-nav-slide justify-content-center align-items-center flex-grow-1">
-%%LG_NATIVE_MENU%%
 							<li class="nav-item d-md-none">
 								
 								
