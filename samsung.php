@@ -983,7 +983,10 @@ $template=<<<'HTMLPAGE'
            ]
          }
       </script>
-   </head>
+   <style id="lg-samsung-native-menu-layout">
+.lg-native-menu-list{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;min-width:0!important;list-style:none!important;margin:0!important;padding:0 16px!important;-webkit-overflow-scrolling:touch}.lg-native-menu-list>.nv00-gnb-v4__menu-item{display:block!important;flex:0 0 auto!important;margin:0!important}.lg-native-menu-list>.nv00-gnb-v4__menu-item>.nv00-gnb-v4__menu-link{display:flex!important;align-items:center!important;min-height:44px!important;padding:0 12px!important;white-space:nowrap!important}.lg-native-menu-list>.nv00-gnb-v4__menu-item>.nv00-gnb-v4__menu-link[aria-current="page"]{font-weight:700!important;text-decoration:underline!important}
+</style>
+</head>
    <style>
       .nv00-gnb-v4__l0-menu-text,
       .nv00-gnb-v4__l1-menu-text,
