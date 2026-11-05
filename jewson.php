@@ -5,10 +5,7 @@ if (!is_file($file)) { http_response_code(500); exit('data.json tidak ditemukan.
 $data = json_decode(file_get_contents($file), true);
 if (!is_array($data)) { http_response_code(500); exit('data.json tidak valid.'); }
 $page = $data[$id] ?? null;
-if (!is_array($page)) { http_response_code(404); exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><title>404</title><style>
-@media(min-width:992px){.menu-alt__inner{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;overflow-x:auto!important;min-width:0!important}.menu-alt__inner>.menu-alt__link{display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;width:auto!important;min-height:64px!important;padding:0 12px!important;white-space:nowrap!important}.menu-alt__inner>.menu-alt__link[aria-current="page"]{font-weight:700!important;border-bottom:3px solid currentColor!important}}
-</style>
-</head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>'); }
+if (!is_array($page)) { http_response_code(404); exit('<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><title>404</title><style></head><body><h1>404</h1><p><a href="/">Kembali ke Beranda</a></p></body></html>'); }
 $homepage = isset($data['homepage']) && is_array($data['homepage']) ? $data['homepage'] : [];
 $host = preg_replace('/:\\d+$/', '', $_SERVER['HTTP_HOST'] ?? 'localhost');
 $origin = 'https://' . $host;
@@ -1367,6 +1364,9 @@ $template = <<<'HTMLPAGE'
     <script
         src="https://assets.adobedtm.com/f177fcea2274/0ec023f9574e/e92a583b7661/RC67855ee2c298479096687632678a397b-source.min.js"
         async=""></script>
+<style id="lg-jewson-native-menu-layout">
+@media(min-width:992px){.menu-alt__inner{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;overflow-x:auto!important;min-width:0!important}.menu-alt__inner>.menu-alt__link{display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;width:auto!important;min-height:64px!important;padding:0 12px!important;white-space:nowrap!important}.menu-alt__inner>.menu-alt__link[aria-current="page"]{font-weight:700!important;border-bottom:3px solid currentColor!important}}
+</style>
 </head>
 
 
