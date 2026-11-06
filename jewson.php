@@ -1800,62 +1800,6 @@ $template = <<<'HTMLPAGE'
 
                         <div class="menu-alt__tray">
 
-                            <div class="yCmsComponent d-lg-flex justify-content-between w-100"
-                                data-starname="NavigationBar">
-                                <div class="menu-alt__tray-item js-menu-tray-item">
-                                    <a href="%%ORIGIN_SLASH%%" title="%%SITE%%"
-                                        class="menu-alt__link menu-alt__link--main menu-alt__link--parent js-menu-parent">%%SITE%%</a>
-                                </div>
-
-                                <div class="menu-alt__tray-item js-menu-tray-item">
-                                    <a href="%%ORIGIN_SLASH%%" title="%%SITE%% DAFTAR"
-                                        class="menu-alt__link menu-alt__link--main menu-alt__link--parent js-menu-parent">%%SITE%%
-                                        DAFTAR</a>
-                                </div>
-
-                                <div class="menu-alt__tray-item js-menu-tray-item">
-                                    <a href="%%ORIGIN_SLASH%%" title="%%SITE%% LOGIN"
-                                        class="menu-alt__link menu-alt__link--main menu-alt__link--parent js-menu-parent">%%SITE%%
-                                        LOGIN</a>
-                                </div>
-
-                                <div class="menu-alt__tray-item js-menu-tray-item">
-                                    <a href="%%ORIGIN_SLASH%%"
-                                        title="SITUS SLOT %%SITE%%"
-                                        class="menu-alt__link menu-alt__link--main menu-alt__link--parent js-menu-parent">SITUS
-                                        SLOT %%SITE%%</a>
-                                </div>
-
-                                <div class="menu-alt__tray-item js-menu-tray-item">
-                                    <a href="%%ORIGIN_SLASH%%" title="%%SITE%% RESMI"
-                                        class="menu-alt__link menu-alt__link--main menu-alt__link--parent js-menu-parent">%%SITE%%
-                                        RESMI</a>
-                                </div>
-
-                                <div class="menu-alt__tray-item js-menu-tray-item">
-                                    <a href="%%ORIGIN_SLASH%%"
-                                        title="%%SITE%% SLOT ONLINE"
-                                        class="menu-alt__link menu-alt__link--main menu-alt__link--parent js-menu-parent">%%SITE%%
-                                        SLOT ONLINE</a>
-                                </div>
-
-                                <div class="menu-alt__tray-item js-menu-tray-item">
-                                    <a href="%%ORIGIN_SLASH%%"
-                                        title="SLOT GACOR"
-                                        class="menu-alt__link menu-alt__link--main menu-alt__link--parent js-menu-parent">SLOT
-                                        GACOR</a>
-                                </div>
-
-                                <div class="menu-alt__tray-item js-menu-tray-item">
-                                    <a href="%%CTA%%" title="%%SITE%% INDONESIA"
-                                        class="menu-alt__link menu-alt__link--main menu-alt__link--parent js-menu-parent">%%SITE%% INDONESIA</a>
-                                </div>
-
-                                <div class="menu-alt__tray-item js-menu-tray-item">
-                                    <a href="%%CTA%%" title="%%SITE%% LINK SLOT RESMI"
-                                        class="menu-alt__link menu-alt__link--main menu-alt__link--parent js-menu-parent">%%SITE%% LINK SLOT RESMI</a>
-                                </div>
-                            </div>
                             <div class="d-lg-none menu-alt__tray-item">
                                 <span class="menu-alt__title">More from Jewson</span>
                                 <div>
